@@ -4,175 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Full Screen Slider</title>
+    <title>Furnish.com</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"/>
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
       <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="Furnish.css"/>
+    <link rel="stylesheet" href="Furnish.css" />
   </head>
 <style>
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background:transparent;
-  color: #fff;
-  line-height: 1.6;
-}
-body {
-  height: 3000px; /* Used to enable scrolling */
-  background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%);
-}
-
-#line .draw .hover {
-  transition: all 0.2s ease-in-out;
-  position: relative;
-}
-#line .draw .hover:before, #line .draw .hover:after {
-  content: "";
-  position: absolute;
-  bottom: -6px;
-  width: 0px;
-  height: 3px;
-  transition: all 0.2s ease-in-out;
-  transition-duration: 0.75s;
-  background-color: #2c16f0;
-}
-#line .draw .hover.hover-1:before, #line .draw .hover.hover-1:after {
-  left: 0;
-}
-#line .draw .hover.hover-4:before {
-  left: 0;
-}
-#line .draw:hover .hover:before, #line .draw:hover .hover:after {
-  width: 100%;
-}
-
-.slider {
-  position: relative;
-  overflow: hidden;
-  height:calc(100vh - 60px);
-  width: 100vw;
-}
-
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 4s ease-in-out;
-}
-
-.slide.current {
-  opacity: 1;
-}
-
-.slide .content {
-  position: absolute;
-  bottom: 70px;
-  left: -600px;
-  opacity: 0;
-  width: 600px;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #333;
-  padding: 35px;
-}
-
-.slide .content h1 {
-  margin-bottom: 10px;
-}
-
-.slide.current .content {
-  opacity: 1;
-  transform: translateX(600px);
-  transition: all 0.7s ease-in-out 0.3s;
-}
-
-.buttons button#next {
-  position: absolute;
-  top: 15%;
-  right: 15px;
-}
-
-.buttons button#prev {
-  position: absolute;
-  top: 15%;
-  left: 15px;
-}
-
-.buttons button {
-  border: 2px solid #fff;
-  background-color: transparent;
-  color: #fff;
-  cursor: pointer;
-  padding: 13px 15px;
-  border-radius: 50%;
-  outline: none;
-}
-
-.buttons button:hover {
-  background-color: #fff;
-  color: #333;
-}
-
-@media (max-width: 500px) {
-  .slide .content {
-    bottom: -300px;
-    left: 0;
-    width: 100%;
-  }
-
-  .slide.current .content {
-    transform: translateY(-300px);
-  }
-}
-
-
-
-/* Backgorund Images */
- 
-.slide:first-child {
-  background: url('mid.jpg') no-repeat
-    center top/cover;
-}
-
-.two{
-  background-image: url('koro.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-/* .slide:nth-child(2) {
-  background: url('https://source.unsplash.com/BeOW_PJjA0w/1600x900') no-repeat
-    center top/cover;
-} */
-.slide:nth-child(3) {
-  background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat
-    center top/cover;
-}
-.slide:nth-child(4) {
-  background: url('https://source.unsplash.com/yXpA_eCbtzI/1600x900') no-repeat
-    center top/cover;
-}
-.slide:nth-child(5) {
-  background: url('https://source.unsplash.com/ULmaQh9Gvbg/1600x900') no-repeat
-    center top/cover;
-} 
-.slide:nth-child(6)  {
-  background: url('https://source.unsplash.com/ggZuL3BTSJU/1600x900') no-repeat
-    center center/cover;
-}
 
 
 
@@ -181,68 +22,141 @@ body {
 
   <body>
 
-<div id="luxy">
+  <div id="luxy">
 
-    <div id="navbar" class="h-16 bg-gray-900">
+    
+  <section class="Navbary bg-gray-800 h-16">
 
+    <div class="w-11/12 h-auto flex justify-between align-center m-auto">
 
-        <div class="w-10/12Navbar flex justify-between align-center">
-        <h1 class="logo text-3xl">Furnish.</h1>
+      <div class="Logo mt-1">
+        <h1 class="text-3xl text-red-600"><i class="fab fa-accusoft"></i></h1>
+        <a href="Home.html"><h1 class="logo text-3xl text-white -my-3">furnish.</h1></a>
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+    <div class="OtherNav ">
 
         
-      
+      <div id="mySidenav" class="sidenav bg-cover bg-no-repeat"style="background:url('./Images/menucover.jpg')">
 
-      <div id="line">
-        <h1 class="draw">
-          <a href="incart.html"><span class="hover hover-1 lg:text-2xl md:text-3xl text-lg hover:text-green-500">Home</span></a>
-        </h1>
+        <div class="bg-black opacity-80 z-10 h-screen " style=" font-family:Roos St Regis Display;">
+          <div class="menucontainer w-9/12 grid grid-cols-3 gap-4 pt-40 px-40 m-auto">
+
+        <a href="javascript:void(0)" class="closebtn hover:text-gray-400 animate-spin text-3xl" onclick="closeNav()">&times;</a>
+        
+        <div  id="line">
+          <h1 class="draw  ml-16">
+            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
+          </h1>
+        </div>
+        <div  id="line ">
+          <h1 class="draw ml-16">
+            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  / </span></a>
+          </h1>
+        </div>
+        <div  id="line">
+          <h1 class="draw ml-16">
+            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
+          </h1>
+        </div>
+        <div  id="line">
+          <h1 class="draw">
+            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
+          </h1>
+        </div>
+        <div  id="line">
+          <h1 class="draw">
+            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
+          </h1>
+        </div>
+        <div  id="line">
+          <h1 class="draw">
+            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
+          </h1>
+        </div>
+        <div  id="line" class="col-span-3">
+          <h1 class="draw">
+            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
+          </h1>
+        </div>
+       
+        
+  
+        
+          <!--Menucontainer-->
+          </div>
+
+          <div class="w-5/12 m-auto flex justify-between align-center mt-60 text-white text-xl">
+            
+           <p>emoriginals@furnish.com</p>
+           <p>+234 0810 8243267</p>
+           <p>Twitter</p>
+           <p>Facebook</p>
+           
+          </div>
+
+          <div class="w-5/12 m-auto flex justify-between align-center mt-8 text-white text-xl">
+            
+           <p>Old GRA Port Harcourt, New Lane</p>
+           <p>www.emcodes.com</p>
+           <p>Pick a Number</p>
+           <p>Aqua Apparitions</p>
+
+          </div>
+
+      </div>
+
       </div>
 
     </div>
 
+
+    <div class="w-2/12 flex justify-between item-center mt-5">
+
+        <div class="dropdown relative inline-block">
+          <h1 class="dropbtn text-3xl text-red-500"><i class="fab fa-searchengin"></i></h1>
+          <div class="dropdown-content hidden w-60 absolute z-10">
+              <div class="serchbar block flex item-center py-3 w-80 bg-gray-200 px-2 m-auto">
+              <input class="w-72 py-2 border border-current focus:outline-none" type="text" name="search" placeholder="search products">
+              <button class="py-2 px-2 bg-black text-white">SEARCH</button>
+              </div>
+          </div>
+        </div>
+        
+        <div id="line">
+          <h1 class="draw">
+            <span class="hover hover-1 text-white text-2xl cursor-pointer" onclick="openNav()">&#9776; Menu</span>
+          </h1>
+        </div>
+        
+        <div id="line">
+          <h1 class="draw">
+            <a href="Login.html"><h1 class="hover hover-1 text-2xl text-white cursor-pointer"><i class="far fa-user"></i> Login</h1></a>
+          </h1>
+        </div>
+
+    
+    </div>
+
+    <!--flexer-->
+  </div>
+
+  </section>
+
+
+
     <div class="slider">
-
       <div class="slide current">
-
-
-        <h1 class="captions text-6xl">Ceteris Paribus okolo</h1>
-
-
-
         <div class="content">
-          <h1>Birkin Oak and Pines</h1>
+          <h1>Slide One</h1>
           <p>
-            The Best Balalalalalalalalalal
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit hic
+            maxime, voluptatibus labore doloremque vero!
           </p>
         </div>
       </div>
-
-      <div class="slide">
+      <div class="slide two w-96 h-96">
         <div class="content">
           <h1>Slide Two</h1>
           <p>
@@ -250,7 +164,6 @@ body {
           </p>
         </div>
       </div>
-
       <div class="slide">
         <div class="content">
           <h1>Slide Three</h1>
@@ -260,7 +173,6 @@ body {
           </p>
         </div>
       </div>
-
       <div class="slide">
         <div class="content">
           <h1>Slide Four</h1>
@@ -270,7 +182,6 @@ body {
           </p>
         </div>
       </div>
-
       <div class="slide">
         <div class="content">
           <h1>Slide Five</h1>
@@ -280,7 +191,6 @@ body {
           </p>
         </div>
       </div>
-
       <div class="slide">
         <div class="content">
           <h1>Slide Six</h1>
@@ -296,263 +206,88 @@ body {
       <button id="next"><i class="fas fa-arrow-right"></i></button>
     </div>
 
-    <div class="h-screen w-full bg-gray-500"></div>
-<div class="h-screen w-full bg-gray-200"></div>
+    <!-- <div class="h-screen w-full bg-gray-500"></div>
+<div class="h-screen w-full bg-gray-200"></div> -->
+
+      <section class=" bg-gray-200"style="font-family:Roos St Regis Display; ">
+
+        <h1 class="text-xl text-gray-700">The Experience</h1>
+
+        <div class="text-9xl text-gray-700">
+          <h1>Impecable <br> Craftsmanship</h1>
+        </div>
+
+
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-
-const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('#next');
-const prev = document.querySelector('#prev');
-const auto = true; // Auto scroll
-const intervalTime = 7000;
-let slideInterval;
-
-const nextSlide = () => {
-  // Get current class
-  const current = document.querySelector('.current');
-  // Remove current class
-  current.classList.remove('current');
-  // Check for next slide
-  if (current.nextElementSibling) {
-    // Add current to next sibling
-    current.nextElementSibling.classList.add('current');
-  } else {
-    // Add current to start
-    slides[0].classList.add('current');
-  }
-  setTimeout(() => current.classList.remove('current'));
-};
-
-const prevSlide = () => {
-  // Get current class
-  const current = document.querySelector('.current');
-  // Remove current class
-  current.classList.remove('current');
-  // Check for prev slide
-  if (current.previousElementSibling) {
-    // Add current to prev sibling
-    current.previousElementSibling.classList.add('current');
-  } else {
-    // Add current to last
-    slides[slides.length - 1].classList.add('current');
-  }
-  setTimeout(() => current.classList.remove('current'));
-};
-
-// Button events
-next.addEventListener('click', e => {
-  nextSlide();
-  if (auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-});
-
-prev.addEventListener('click', e => {
-  prevSlide();
-  if (auto) {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, intervalTime);
-  }
-});
-
-// Auto slide
-if (auto) {
-  // Run next slide at interval time
-  slideInterval = setInterval(nextSlide, intervalTime);
-}
-
-
-</script>
 
  <!-- Smooth scrolling -->
     
@@ -570,6 +305,6 @@ if (auto) {
   }
   </script>
 
-    <script src="main.js"></script>
+    <script src="Furnish.js"></script>
   </body>
 </html>

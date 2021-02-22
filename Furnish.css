@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background:transparent;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height:calc(100vh - 64px);
+  width: 100vw;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: 70px;
+  left: -600px;
+  opacity: 0;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #333;
+  padding: 35px;
+}
+
+.slide .content h1 {
+  margin-bottom: 10px;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateX(600px);
+  transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 30%;
+  right: 15px;
+}
+
+.buttons button#prev {
+  position: absolute;
+  top: 30%;
+  left: 15px;
+}
+
+.buttons button {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.buttons button:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .slide .content {
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+  }
+
+  .slide.current .content {
+    transform: translateY(-300px);
+  }
+}
+
+
+
+/* Backgorund Images */
+ 
+.slide:first-child {
+  background: url('./Images/C1.jpg') no-repeat
+    center /cover;
+}
+
+.slide:nth-child(2) {
+  background: url('/Images/C2.jpg') no-repeat
+    center bottom/cover;
+} 
+.slide:nth-child(3) {
+  background: url('./Images/C3.jpg') no-repeat
+    center /cover;
+}
+.slide:nth-child(4) {
+  background: url('./Images/C4.jpg') no-repeat
+    center top/cover;
+}
+.slide:nth-child(5) {
+  background: url('./Images/C5.jpg') no-repeat
+    center bottom/cover;
+} 
+.slide:nth-child(6)  {
+  background: url('./Images/C6.jpg') no-repeat
+    center center/cover;
+}
+
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 64px;
+  right: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.sidenav a {
+  /* padding: 8px 8px 8px 32px; */
+  text-decoration: none;
+  /* font-size: 25px; */
+  color: #ffffff;
+  /* display: block; */
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #fde7e7;
+} 
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#line .draw .hover {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+#line .draw .hover:before, #line .draw .hover:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 0px;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.55s;
+  background-color: #f51919;
+}
+#line .draw .hover.hover-1:before, #line .draw .hover.hover-1:after {
+  left: 0;
+}
+#line .draw .hover.hover-4:before {
+  left: 0;
+}
+#line .draw:hover .hover:before, #line .draw:hover .hover:after {
+  width: 100%;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ffffff00;}
+
