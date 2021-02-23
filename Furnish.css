@@ -13,6 +13,82 @@ body {
   line-height: 1.6;
 }
 
+/* *888888888888888888888888888888888888888888888888888888888888888 */
+
+.sizer{
+  font-size:9.7rem;
+}
+
+.craft{
+  height: 750px;
+}
+
+
+.gradients{
+  background: linear-gradient(to bottom, #f4f4f4 0%, #fefefe 100%);
+}
+
+.reverse-grad{
+  background: linear-gradient(to bottom, #fefefe 0%, #f4f4f4 100%);
+}
+
+.red-grad-in{
+  background: linear-gradient(to bottom, #f4f4f4 0%, #fbeded 100%);
+}
+.red-grad-out{
+  background: linear-gradient(to bottom, #fbeded 0%, #f4f4f4 100%);
+}
+
+
+
+.butty {
+  width: 200px;
+  height: 40px;
+  position: relative;
+  background: rgb(202, 18, 18);
+  transition:         transform .6s ease-in-out;
+}
+.butty:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+.butty:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid  rgb(202, 18, 18);
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+
+.butty:hover{
+  transform: translateX(25px);
+  background-color: #f51919;
+  border-left: #f51919;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* *********************************************************************************** */
 .slider {
   position: relative;
   overflow: hidden;
@@ -57,13 +133,13 @@ body {
 
 .buttons button#next {
   position: absolute;
-  top: 30%;
+  top: 5%;
   right: 15px;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 30%;
+  top: 5%;
   left: 15px;
 }
 
