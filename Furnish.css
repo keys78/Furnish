@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
 * {
   box-sizing: border-box;
@@ -76,6 +77,70 @@ body {
   background-color: #f51919;
   border-left: #f51919;
 }
+
+.glide__slide{
+  filter:blur(6px);
+  opacity: .7;
+  transition: .3s linear;
+}
+
+.glide__slide--active{
+  opacity: 1;
+  filter:none;
+  transform: scale(1.1);
+}
+
+
+
+.burron{
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    border-width: 0 5px 5px 5px;
+    height: 0;
+    width: 11px;
+    box-sizing: content-box;
+    position: relative;
+    margin: 3.5px 0 11px 0;
+    transition:transform .6s ease-in-out;
+  }
+  .burron:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: red transparent transparent transparent;
+    border-width: 16px 11px 0 11px;
+  }
+
+
+  .burron:hover{
+    transform: translate(-5px);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -214,6 +279,11 @@ body {
   overflow-x: hidden;
   transition: 0.5s;
   text-align: center;
+  transition: .3s linear;
+}
+
+.side--active{
+  transform: scale(1.1);
 }
 
 .sidenav a {
