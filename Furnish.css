@@ -40,6 +40,16 @@ body {
   background: linear-gradient(to bottom, #fbeded 0%, #f4f4f4 100%);
 }
 
+.free{
+  background: linear-gradient(to bottom, #f4f4f4 0%, #d5eeff 100%)
+}
+
+.free-out{
+  background: linear-gradient(to bottom, #d5eeff 0%, #fefefe 100%)
+}
+
+
+
 
 
 .butty {
