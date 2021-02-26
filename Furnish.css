@@ -49,10 +49,10 @@ body {
 }
 
 
-.footer-grad{
-  background: linear-gradient(to bottom, #fbeded 0%, #000 100%);
-}
+.end{
+  background: linear-gradient(to bottom, #fbeded 0%, #f8e6e6 100%);
 
+}
 
 
 
@@ -331,6 +331,8 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+
+
 #line .draw .hover {
   transition: all 0.2s ease-in-out;
   position: relative;
@@ -354,6 +356,37 @@ body {
 #line .draw:hover .hover:before, #line .draw:hover .hover:after {
   width: 100%;
 }
+
+
+
+
+#lin .dra .hove {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+#lin .dra .hove:before, #lin .dra .hove:after {
+  content: "";
+  position: absolute;
+  bottom: -0px;
+  width: 0px;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.55s;
+  background-color: #45f519;
+}
+#lin .dra .hove.hove-1:before, #lin .dra .hove.hove-1:after {
+  left: 0;
+}
+#lin .dra .hove.hove-4:before {
+  left: 0;
+}
+#lin .dra:hover .hove:before, #lin .dra:hover .hove:after {
+  width: 100%;
+}
+
+
+
+
 
 
 .dropdown-content a:hover {background-color: #ddd;}
