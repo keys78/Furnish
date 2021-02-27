@@ -17,8 +17,32 @@ body {
 /* *888888888888888888888888888888888888888888888888888888888888888 */
 
 .sizer{
-  font-size:9.7rem;
+  font-size:9.5rem;
 }
+
+@media only screen and (max-width:1024px){
+  .sizer{
+    font-size:7.7rem;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .sizer{
+    font-size:5.7rem;
+  }
+}
+@media only screen and (max-width:540px){
+  .sizer{
+    font-size:3rem;
+  }
+}
+
+
+
+
+
+
+
 
 .craft{
   height: 750px;
@@ -65,7 +89,7 @@ body {
   height: 40px;
   position: relative;
   background: rgb(202, 18, 18);
-  transition:         transform .6s ease-in-out;
+  transition:transform .6s ease-in-out;
 }
 .butty:after {
   content: "";
@@ -175,7 +199,7 @@ body {
 .slider {
   position: relative;
   overflow: hidden;
-  height:calc(100vh - 64px);
+  height:calc(100vh - 56px);
   width: 100vw;
 }
 
@@ -216,13 +240,13 @@ body {
 
 .buttons button#next {
   position: absolute;
-  top: 5%;
+  top: 40%;
   right: 15px;
 }
 
 .buttons button#prev {
   position: absolute;
-  top: 5%;
+  top: 40%;
   left: 15px;
 }
 
