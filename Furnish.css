@@ -17,18 +17,18 @@ body {
 /* *888888888888888888888888888888888888888888888888888888888888888 */
 
 .sizer{
-  font-size:9.5rem;
+  font-size:8.3rem;
 }
 
 @media only screen and (max-width:1024px){
   .sizer{
-    font-size:7.7rem;
+    font-size:6.7rem;
   }
 }
 
 @media only screen and (max-width:768px){
   .sizer{
-    font-size:5.7rem;
+    font-size:5.2rem;
   }
 }
 @media only screen and (max-width:540px){
@@ -158,9 +158,43 @@ body {
   }
 
 
-  .burron:hover{
-    transform: translate(-5px);
+ 
+  
+  @media only screen and (max-width:1024px){
+    .burron{
+      border-style: solid;
+      border-color: transparent transparent red transparent;
+      border-width: 0 2px 2px 2px;
+      height: 0;
+      width: 4px;
+      box-sizing: content-box;
+      position: relative;
+      margin: 2px 0 4px 0;
+      transition:transform .6s ease-in-out;
+    }
+    .burron:after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: -2px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-color: red transparent transparent transparent;
+      border-width: 17px 4px 0 4px;
+    }
   }
+
+  @media only screen and (max-width:540px){
+    .burron{
+     height: 1px;
+     background-color: black;
+    }
+    .burron:after {
+    width: 1px;
+    background-color: black;
+  }
+  
 
 
 
