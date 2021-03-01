@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
 
 * {
   box-sizing: border-box;
@@ -31,15 +30,12 @@ body {
     font-size:5.2rem;
   }
 }
+
 @media only screen and (max-width:540px){
   .sizer{
     font-size:3rem;
   }
 }
-
-
-
-
 
 
 
@@ -79,8 +75,35 @@ body {
 }
 
 
+.kara{
+  color: blanchedalmond;
+  animation: fade 12s ease-in infinite;
+}
 
 
+@keyframes fade {
+  0%{
+      color:transparent;
+  }
+  18%{
+      color:white;
+  }
+  32%{
+      color:greenyellow;
+  }
+  50%{
+      color:hotpink;
+  }
+  70%{
+      color:greenyellow;
+  }
+  87%{
+      color:white;
+  }
+  100%{
+      color:transparent;
+  }
+}
 
 
 
@@ -194,42 +217,10 @@ body {
     width: 1px;
     background-color: black;
   }
-  
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *********************************************************************************** */
+  /* ************************************************************************************/
 .slider {
   position: relative;
   overflow: hidden;
@@ -432,6 +423,7 @@ body {
   transition-duration: 0.55s;
   background-color: #45f519;
 }
+
 #lin .dra .hove.hove-1:before, #lin .dra .hove.hove-1:after {
   left: 0;
 }
@@ -447,9 +439,34 @@ body {
 
 
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: #ffffff00;}
+.dropdown:hover .dropbtn {
+  background-color: #ffffff00;
+}
 
+/*****************************FOOTER MINIMIZE**********************/
+  /* hide text */
+
+  .question-text {
+    display: none;
+  }
+  .show-text .question-text {
+    display: block;
+  }
+  .minus-icon {
+    display:none;
+  }
+  .show-text .minus-icon {
+    display:inline;
+  }
+  .show-text .plus-icon {
+    display: none;
+  }
+  
