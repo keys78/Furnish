@@ -1,5 +1,5 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.width = "250px";
   }
   
   function closeNav() {
@@ -97,3 +97,40 @@ questions.forEach(function (question) {
     question.classList.toggle("show-text");
   });
 });
+
+
+
+
+/////////////////// CUSTOMER TESTIMONIALS AREA////////////////////////////
+
+const nexty = document.querySelector('.nexty');
+const prevy = document.querySelector('.prevy');
+const moves = document.querySelectorAll('.move');
+
+let index = 0;
+display(index);
+function display (index) {
+	moves.forEach((move) => {
+		move.style.display = 'none';
+	});
+	moves[index].style.display = 'grid';
+}
+
+function nextMove () {
+	index++;
+	if (index > moves.length - 1) {
+		index = 0;
+	}
+	display(index);
+  
+}
+function prevMove () {
+	index--;
+	if (index < 0) {
+		index = moves.length - 1;
+	}
+	display(index);
+}
+
+nexty.addEventListener('click', nextMove);
+prevy.addEventListener('click', prevMove);
