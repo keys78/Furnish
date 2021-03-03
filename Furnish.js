@@ -134,3 +134,5 @@ function prevMove () {
 
 nexty.addEventListener('click', nextMove);
 prevy.addEventListener('click', prevMove);
+
+

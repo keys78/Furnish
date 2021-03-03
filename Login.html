@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Furnish.com</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Furnish.css" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Images/fav.ico">
+  </head>
+
+
+  <style>
+    html {
+	height: 100%;
+	width: 100%;
+	background-image:url('./Images/C2.jpg');
+	background-repeat: repeat-x;
+	background-position: 0 20%;
+	background-size: 2000px;
+	animation: 50s para infinite linear;
+	}
+
+	@keyframes para {
+	100% {
+		background-position: 
+			-5000px 20%;
+		}
+	}
+
+    .login-div{
+	position: absolute;
+	top:42%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	box-sizing:border-box;
+    overflow-y: hidden;
+
+	}
+
+	.shadow{
+		box-shadow: 0px 1px 12px 5px rgba(0, 0, 0, 0.342);
+	}
+
+  </style>
+
+
+<body>
+
+
+    <section class="h-screen mb-40 w-full bg-black opacity-40 ">
+        <div class="lg:w-full sm:w-9/12 w-7/12 ">
+
+        </div>
+    </section>
+    <!--Holders-->
+    
+
+    <div class="login-div shadow h-auto lg:w-3/12 md:w-4/12 sm:w-7/12 w-8/12 m-auto">
+
+
+      <div class="w-11/12 m-auto">
+
+        <div class="rounded-full h-10 w-full m-auto">
+            <img class="rounded-full w-2/12 animate-spin" src="./Images/giphy.gif">
+            </div>
+     
+
+
+        <form id="register">
+            <div class="input-group py-8">
+             <label for="firstname">First Name:</label><br>
+             <input type="text" name="firstname" id="firstname" />
+             <p>Please enter your first name</p>
+            </div>
+    
+            <div class="input-group pb-8">
+               <label for="surname">Surname: </label>
+               <input type="text" name="surname" id="surname" />
+               <p>Please enter your Surname</p>
+            </div>
+    
+            <div class="input-group pb-8">
+             <label for="email">Email: </label>
+             <input type="text" name="email" id="email" />
+             <p>Please enter your valid Email Address</p>
+            </div>
+    
+            <div class="input-group pb-8">
+              <label for="password">Password: </label>
+              <input type="password" name="password" id="password" />
+              <p>Minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter and 1 number</p>
+            </div>
+    
+            <div class="input-group full">
+             <a href="flo.html"></a><input type="submit" value="Login" class="submit-btn" /></a>
+             <div class="clear"></div>
+            </div>
+    
+            <div class="errors">
+            </div>
+           </form>
+    
+          
+
+        </div>
+
+    </div>
+
+     
+       <script>
+
+const regForm = document.querySelector('form#register');
+const errors_el = document.querySelector('form#register .errors');
+
+regForm.addEventListener('submit', validateRegisterForm);
+
+function validateRegisterForm (e) {
+ e.preventDefault();
+ 
+ const firstname = document.querySelector('#register #firstname');
+ const surname = document.querySelector('#register #surname');
+ const email = document.querySelector('#register #email');
+ const password = document.querySelector('#register #password');
+ 
+ let errors = [];
+ 
+const email_reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+ const pass_reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+ 
+ if (firstname.value == "") {
+  errors.push({text: "first name", el: firstname});
+ }
+ 
+ if (surname.value == "") {
+  errors.push({text: "surname", el: surname});
+ }
+ 
+ if (email.value == "") {
+  errors.push({text: "email", el: email});
+ } else if (!email_reg.test(email.value)) {
+  errors.push({text: "email", el: email});
+ }
+ 
+ if (password.value == "") {
+  errors.push({text: "password", el: password});
+ } else if (!pass_reg.test(password.value)) {
+  errors.push({text: "password", el: password});
+ }
+ 
+ if (errors.length > 0) {
+  handle_errors(errors);
+  return false;
+ }
+ 
+ window.location = "Dashboard.html";;
+ return true;
+}
+
+function handle_errors(errs) {
+ let str = "You have errors with the following field(s); ";
+ 
+ errs.map((er) => {
+  er.el.classList.add('error');
+  str += er.text + ", ";
+ });
+ 
+ errs[0].el.focus();
+ 
+ let error_el = document.createElement('div');
+ error_el.classList.add('error');
+ error_el.innerText = str;
+ 
+ error_el.addEventListener('click', function () {
+  errors_el.removeChild(error_el);
+ });
+ 
+ errors_el.appendChild(error_el);
+}
+
+       </script>
+
+
+
+
+
+    <script src="Furnh.js"></script>
+</body>
+</html>
