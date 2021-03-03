@@ -37,7 +37,7 @@
 
     .login-div{
 	position: absolute;
-	top:42%;
+	top:50%;
 	left:50%;
 	transform:translate(-50%, -50%);
 	box-sizing:border-box;
@@ -48,6 +48,44 @@
 	.shadow{
 		box-shadow: 0px 1px 12px 5px rgba(0, 0, 0, 0.342);
 	}
+
+        .spin {
+        border-radius: 50%;
+        transition:transform .8s ease-in-out;
+        }
+        .spin:hover {
+        transform: rotate(360deg);
+}
+
+.kara{
+  color: blanchedalmond;
+  animation: fade 1s ease-in infinite;
+}
+
+
+@keyframes fade {
+  0%{
+      color:transparent;
+  }
+  18%{
+      color:white;
+  }
+  32%{
+      color:greenyellow;
+  }
+  50%{
+      color:hotpink;
+  }
+  70%{
+      color:greenyellow;
+  }
+  87%{
+      color:white;
+  }
+  100%{
+      color:transparent;
+  }
+}
 
   </style>
 
@@ -63,52 +101,66 @@
     <!--Holders-->
     
 
-    <div class="login-div shadow h-auto lg:w-3/12 md:w-4/12 sm:w-7/12 w-8/12 m-auto">
+    <div class="login-div shadow h-auto lg:w-3/12 md:w-6/12 sm:w-8/12 w-10/12 m-auto">
 
 
-      <div class="w-11/12 m-auto">
+      <div class="w-10/12 m-auto">
 
-        <div class="rounded-full h-10 w-full m-auto">
-            <img class="rounded-full w-2/12 animate-spin" src="./Images/giphy.gif">
+        <div class="rounded-full h-10 w-full m-auto mb-12 mt-4">
+            <img class="rounded-full w-2/12 m-auto animate-spin" src="./Images/giphy.gif">
+            <h1 class="text-xl"style=" font-family:Roos St Regis Display;">Register Here</h1>
             </div>
      
 
 
         <form id="register">
-            <div class="input-group py-8">
-             <label for="firstname">First Name:</label><br>
-             <input type="text" name="firstname" id="firstname" />
-             <p>Please enter your first name</p>
+            <div class="input-group border border-current bg-white px-2 rounded mt-6">
+            <i class="text-red-500 fas fa-user"></i><br>
+             <input class="w-full py-1 focus:outline-none text-black" type="text" name="firstname" id="firstname" placeholder="Enter firstname" />
             </div>
     
-            <div class="input-group pb-8">
-               <label for="surname">Surname: </label>
-               <input type="text" name="surname" id="surname" />
-               <p>Please enter your Surname</p>
+            <div class="input-group mt-6 border border-current bg-white px-2 rounded">
+                <i class="text-red-500 fas fa-user"></i><br>
+               <input class="w-full py-1 focus:outline-none text-black" type="text" name="surname" id="surname" placeholder="Enter surname" />
             </div>
     
-            <div class="input-group pb-8">
-             <label for="email">Email: </label>
-             <input type="text" name="email" id="email" />
-             <p>Please enter your valid Email Address</p>
+            <div class="input-group mt-6 border border-current bg-white px-2 rounded">
+                <i class="text-red-500 fas fa-envelope"></i>
+             <input class="w-full py-1 focus:outline-none text-black" type="text" name="email" id="email" placeholder="Enter valid email"/>
+             
             </div>
     
-            <div class="input-group pb-8">
-              <label for="password">Password: </label>
-              <input type="password" name="password" id="password" />
-              <p>Minimum 8 characters, at least 1 uppercase letter, 1 lowercase letter and 1 number</p>
+            <div class="input-group mt-6 border border-current bg-white px-2 rounded">
+                <i class="text-red-500 fas fa-lock"></i>
+              <input class="w-full py-1 focus:outline-none text-black" type="password" name="password" id="password" placeholder="Enter password" />
             </div>
+            <p class="text-xs leading-none font-thin mt-1 text-red-400">*Minimum of 8 characters, must consist at least 1 uppercase letter, 1 lowercase letter and 1 number</p>
     
-            <div class="input-group full">
-             <a href="flo.html"></a><input type="submit" value="Login" class="submit-btn" /></a>
+
+            <div class="">
+                <input type="checkbox" value=""><span class="text-sm text-gray-300 ml-2">I agree to Furnish's T&C's</span>
+            </div>
+
+            <div class="input-group full my-4">
+             <input class="py-2 w-full text-white bg-red-700 hover:bg-red-600 cursor-pointer" type="submit" value="SIGN UP" class="submit-btn" />
              <div class="clear"></div>
             </div>
+
+            
     
-            <div class="errors">
+            <div class="errors text-xs leading-none font-thin text-red-700 kara border border-red-500 animate-pulse">
             </div>
            </form>
     
-          
+          <div class="">
+              <h1 class="text-base pt-4"style=" font-family:Roos St Regis Display;">~ Or sign up through:</h1>
+              
+              <i class="spin text-2xl text-blue-800 hover:text-blue-500 pr-2 cursor-pointer fab fa-facebook"></i>
+              <i class="spin text-2xl text-red-700 hover:text-red-500 pr-2 cursor-pointer fab fa-google-plus"></i>
+              <i class="spin text-2xl text-black hover:text-gray-900 cursor-pointer fab fa-github"></i>
+          </div>
+
+          <h1 class="py-2 text-base"style=" font-family:Roos St Regis Display;">Already have an account with us? <a class="text-red-600" href="Login.html">Log in</a> here</h1>
 
         </div>
 
