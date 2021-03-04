@@ -108,23 +108,15 @@
 
         <div class="rounded-full h-10 w-full m-auto mb-12 mt-4">
             <img class="rounded-full w-2/12 m-auto animate-spin" src="./Images/giphy.gif">
-            <h1 class="text-xl"style=" font-family:Roos St Regis Display;">Register Here</h1>
+            <h1 class="text-xl"style=" font-family:Roos St Regis Display;">Login Here</h1>
             </div>
      
 
 
         <form id="register">
-            <div class="input-group border border-current bg-white px-2 rounded mt-6">
-            <i class="text-red-500 fas fa-user"></i><br>
-             <input class="w-full py-1 focus:outline-none text-black" type="text" name="firstname" id="firstname" placeholder="Enter firstname" />
-            </div>
+           
     
-            <div class="input-group mt-6 border border-current bg-white px-2 rounded">
-                <i class="text-red-500 fas fa-user"></i><br>
-               <input class="w-full py-1 focus:outline-none text-black" type="text" name="surname" id="surname" placeholder="Enter surname" />
-            </div>
-    
-            <div class="input-group mt-6 border border-current bg-white px-2 rounded">
+            <div class="input-group mt-6 border border-current bg-white px-2 mt-6 rounded">
                 <i class="text-red-500 fas fa-envelope"></i>
              <input class="w-full py-1 focus:outline-none text-black" type="text" name="email" id="email" placeholder="Enter valid email"/>
              
@@ -134,15 +126,15 @@
                 <i class="text-red-500 fas fa-lock"></i>
               <input class="w-full py-1 focus:outline-none text-black" type="password" name="password" id="password" placeholder="Enter password" />
             </div>
-            <p class="text-xs leading-none font-thin mt-1 text-red-400">*Minimum of 8 characters, must consist at least 1 uppercase letter, 1 lowercase letter and 1 number</p>
     
 
-            <div class="">
-                <input type="checkbox" value=""><span class="text-sm text-gray-300 ml-2">I agree to Furnish's T&C's</span>
+            <div class=" mt-2 flex justify-between items-center">
+                <div><input type="checkbox" value=""><span class="text-sm text-gray-300 ml-2">Remember me</span></div>
+                <h1 class="text-sm text-gray-300 ml-2"><a href="Passwordreset.html">Forgot password?</a></h1>
             </div>
 
             <div class="input-group full my-4">
-             <input class="py-2 w-full text-white bg-red-700 focus:outline-none hover:bg-red-600 cursor-pointer" type="submit" value="SIGN UP" class="submit-btn" />
+             <input class="focus:outline-none py-2 w-full text-white bg-red-700 hover:bg-red-600 cursor-pointer" type="submit" value="LOG IN" class="submit-btn" />
              <div class="clear"></div>
             </div>
 
@@ -153,14 +145,14 @@
            </form>
     
           <div class="">
-              <h1 class="text-base pt-4"style=" font-family:Roos St Regis Display;">~ Or sign up through:</h1>
+              <h1 class="text-lg pt-4"style=" font-family:Roos St Regis Display;">~ Or log in through:</h1>
               
               <i class="spin text-2xl text-blue-800 hover:text-blue-500 pr-2 cursor-pointer fab fa-facebook"></i>
               <i class="spin text-2xl text-red-700 hover:text-red-500 pr-2 cursor-pointer fab fa-google-plus"></i>
               <i class="spin text-2xl text-black hover:text-gray-900 cursor-pointer fab fa-github"></i>
           </div>
 
-          <h1 class="py-2 text-base"style=" font-family:Roos St Regis Display;">Already have an account with us? <a class="text-red-600" href="Login.html">Log in</a> here</h1>
+          <h1 class="py-2 text-base text-center"style=" font-family:Roos St Regis Display;">Are you new to this space? <a class="text-red-600" href="Signup.html">Register</a> here</h1>
 
         </div>
 
@@ -177,8 +169,6 @@ regForm.addEventListener('submit', validateRegisterForm);
 function validateRegisterForm (e) {
  e.preventDefault();
  
- const firstname = document.querySelector('#register #firstname');
- const surname = document.querySelector('#register #surname');
  const email = document.querySelector('#register #email');
  const password = document.querySelector('#register #password');
  
@@ -187,13 +177,9 @@ function validateRegisterForm (e) {
 const email_reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
  const pass_reg = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
  
- if (firstname.value == "") {
-  errors.push({text: "first name", el: firstname});
- }
  
- if (surname.value == "") {
-  errors.push({text: "surname", el: surname});
- }
+ 
+ 
  
  if (email.value == "") {
   errors.push({text: "email", el: email});
@@ -211,7 +197,7 @@ const email_reg = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"
   handle_errors(errors);
   return false;
  }
- alert('Welcome back!');
+ alert('Login Successful');
  window.location = "Dashboard.html";;
  return true;
 }
