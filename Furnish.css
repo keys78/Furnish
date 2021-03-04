@@ -13,6 +13,47 @@ body {
   line-height: 1.6;
 }
 
+
+
+/************************* LOADER **********************************/
+
+#loader{
+  position: fixed;
+  width:100%;
+  height: 100vh;
+  z-index: 1;
+  overflow:visible ;
+  background: #000 url('./Images/loader.gif') no-repeat center center;
+  transition: linear 2s;
+}
+
+
+.ld{
+  position: absolute;
+  top:70%;
+  left:47%;
+  transform: translate(-50%  -50%);
+  animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade{
+  0%{
+      color:transparent;
+  }
+  25%{
+      color:white;
+  }
+  50%{
+      color:red;
+  }
+  75%{
+      color:white;
+  }
+  100%{
+      color:transparent;
+  }
+}
+
 /* *888888888888888888888888888888888888888888888888888888888888888 */
 
 .sizer{
@@ -470,3 +511,5 @@ body {
     display: none;
   }
   
+
+

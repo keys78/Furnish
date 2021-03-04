@@ -18,6 +18,11 @@
 
 <body>
 
+  <div id="loader">
+    <h1 class="ld text-2xl">Loading...</h1>
+  </div>
+
+
   <div id="luxy">
 
     
@@ -26,7 +31,7 @@
     <div class="w-11/12 h-auto flex justify-between align-center m-auto">
 
       <div class="Logo sm:mt-1 mt-2">
-        <h1 class="sm:text-2xl text-xl text-red-600"><i class="fab fa-accusoft"></i></h1>
+        <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
         <a href="Home.html"><h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1></a>
       </div>
 
@@ -1786,7 +1791,7 @@
 
 </div>
 
- <!-- Smooth scrolling -------------------->
+ <!-- ------------------Smooth scrolling -------------------->
     
  <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
     
@@ -1803,6 +1808,7 @@
   // }
   </script>
 
+  <!----------------------------SLIDER-------------------------->
 
       <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
 
@@ -1827,6 +1833,34 @@
         new Glide('.glide', config).mount()
       </script>
 
+
+<!-----------------------LOADER----------------------->
+
+<script type="text/javascript">
+    
+  var loader;
+  function loadNow(opacity) {
+      if(opacity <= 0) {
+          displayContent();
+      }
+      else {
+          loader.style.opacity = opacity;
+          window.setTimeout(function() {
+              loadNow(opacity - 0.99999)
+          }, 5000);
+      }
+  }
+  function displayContent() {
+      loader.style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+      loader = document.getElementById('loader');
+      loadNow(1)
+  });
+
+</script>
 
     <script src="Furnish.js"></script>
   </body>
