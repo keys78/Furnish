@@ -64,8 +64,6 @@
         top:0;
         left:0;
         transition: 0.6s;
-       
-        z-index: 100000;
     }
 
     header .logo{
@@ -73,18 +71,13 @@
         transition: 0.6s;
        
     }
-
     .navbi{
         position: relative;
         transition: 0.6s;
     }
-    
 
-    .banner{
-        position: relative;
-    }
     header.sticky{
-        padding: 5px 10px;
+        padding: 4px 30px;
         background:rgba(0, 0, 0, 0.753);
     }
     header.logo,
@@ -95,8 +88,8 @@
   </style>
   <body>
 
-    
-        
+   
+        <!------------stickyNAV--------------------->
         <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#">About</a>
@@ -121,9 +114,7 @@
 
 
 
-
-
-    <section class=" bg-black h-auto text-white pt-20">
+    <section class="bg-black h-auto text-white pt-20">
 
         <div class="cont w-10/12 flex sm:flex-row flex-col-reverse justify-center m-auto">
 
@@ -170,19 +161,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!----------------------SIDENAV TOOGLE------------------------------------>
     <script>
         function openNav() {
           document.getElementById("mySidenav").style.width = "250px";
@@ -193,11 +172,15 @@
         }
         </script>
            
+        <!---------------------------Sticky Navbar------------->
            <script>
             window.addEventListener("scroll", function(){
                 var header = document.querySelector("header");
                 header.classList.toggle("sticky", window.scrollY > 0)
             });
         </script>
+
+
+
   </body>
 </html>
