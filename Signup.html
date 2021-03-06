@@ -132,7 +132,9 @@
     
             <div class="input-group mt-6 border border-current bg-white px-2 rounded">
                 <i class="text-red-500 fas fa-lock"></i>
-              <input class="w-full py-1 focus:outline-none text-black" type="password" name="password" id="password" placeholder="Enter password" />
+                <div class="flex justify-center items-center">
+                    <input class="w-full py-1 focus:outline-none text-black" type="password" name="password" id="password" placeholder="Enter password"/><i class="text-red-500 text-black far fa-eye" id="togglePassword"></i>
+                </div>
             </div>
             <p class="text-xs leading-none font-thin mt-1 text-red-400">*Minimum of 8 characters, must consist at least 1 uppercase letter, 1 lowercase letter and 1 number</p>
     
@@ -236,6 +238,19 @@ function handle_errors(errs) {
  
  errors_el.appendChild(error_el);
 }
+
+
+
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#password');
+
+togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
 
        </script>
 
