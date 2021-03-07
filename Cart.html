@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Furnish.com</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cart.css" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Images/fav.ico">
+  </head>
+  <body>
+
+
+
+
+     <!--- navbar -->
+     <nav class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+        <img src="" alt="store logo"/>
+        <div class="cart-btn">
+            <span class="nav-icon">
+                <i class="fas fa-cart-plus"></i>
+            </span>
+           <div class="cart-items">0</div>
+         </div>
+       </div>
+    </nav>
+  <!---end of navbar -->
+  <!---her0---->
+
+<header class="hero">
+    <div class="banner">
+        <h1 class="banner-btn">furniture collection</h1>
+        <button class="banner-btn">shop now</button>
+    </div>
+</header>
+<!---end of hero-->
+<!--products -->
+<section class="products">
+    <div class="section-title">
+        <h2>our products</h2>
+    </div>
+    <div class="products-center">
+        <!-- single product  -->
+        <!-- <article class="products">
+            <div class="img-container">
+                <img src="images/product-1.jpeg"alt="product"
+                class="product-img"/>
+
+                <button class="bag-btn" data-id="1">
+                    <i class="fas fa-shopping-cart"></i>
+                    add to bag
+                </button>
+            </div>
+            <h3>Queen Bed</h3>
+            <h4>$16</h4>
+        </article> -->
+        <!----end of single product  -->
+      </div>
+    </section>
+    <!--end of products-->
+
+
+        <!----cart  -->
+        <div class="cart-overlay">
+            <div class="cart">
+                <span class="close-cart">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <h2>Your Cart</h2>
+                <div class="cart-content">
+                    <!--cart item-->
+                    <div class="cart-item">
+                        <!-- <img src="images/product-1.jpeg"
+                        alt="product" />
+                        <div>
+                            <h4>queen bed</h4>
+                            <h5>$9.00</h5>
+                            <span class="remove-item">remove</span>
+                        </div>
+                    <div>
+                    <i class="fas fa-chevron-up"></i>
+                    <p class="item-amount">1</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div> -->
+            </div>
+        <!----end of cart item-->
+    </div>
+
+    <div class="cart-footer">
+        <h3>your total : $ <span class="cart-total">0</span></h3>
+        <button class="clear-cart banner-btn">clear cart</button>
+    </div>
+
+   </div>
+</div>
+
+<!--end of cart-->
+<script src="cart.js"></script>
+
+  </body>
+  </html>
