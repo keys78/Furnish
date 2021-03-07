@@ -8,15 +8,54 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="cart.css" />
-    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="glide.core.min.css">
-    <link rel="stylesheet" href="glide.theme.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="/Images/fav.ico">
   </head>
   <body>
 
+
+    <!------------stickyNAV--------------------->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+
+        
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    
+
+    <header class="flex justify-between bg-black items-center w-full m-auto lg:px-10 px-3 py-2">
+
+        <a href="Home.html"><div class="Logo sm:mt-1 mt-0">
+            <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+           <h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1>
+          </div></a>
+
+
+        <div class="flex justify-between items-center gap-4">
+
+            <span class="navbi text-white cursor-pointer md:text-2xl text-xl" onclick="openNav()">&#9776;</span>
+
+       
+            <div id="line">
+                <h1 class="draw">
+                <a href="Login.html"><h1 class="hover hover-1 sm:text-base text-sm text-white cursor-pointer"><i class="far fa-user"></i> Login</h1></a>
+                </h1>
+            </div>
+
+            <span class="nav-icon text-white ">
+                <i class="text-lg fas fa-cart-plus"></i>
+            </span>
+             <div class="cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-2 sm:right-8 right-2">0</div>
+
+      </div>
+
+    </header>
 
 
 
@@ -26,12 +65,9 @@
             <span class="nav-icon">
                 <i class="fas fa-bars"></i>
             </span>
-        <img src="" alt="store logo"/>
+        <img src="./carrtimages/logo.svg" alt="store logo"/>
         <div class="cart-btn">
-            <span class="nav-icon">
-                <i class="fas fa-cart-plus"></i>
-            </span>
-           <div class="cart-items">0</div>
+            
          </div>
        </div>
     </nav>
@@ -108,5 +144,40 @@
 <!--end of cart-->
 <script src="cart.js"></script>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------SIDENAV TOOGLE------------------------------------>
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    }
+    
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    
   </body>
   </html>
