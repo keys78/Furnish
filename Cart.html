@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Furnish.com</title>
+
+
+       <!-- Latest compiled and minified CSS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    
+   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="cart.css" />
@@ -12,6 +20,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="/Images/fav.ico">
   </head>
+
+
+
   <body>
 
 
@@ -48,45 +59,84 @@
                 </h1>
             </div>
 
+
+            <div class="cart-btn">
             <span class="nav-icon text-white ">
                 <i class="text-lg fas fa-cart-plus"></i>
             </span>
              <div class="cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-2 sm:right-8 right-2">0</div>
+            </div>
+
+
 
       </div>
 
     </header>
 
+<section class="bg-gray-100">
+    <section class="pt-24 w-11/12 m-auto">
+
+        <h1 class="regis font-extrabold text-gray-300 text-4xl">Explore <span class="regis font-extrabold text-red-500 text-4xl">Our Products</span></h1>
+          <div class="border-b border-red-500 sm:w-1/12 w-2/12 my-4"></div>
 
 
-     <!--- navbar -->
-     <nav class="navbar">
-        <div class="navbar-center">
-            <span class="nav-icon">
-                <i class="fas fa-bars"></i>
-            </span>
-        <img src="./carrtimages/logo.svg" alt="store logo"/>
-        <div class="cart-btn">
-            
-         </div>
-       </div>
-    </nav>
-  <!---end of navbar -->
-  <!---her0---->
+        <h1 class="text-xl text-black">Hey there! find you a world of quality varieties at the cheapest rates</h1>
 
-<header class="hero">
-    <div class="banner">
-        <h1 class="banner-btn">furniture collection</h1>
-        <button class="banner-btn">shop now</button>
+    
+    </section>
+
+
+    <div class="h-auto shadowi py-4 my-4">
+        <div class="w-11/12 flex justify-between m-auto">
+
+        
+        <div class="flex justify-center items-center 4/12">
+            <div class="number text-red-500 text-xl font-extrabold mara regis pr-4">1780</div>
+            <p class="text-xl"> products found</p>
+        </div>
+
+        <h1 class="flex w-6/12">
+            <input class="w-full px-1 border-current border focus:outline-none rounded-l-sm text-black" type="text" name="text" placeholder="Search products, brands and categories">
+            <button class="text-white px-3 rounded-r-sm py-1 bg-red-500 focus:outline-none hover:bg-red-700">SEARCH</i>
+            </button></h1>
+    
+
+        </div>
     </div>
-</header>
-<!---end of hero-->
+
+    <h1 class="text-black text-base w-11/12 m-auto">>>>>Get <span class="text-red-500">25% discount</span> when you make purchase over $4000!>>>></h1>
+
+
+
+    <div class="border-b border-gray-400 pt-6">
+
+        <div class="cont flex justify-between items-center w-11/12 m-auto">
+        <h1>Browse by categories</h1>
+        <h1 class="px-2 text-black text-base border border-red-400 hover:bg-red-500 hover:text-white cursor-pointer"><i class="text-red-500 text-xl fas fa-filter"></i>Filter</h1>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--products -->
 <section class="products">
-    <div class="section-title">
-        <h2>our products</h2>
-    </div>
-    <div class="products-center">
+    <!-- <div class="py-13 px-3 bg-black">Living room</div> -->
+    <div class="products-center w-11/12 m-auto">
+        <div class="py-12 px-16 bg-black">THIS A SKD CJSFB</div>
         <!-- single product  -->
         <!-- <article class="products">
             <div class="img-container">
@@ -100,6 +150,7 @@
             </div>
             <h3>Queen Bed</h3>
             <h4>$16</h4>
+            <h4>Details</h4>
         </article> -->
         <!----end of single product  -->
       </div>
@@ -136,6 +187,7 @@
     <div class="cart-footer">
         <h3>your total : $ <span class="cart-total">0</span></h3>
         <button class="clear-cart banner-btn">clear cart</button>
+        <a href="Login.html"><button onclick="ala()">Checkout</button></a>
     </div>
 
    </div>
@@ -165,6 +217,21 @@
 
 
 
+ 
+           
+        <!---------------------------Sticky Navbar------------->
+           <script>
+             function ala() {
+                alert("You need to login to check out");
+                }
+
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0)
+            });
+        </script>
+
+    
 
 
 
@@ -179,5 +246,10 @@
     }
     </script>
     
+    <script>
+        $(".number").counterUp({time:9000});
+      </script>
+    
+
   </body>
   </html>

@@ -3,7 +3,7 @@
     {
       "sys": { "id": "1" },
       "fields": {
-        "title": "queen panel bed",
+        "title": "Queen panel bed",
         "price": 10.99,
         "image": { "fields": { "file": { "url": "./carrtimages/product-1.jpeg" } } }
       }
@@ -19,7 +19,7 @@
     {
       "sys": { "id": "3" },
       "fields": {
-        "title": "single panel bed",
+        "title": "Single panel bed",
         "price": 12.99,
         "image": { "fields": { "file": { "url": "./carrtimages/product-3.jpeg" } } }
       }
