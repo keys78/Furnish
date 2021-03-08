@@ -26,6 +26,43 @@
 
 
 
+#line .draw .hover {
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+#line .draw .hover:before, #line .draw .hover:after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 0px;
+  height: 1px;
+  transition: all 0.2s ease-in-out;
+  transition-duration: 0.55s;
+  background-color: #f51919;
+}
+#line .draw .hover.hover-1:before, #line .draw .hover.hover-1:after {
+  left: 0;
+}
+#line .draw .hover.hover-4:before {
+  left: 0;
+}
+#line .draw:hover .hover:before, #line .draw:hover .hover:after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -125,12 +162,12 @@ body {
 /* --------------- Products ---------------- */
 
 .products {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 .section-title h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 } 
@@ -138,7 +175,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 0.7rem;
-  grid-row-gap: 1rem;
+  grid-row-gap: 0.5rem;
 }
 .img-container {
   position: relative;
@@ -146,13 +183,14 @@ body {
 }
 .bag-btn {
   width: 100%;
+  font-size: 17px;
   position: absolute;
   top: 80%;
   right: 0;
   background: rgb(130, 243, 120);
   border: none;
   text-transform: uppercase;
-  padding: 0.5rem 0rem;
+  padding: 0.6rem 0rem;
   letter-spacing: var(--mainSpacing);
   font-weight:normal;
   transition: var(--mainTransition);
@@ -185,7 +223,8 @@ body {
 }
 
 .products-center h4 {
-  margin-top: 0.3rem;
+  font-size: 17px;
+  margin-top: 0.1rem;
   color:red;
 }
 
