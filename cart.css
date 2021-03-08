@@ -162,7 +162,7 @@ body {
 /* --------------- Products ---------------- */
 
 .products {
-  padding: 2rem 0;
+  padding:0;
 }
 .section-title h2 {
   text-align: center;
@@ -175,7 +175,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   grid-column-gap: 0.7rem;
-  grid-row-gap: 0.5rem;
+  grid-row-gap: 1.9rem;
 }
 .img-container {
   position: relative;
