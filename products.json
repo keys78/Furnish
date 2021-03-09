@@ -3,17 +3,17 @@
     {
       "sys": { "id": "1" },
       "fields": {
-        "title": "#001 Queen panel bed",
-        "price": 10.99,
-        "image": { "fields": { "file": { "url": "./carrtimages/product-1.jpeg" } } }
+        "title": "#001 Pandel Irish Cushion",
+        "price": 1199.99,
+        "image": { "fields": { "file": { "url": "./prodetailsimages/sam1.jpg" } } }
       }
     },
     {
       "sys": { "id": "2" },
       "fields": {
-        "title": "king panel bed",
-        "price": 12.99,
-        "image": { "fields": { "file": { "url": "./carrtimages/product-2.jpeg" } } }
+        "title": "Bowen Sofa",
+        "price": 899.01,
+        "image": { "fields": { "file": { "url": "./prodetailsimages/sam6.jpg" } } }
       }
     },
     {

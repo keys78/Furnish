@@ -250,6 +250,165 @@
 
 
 
+      <!----divide-->
+      <div class="border-b border-current mt-16"></div>
+
+
+
+
+    <section class="">
+
+        <div class="xl:w-8/12 lg:w-9/12 md:10/12 w-11/12 m-auto lg:flex-row flex-col flex justify-between items-start gap-2">
+
+            <div class="lg:w-6/12 w-full">
+
+                <div id="bi-image" class="imgBox sm:w-96 w-80 h-80 my-12 sm:-mb-8 -mb-16 m-auto">
+                    <img src="prodetailsimages/sam6.jpg">
+                    <img src="prodetailsimages/sam7.jpg">
+                    <img src="prodetailsimages/sam8.jpg">
+                    <img src="prodetailsimages/sam9.jpg">
+                    <img src="prodetailsimages/sam10.jpg">
+                </div>
+                
+                <div class="smal-images thumb flex justify-center items-center gap-4">
+                    <img class="sm:w-20 w-14 m-auto"  src="prodetailsimages/sam6.jpg">
+                    <img class="sm:w-20 w-14 m-auto" src="prodetailsimages/sam7.jpg">
+                    <img class="sm:w-20 w-14 m-auto" src="prodetailsimages/sam8.jpg">
+                    <img class="sm:w-20 w-14 m-auto" src="prodetailsimages/sam9.jpg">
+                    <img class="sm:w-20 w-14 m-auto" src="prodetailsimages/sam10.jpg">
+                </div>
+                
+            </div>
+
+
+            <!---otherside--->
+            <div class="md:w-6/12 w-full lg:mt-0 mt-8">
+
+                <h1 class="font-semibold text-2xl mt-4">Bowen Sofa</h1>
+                <div class="flex justify-between items-center md:w-8/12 w-full">
+                    
+
+                    
+                    <div class="rating-css ">
+                        <div class="star-icon flex justify-between text-xs items-center w-4/12">
+                          <input type="radio" name="rating1" id="rating1">
+                          <label for="rating1" class=" fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating2">
+                          <label for="rating2" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating3">
+                          <label for="rating3" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating4">
+                          <label for="rating4" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating5">
+                          <label for="rating5" class="fa fa-star"></label>
+                        </div>
+                      </div>
+                  
+
+                    <h1>97 review(s)</h1>
+                    <h1>ADD A REVIEW</h1>
+                </div>
+
+                <h1 class="text-gray-400 font-bold text-2xl pt-2">$899.01</h1>
+
+                <div class="py-4">
+                    <p>Availability: <span class="text-gray-400">In stock</span></p>
+                    <p>Product Code: <span class="text-gray-400">#002</span></p>
+                    <p>Tags: <span class="text-gray-400">cushion, Sofa, furniture</span></p>
+                </div>
+
+                <h1 class="mb-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Ipsa asperiores autem cumque odit perferendis architecto
+                          eveniet veniam corporis, accusamus dolor dicta accusantium
+                    </p>
+                </h1>
+
+
+                <div class="list-disc mb-3">
+                    <li>Comfortable and durable</li>
+                    <li>100% leather</li>
+                    <li>Promotional qualification</li>
+                    <li>Promotional qualification</li>
+                </div>
+
+
+
+                    <div class="w-full flex justify-between items-center mb-4">
+
+                        <div class="w-full">
+                        <label class="font-semibold">AVAILABLE SIZES</label>
+                        <form class="border-2 border-gray-400 focus:outline-none" action="">
+                            <select id="">
+                                <option value="">50</option>
+                                <option value="">40</option>
+                                <option value="">30</option>
+                                <option value="">20</option>
+                                <option value="">10</option>
+                            </select>
+                        </form>
+                        </div>
+
+                        <div class="w-full">
+                        <label  class="font-semibold py-6">AVAILABLE COLOURS</label>
+                        <form class="border-2 border-gray-400 focus:outline-none" action="">
+                            <select id="">
+                                <option value="">Greenyellow</option>
+                                <option value="">Vindeo</option>
+                                <option value="">Pana</option>
+                                <option value="">Red</option>
+                                <option value="">Summer black</option>
+                            </select>
+                        </form>
+                        </div>
+
+                
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                       <a href="Cart.html"><button class="px-16 py-2 border-2 lg:text-base text-xs border-current hover:bg-white hover:text-black bg-black text-white">ADD TO CART</button></a>
+                        <a href="Cart.html"><button class="px-12 py-2 border lg:text-base text-xs border-current hover:bg-black hover:text-white text-black">ADD TO WISHLIST</button></a>
+
+                    </div>
+
+                    <div class="flex items-center w-full gap-4 border-t border-b border-r border-current mt-4">
+                        <h1 class="font-semibold">SHARE THIS</h1>
+ 
+                            <i class="text-3xl text-blue-600 fab fa-facebook-square"></i>
+          
+                            <i class="text-3xl text-blue-400 fab fa-twitter-square"></i>
+  
+                    </div>
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -259,6 +418,16 @@
         $(".small-images img").click(function(e){
             var index = $(this).index();
             $("#big-image img").eq(index).show().siblings().hide();
+        });
+    });
+</script>
+
+    <script>
+    $(function(){
+        $("#bi-image img:eq(0)").nextAll().hide();
+        $(".smal-images img").click(function(e){
+            var index = $(this).index();
+            $("#bi-image img").eq(index).show().siblings().hide();
         });
     });
 </script>
