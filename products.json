@@ -20,48 +20,64 @@
       "sys": { "id": "3" },
       "fields": {
         "title": "Single panel bed",
-        "price": 12.99,
+        "price": 506.99,
         "image": { "fields": { "file": { "url": "./carrtimages/product-3.jpeg" } } }
       }
     },
     {
       "sys": { "id": "4" },
       "fields": {
-        "title": "twin panel bed",
-        "price": 22.99,
+        "title": "Twin Panel Bed",
+        "price": 798.99,
         "image": { "fields": { "file": { "url": "./carrtimages/product-4.jpeg" } } }
       }
     },
     {
       "sys": { "id": "5" },
       "fields": {
-        "title": "fridge",
+        "title": "Suntra Jamaican Wallpaper",
         "price": 88.99,
-        "image": { "fields": { "file": { "url": "./carrtimages/product-5.jpeg" } } }
+        "image": { "fields": { "file": { "url": "https://cdn.pixabay.com/photo/2017/07/27/18/45/view-2546328_1280.png" } } }
       }
     },
     {
       "sys": { "id": "6" },
       "fields": {
         "title": "dresser",
-        "price": 32.99,
+        "price": 208.99,
         "image": { "fields": { "file": { "url": "./carrtimages/product-6.jpeg" } } }
       }
     },
     {
       "sys": { "id": "7" },
       "fields": {
-        "title": "couch",
-        "price": 45.99,
+        "title": "Panden couch",
+        "price": 2245.99,
         "image": { "fields": { "file": { "url": "./carrtimages/product-7.jpeg" } } }
       }
     },
     {
       "sys": { "id": "8" },
       "fields": {
-        "title": "table",
-        "price": 33.99,
-        "image": { "fields": { "file": { "url": "./carrtimages/product-8.jpeg" } } }
+        "title": "Lwed Dresser",
+        "price": 1410.09,
+        "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/5825530/pexels-photo-5825530.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" } } }
+      }
+    },
+    {
+      "sys": { "id": "9" },
+      "fields": {
+        "title": "Echio Table",
+        "price": 150.99,
+        "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/890669/pexels-photo-890669.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" } } }
+      }
+    },
+    {
+      "sys": { "id": "10" },
+      "fields": {
+        "title": "Weisten Kitchen Cabinet",
+        "price": 2399.99,
+        "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" } } }
       }
     }
   ]

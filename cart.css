@@ -7,7 +7,7 @@
 
 .mara{
   animation: mia 1s ease-in infinite;
-  animation-delay: 9s;
+  animation-delay: 10s;
 }
 
 
@@ -26,6 +26,40 @@
 #pana{
   display: none;
 }
+
+
+
+@media only screen and (max-width:540px){
+  header.sticky{
+    padding:8px 18px;
+}
+
+  #panel{
+     display: none;
+  }
+  #pane{
+     display: none;
+  }
+  #pan{
+     display: none;
+  }
+  #paneler{
+     display: none;
+  }
+  #panele{
+     display: none;
+  }
+  #decor{
+     display: none;
+  }
+
+}
+
+
+
+
+
+
 
 .shadowi{
   box-shadow:
@@ -166,7 +200,7 @@ body {
   background: rgb(130, 243, 120);
   border: none;
   text-transform: uppercase;
-  padding: 0.6rem 0rem;
+  padding: 0.7rem 0rem;
   letter-spacing: var(--mainSpacing);
   font-weight:normal;
   transition: var(--mainTransition);
@@ -199,9 +233,10 @@ body {
 }
 
 .products-center h4 {
+ 
   font-size: 17px;
   margin-top: 0.1rem;
-  color:red;
+  color:rgb(172, 23, 23);
 }
 
 /* ---------------End of Products ---------------- */
@@ -246,6 +281,7 @@ body {
 .close-cart {
   font-size: 1.7rem;
   cursor: pointer;
+  color:red;
 }
 .cart h2 {
   text-transform: capitalize;
