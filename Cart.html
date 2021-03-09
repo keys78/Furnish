@@ -113,8 +113,8 @@
         <div class="cont flex justify-between items-center w-11/12 m-auto">
 
         <div class="bg-gray-600">
-            <span class="mr-16 text-white">Browse by categories</span>
-            <a href="proddetails.html"><button class="px-1 hover:bg-gray-500 bg-red-600 text-white">Products details</button></a>
+            <span class="mr-16 px-2 text-white">Browse by categories</span>
+            <a href="prodetails.html"><button class="px-1 hover:bg-gray-500 bg-red-600 text-white">Products details</button></a>
         </div>
 
         <div class="w-2/12">
@@ -191,6 +191,16 @@
                 <article class="">
                     <div id="fl" class="font-semibold text-base hover:text-green-700  cursor-pointer">Bathroom and outdoor furnitures</div>
                     <div id="pan" class="py-2 border-current border-t border-b">
+                    <a href="Beds.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum.</h1></a>
+                    <a href="Headboards.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    <a href="testcart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem</h1></a>
+                    <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="deco" class="font-semibold text-base hover:text-green-700  cursor-pointer">Decor & Styling Services</div>
+                    <div id="decor" class="py-2 border-current border-t border-b">
                     <a href="Beds.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum.</h1></a>
                     <a href="Headboards.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
                     <a href="testcart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem</h1></a>
@@ -336,7 +346,19 @@
                 });
             </script>
 
+            <script> 
+                $(document).ready(function(){
+                $("#deco").click(function(){
+                    $("#decor").slideToggle("fast");
+                });
+                });
+            </script>
 
+
+
+
+
+        <!---------------FILTER TOOGLE------------->
             <script> 
                 $(document).ready(function(){
                 $("#filta").click(function(){
