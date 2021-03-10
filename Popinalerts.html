@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+      </script>
+      <script>
+         function functionAlert(msg, myYes) {
+            var confirmBox = $("#confirm");
+            confirmBox.find(".message").text(msg);
+            confirmBox.find(".yes").unbind().click(function() {
+               confirmBox.hide();
+            });
+            confirmBox.find(".yes").click(myYes);
+            confirmBox.show();
+         }
+      </script>
+      <style>
+         #confirm {
+            display: none;
+            background-color: #ffffff;
+            border-bottom: 1px solid #aaa;
+            border-right: 1px solid #aaa;
+            border-left: 1px solid #aaa;
+            position: fixed;
+            width: 340px;
+            top:0;
+            left: 50%;
+            margin-left: -170px;
+            padding: 6px 8px 8px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 6px 6px 3px 0px rgba(0,0,0,0.48);
+         }
+         #confirm button {
+            outline: none;
+            background-color: #aa1919;
+            display: inline-block;
+            padding: 2px;
+            text-align: center;
+            width: 40px;
+            cursor: pointer;
+            color:white;
+            margin-left: 250px;
+         }
+         #confirm button:hover{
+             background-color: rgb(28, 49, 63);
+         }
+         #confirm .message {
+            text-align: left;
+            padding-bottom: 10px;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="confirm">
+         <div class="message">Sorry! we are working hard to bring up this page</div>
+            <div class="flex">
+            <img src = "https://i.gifer.com/A8GB.gif"
+                        width="80" height="80"/>
+            <img src = "https://i.gifer.com/8t4M.gif"
+                        width="80" height="80"/>
+            </div>
+         <a href="Cart.html"><button class="yes">OK</button></a>
+      </div>
+      <input type="button" value="Explore" onclick="functionAlert();" />
+   </body>
+</html>
