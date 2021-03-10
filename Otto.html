@@ -93,7 +93,7 @@
 
         
         <div class="flex  justify-center items-center 4/12">
-            <div class="number text-red-500 text-xl font-extrabold mara regis pr-4">356</div>
+            <div class="number text-red-500 text-xl font-extrabold mara regis pr-4">79</div>
             <p class="text-xl"> products found</p>
         </div>
 
@@ -114,7 +114,7 @@
 
         <div class="bg-gray-600 sm:w-11/12 w-full sm:mb-0 mb-2 sm:block flex justify-between">
             <span class="mr-14 pl-2 text-white">Browse by categories</span>
-            <a href="sofadetails.html"><button class="px-1 ml-3 hover:bg-gray-500 bg-red-600 text-white">Product details</button></a>
+            <a href="Ottodetails.html"><button class="px-1 ml-3 hover:bg-gray-500 bg-red-600 text-white">Product details</button></a>
         </div>
 
         <div class="sm:w-2/12 w-full sm:mb-0 mb-2">
@@ -149,8 +149,8 @@
                     <div id="flip" class="font-semibold text-base hover:text-green-700 border-current border-t cursor-pointer">Living room collections</div>
                     <div id="panel" class="py-2 border-current border-t border-b">
                     <a href="sectionalscart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Sectionals</h1></a>
-                    <a href="Sofacart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-red-500 cursor-pointer">Sofas</h1></a>
-                    <a href="Otto.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Benches and ottomans</h1></a>
+                    <a href="Sofacart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Sofas</h1></a>
+                    <a href="Otto.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-red-500 cursor-pointer">Benches and ottomans</h1></a>
                     <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Chaise lounges & daybeds</h1></a>
                     <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Leather seating</h1></a>
                     <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Chairs</h1></a>
@@ -208,7 +208,6 @@
                     <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
                     </div>
                 </article>
-
 
 
 
@@ -391,7 +390,7 @@ let buttonsDOM = []
 class Products{
  async getProducts(){
 try {
-    let result =  await fetch("sofa.json");
+    let result =  await fetch("Otto.json");
     let data = await result.json();
 
     let products = data.items;

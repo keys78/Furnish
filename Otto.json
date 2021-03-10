@@ -1,0 +1,84 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "#d01 Love Bug",
+          "price": 230,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "#d02 Tiwa",
+          "price": 100,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b2?$a15-mto-carousel$&hei=150&qlt=80&fit=constrain" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "#d03 Chop",
+          "price": 50,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/57780538-0000-WS0053_b?$a15-mto-carousel$&hei=150&qlt=80&fit=constrain" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "#d04 Slide",
+          "price": 200,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/43823152-0000-BL0041-MBRS_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "#d05 Hop",
+          "price": 50.10,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/55327647-0000-BL0036-MBRS_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "#d06 Kpoingolo",
+          "price": 49.99,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/49800766-0000-VE0038_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "#d07 Muchoger Lacro",
+          "price": 30,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/53909651-0000-WL0023-MCIR_b2?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "#d08 Liveher",
+          "price": 170,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/59630905-0000-CP0070_b2?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
+        }
+      },
+      {
+        "sys": { "id": "9" },
+        "fields": {
+          "title": "#d09 Sweet One",
+          "price": 200,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/57781585-0000-BL0055_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
+        }
+      },
+      {
+        "sys": { "id": "10" },
+        "fields": {
+          "title": "#d010 Free Fire",
+          "price": 48,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/43805647-0000-SV0070-MBRS_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
+        }
+      }
+    ]
+  }

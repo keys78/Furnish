@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Furnish.com</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="/Images/fav.ico">
+  </head>
+  <style>
+      .regis{
+        font-family:Roos St Regis Display;
+      }
+      .searchii{
+          display: none;
+      }
+
+      /**** STAR RATING********/
+        .rating-css div {
+        color:  #df1a1a;
+        }
+        .rating-css input {
+        display: none;
+        }
+        .rating-css input + label {
+            font-size: 18px;
+        cursor: pointer;
+        }
+        .rating-css input:checked + label ~ label {
+        color: #000000;
+        }
+        .rating-css label:active {
+        transform: scale(0.8);
+        transition: 0.3s ease;
+        }
+        
+    /********THUMBNAILS*********/
+        
+    .imgBox img{
+        width: 100%;
+        border: 4px solid white;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.205);
+    }
+
+
+    .thumb img{
+        border: 4px solid #fff;
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.167);
+    }
+
+  </style>
+  <body>
+
+    <header>
+        <h1 class="text-black text-center bg-gray-400 py-2 text-base">>>>>Get <span class="text-red-500">25% discount</span> when you make purchase over $4000!>>>></h1>
+
+        <div class="xl:w-8/12 lg:w-9/12 md:10/12 w-11/12 m-auto py-4 flex justify-between items-center">
+
+            <a href="Otto.html"><h1 class="hover:text-red-500 text-2xl"><i class="fas fa-angle-double-left"></i></h1></a>
+
+              <h1 class="md:text-2xl sm:text-xl text-base md:font-extrabold font-semibold regis">Products Description</h1>
+
+              <div class="border-yellow-600 border px-5 py-1 hover:bg-gray-100">
+                  Shopper
+              </div>
+
+        </div>
+        <!----divide-->
+        <div class=" border-b border-current "></div>
+
+
+
+        <div class="xl:w-8/12 lg:w-9/12 md:10/12 w-11/12 py-2 m-auto flex justify-between items-center">
+            
+            <h1><i class="far fa-thumbs-up"></i></h1>
+
+            <div class="flex justify-between items-center gap-2">
+                <h1>Home >></h1>
+                <h1 class="md:block hidden">Shop >></h1>
+                <h1 class="md:block hidden">Categories >></h1>
+                <h1 class="md:block hidden">Product >></h1>
+                <h1>Product details</h1>
+            </div>
+
+            <div class="flex justify-between  items-center">
+
+                <h1 class="border-r border-current pr-2"><i class="far fa-heart"></i></h1>
+                <h1 class="pl-2"><i class="fas fa-search"></i></h1>
+
+            </div>
+
+
+        </div>
+
+
+        <!----divide-->
+        <div class=" border-b border-current"></div>
+
+    </header>
+
+
+
+    <section class="">
+
+        <div class="xl:w-8/12 lg:w-9/12 md:10/12 w-11/12 m-auto lg:flex-row flex-col flex justify-between items-start gap-2">
+
+            <div class="lg:w-6/12 w-full">
+
+                <div id="big-image" class="imgBox sm:w-96 w-80 h-80 my-12 sm:-mb-8 -mb-16 m-auto">
+                    <img src="https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img src="https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b2?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img src="https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b3?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img src="https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b4?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img src="https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                </div>
+                
+                <div class="small-images thumb flex justify-center items-center gap-4">
+                    <img class="sm:w-20 w-14 m-auto"  src="https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img class="sm:w-20 w-14 m-auto" src="https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b2?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img class="sm:w-20 w-14 m-auto" src="https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b3?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img class="sm:w-20 w-14 m-auto" src="https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b4?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img class="sm:w-20 w-14 m-auto" src="https://s7d5.scene7.com/is/image/Anthropologie/43805613-0000-BW0102-MBSI_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                </div>
+                
+            </div>
+
+
+            <!---otherside--->
+            <div class="md:w-6/12 w-full lg:mt-0 mt-8">
+                <p class="md:flex hidden">Back to <a class="text-red-500 pl-1" href="Otto.html"> Cart</a></p>
+
+                <h1 class="font-semibold text-2xl mt-4 mb-2">Love Bug</h1>
+                <div class="flex justify-between items-center md:w-8/12 w-full">
+                    
+
+                    
+                    <div class="rating-css ">
+                        <div class="star-icon flex justify-between text-xs items-center w-4/12">
+                          <input type="radio" name="rating1" id="rating1">
+                          <label for="rating1" class=" fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating2">
+                          <label for="rating2" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating3">
+                          <label for="rating3" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating4">
+                          <label for="rating4" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating5">
+                          <label for="rating5" class="fa fa-star"></label>
+                        </div>
+                      </div>
+                  
+
+                    <h1>54 review(s)</h1>
+                    <h1>ADD A REVIEW</h1>
+                </div>
+
+                <h1 class="text-gray-400 font-bold text-2xl pt-2">$230.00</h1>
+
+                <div class="py-4">
+                    <p>Availability: <span class="text-gray-400">In stock</span></p>
+                    <p>Product Code: <span class="text-gray-400">#d01</span></p>
+                    <p>Tags: <span class="text-gray-400">cushion, Benches, ottoman furniture</span></p>
+                </div>
+
+                <h1 class="mb-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Ipsa asperiores autem cumque odit perferendis architecto
+                          eveniet veniam corporis, accusamus dolor dicta accusantium
+                    </p>
+                </h1>
+
+
+                <div class="list-disc mb-3">
+                    <li>Comfortable and durable</li>
+                    <li>100% leather</li>
+                    <li>Promotional qualification</li>
+                    <li>Promotional qualification</li>
+                </div>
+
+
+
+                    <div class="w-full flex justify-between items-center mb-4">
+
+                        <div class="w-full">
+                        <label class="font-semibold">AVAILABLE SIZES</label>
+                        <form class="border-2 border-gray-400 focus:outline-none" action="">
+                            <select id="">
+                                <option value="">50</option>
+                                <option value="">40</option>
+                                <option value="">30</option>
+                                <option value="">20</option>
+                                <option value="">10</option>
+                            </select>
+                        </form>
+                        </div>
+
+                        <div class="w-full">
+                        <label  class="font-semibold py-6">AVAILABLE COLOURS</label>
+                        <form class="border-2 border-gray-400 focus:outline-none" action="">
+                            <select id="">
+                                <option value="">Greenyellow</option>
+                                <option value="">Vindeo</option>
+                                <option value="">Pana</option>
+                                <option value="">Red</option>
+                                <option value="">Summer black</option>
+                            </select>
+                        </form>
+                        </div>
+
+                
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                       <a href="Otto.html"><button class="px-16 py-2 border-2 lg:text-base text-xs border-current hover:bg-white hover:text-black bg-black text-white">ADD TO CART</button></a>
+                        <a href="Otto.html"><button class="px-12 py-2 border lg:text-base text-xs border-current hover:bg-black hover:text-white text-black">ADD TO WISHLIST</button></a>
+
+                    </div>
+
+                    <div class="flex items-center w-full gap-4 border-t border-b border-r border-current mt-4">
+                        <h1 class="font-semibold">SHARE THIS</h1>
+ 
+                            <i class="text-3xl text-blue-600 fab fa-facebook-square"></i>
+          
+                            <i class="text-3xl text-blue-400 fab fa-twitter-square"></i>
+  
+                    </div>
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+    
+
+
+
+
+
+
+      <!----divide-->
+      <div class="border-b border-current mt-16"></div>
+
+
+
+
+    <section class="">
+
+        <div class="xl:w-8/12 lg:w-9/12 md:10/12 w-11/12 m-auto lg:flex-row flex-col flex justify-between items-start gap-2">
+
+            <div class="lg:w-6/12 w-full">
+
+                <div id="bi-image" class="imgBox sm:w-96 w-80 h-80 my-12 sm:-mb-8 -mb-16 m-auto">
+                    <img src="https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b2?$a15-mto-carousel$&hei=150&qlt=80&fit=constrain">
+                    <img src="https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b3?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img src="https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img src="https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b2?$a15-mto-carousel$&hei=150&qlt=80&fit=constrain">
+                    <img src="https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b3?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                </div>
+                
+                <div class="smal-images thumb flex justify-center items-center gap-4">
+                    <img class="sm:w-20 w-14 m-auto"  src="https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b2?$a15-mto-carousel$&hei=150&qlt=80&fit=constrain">
+                    <img class="sm:w-20 w-14 m-auto" src="https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b3?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img class="sm:w-20 w-14 m-auto" src="https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                    <img class="sm:w-20 w-14 m-auto" src="https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b2?$a15-mto-carousel$&hei=150&qlt=80&fit=constrain">
+                    <img class="sm:w-20 w-14 m-auto" src="https://s7d5.scene7.com/is/image/Anthropologie/50154343-0000-SV0030-MBRS_b3?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                </div>
+                
+            </div>
+
+
+            <!---otherside--->
+            <div class="md:w-6/12 w-full m-auto lg:mt-0 mt-8">
+
+                <h1 class="font-semibold text-2xl mt-4 mb-2">Tiwa</h1>
+                <div class="flex justify-between items-center md:w-8/12 w-full">
+                    
+
+                    
+                    <div class="rating-css ">
+                        <div class="star-icon flex justify-between text-xs items-center w-4/12">
+                          <input type="radio" name="rating1" id="rating">
+                          <label for="rating1" class=" fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating">
+                          <label for="rating2" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating">
+                          <label for="rating3" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating">
+                          <label for="rating4" class="fa fa-star"></label>
+                          <input type="radio" name="rating1" id="rating">
+                          <label for="rating5" class="fa fa-star"></label>
+                        </div>
+                      </div>
+                  
+
+                    <h1>971 review(s)</h1>
+                    <h1>ADD A REVIEW</h1>
+                </div>
+
+                <h1 class="text-gray-400 font-bold text-2xl pt-2">$100</h1>
+
+                <div class="py-4">
+                    <p>Availability: <span class="text-gray-400">In stock</span></p>
+                    <p>Product Code: <span class="text-gray-400">#d02</span></p>
+                    <p>Tags: <span class="text-gray-400">cushion, Benches, ottoman furniture</span></p>
+                </div>
+
+                <h1 class="mb-2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Ipsa asperiores autem cumque odit perferendis architecto
+                          eveniet veniam corporis, accusamus dolor dicta accusantium
+                    </p>
+                </h1>
+
+
+                <div class="list-disc mb-3">
+                    <li>Comfortable and durable</li>
+                    <li>100% leather</li>
+                    <li>Promotional qualification</li>
+                    <li>Promotional qualification</li>
+                </div>
+
+
+
+                    <div class="w-full flex justify-between items-center mb-4">
+
+                        <div class="w-full">
+                        <label class="font-semibold">AVAILABLE SIZES</label>
+                        <form class="border-2 border-gray-400 focus:outline-none" action="">
+                            <select id="">
+                                <option value="">50</option>
+                                <option value="">40</option>
+                                <option value="">30</option>
+                                <option value="">20</option>
+                                <option value="">10</option>
+                            </select>
+                        </form>
+                        </div>
+
+                        <div class="w-full">
+                        <label  class="font-semibold py-6">AVAILABLE COLOURS</label>
+                        <form class="border-2 border-gray-400 focus:outline-none" action="">
+                            <select id="">
+                                <option value="">Greenyellow</option>
+                                <option value="">Vindeo</option>
+                                <option value="">Pana</option>
+                                <option value="">Red</option>
+                                <option value="">Summer black</option>
+                            </select>
+                        </form>
+                        </div>
+
+                
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                       <a href="Otto.html"><button class="px-16 py-2 border-2 lg:text-base text-xs border-current hover:bg-white hover:text-black bg-black text-white">ADD TO CART</button></a>
+                        <a href="Otto.html"><button class="px-12 py-2 border lg:text-base text-xs border-current hover:bg-black hover:text-white text-black">ADD TO WISHLIST</button></a>
+
+                    </div>
+
+                    <div class="flex items-center w-full gap-4 border-t border-b border-r border-current mt-4">
+                        <h1 class="font-semibold">SHARE THIS</h1>
+ 
+                            <i class="text-3xl text-blue-600 fab fa-facebook-square"></i>
+          
+                            <i class="text-3xl text-blue-400 fab fa-twitter-square"></i>
+  
+                    </div>
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    $(function(){
+        $("#big-image img:eq(0)").nextAll().hide();
+        $(".small-images img").click(function(e){
+            var index = $(this).index();
+            $("#big-image img").eq(index).show().siblings().hide();
+        });
+    });
+</script>
+
+    <script>
+    $(function(){
+        $("#bi-image img:eq(0)").nextAll().hide();
+        $(".smal-images img").click(function(e){
+            var index = $(this).index();
+            $("#bi-image img").eq(index).show().siblings().hide();
+        });
+    });
+</script>
+  </body>
+  </html>
