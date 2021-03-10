@@ -32,7 +32,7 @@
 @media only screen and (max-width:540px){
   header.sticky{
     padding:8px 18px;
-}
+  }
 
   #panel{
      display: none;
@@ -282,6 +282,9 @@ body {
   font-size: 1.7rem;
   cursor: pointer;
   color:red;
+}
+.close-cart:hover{
+  color:rgb(55, 64, 75);
 }
 .cart h2 {
   text-transform: capitalize;

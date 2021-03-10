@@ -44,7 +44,7 @@
 
         <a href="Home.html"><div class="Logo sm:mt-1 mt-0">
             <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
-           <h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1>
+           <h1 class="logo sm:text-2xl text-base text-white sm:-mt-3 -my-2">furnish.</h1>
           </div></a>
 
 
@@ -74,105 +74,150 @@
     </header>
 
 <section class="bg-gray-100">
-    <section class="pt-24 w-11/12 m-auto">
+    <section class="sm:pt-20 pt-16 w-11/12 m-auto">
 
-        <h1 class="regis font-extrabold text-gray-300 text-4xl">Explore <span class="regis font-extrabold text-red-500 text-4xl">Our Products</span></h1>
+        <h1 class="regis font-extrabold text-gray-300 md:text-4xl sm:text-3xl text-2xl">Explore <span class="regis font-extrabold text-red-500 md:text-4xl sm:text-3xl text-2xl">Our Products</span></h1>
           <div class="border-b border-red-500 sm:w-1/12 w-2/12 my-4"></div>
 
 
-        <h1 class="text-xl text-black">Hey there! find you a world of quality varieties at the cheapest rates</h1>
-
+        <div class="flex sm:flex-row flex-col justify-between items-center">
+        <h1 class="text-base text-black">Hey there! find you a world of quality varieties at the cheapest rates</h1>
+        <h1 class="text-black text-base">>>>>Get <span class="text-red-500">25% discount</span> when you make purchase over $4000!>>>></h1>
+        </div>
     
     </section>
 
 
-    <div class="h-auto shadowi py-4 my-4">
-        <div class="w-11/12 flex justify-between m-auto">
+    <div class="h-auto shadowi py-4 my-3">
+        <div class="w-11/12 sm:flex-row flex-col  flex justify-between m-auto">
 
         
-        <div class="flex justify-center items-center 4/12">
-            <div class=" text-red-500 text-xl font-extrabold mara regis pr-4">1780</div>
+        <div class="flex  justify-center items-center 4/12">
+            <div class="number text-red-500 text-xl font-extrabold mara regis pr-4">873</div>
             <p class="text-xl"> products found</p>
         </div>
 
-        <h1 class="flex w-6/12">
-            <input class="w-full px-1 border-current border focus:outline-none rounded-l-sm text-black" type="text" name="text" placeholder="Search products, brands and categories">
-            <button class="text-white px-3 rounded-r-sm py-1 bg-red-500 focus:outline-none hover:bg-red-700">SEARCH</i>
+        <h1 class="flex sm:w-6/12 w-full">
+            <input class="w-full px-1 border-gray-400 border focus:outline-none rounded-l-sm text-black" type="text" name="text" placeholder="Search products, brands and categories">
+            <button class="text-white px-3 rounded-r-sm py-1 bg-red-500 focus:outline-none hover:bg-gray-500">SEARCH</i>
             </button></h1>
     
 
         </div>
     </div>
 
-    <h1 class="text-black text-base w-11/12 m-auto">>>>>Get <span class="text-red-500">25% discount</span> when you make purchase over $4000!>>>></h1>
 
 
+    <div class="pt-6">
 
-    <div class="border-b border-gray-400 pt-6">
+        <div class="cont flex sm:flex-row flex-col justify-between items-center w-11/12 m-auto">
 
-        <div class="cont flex justify-between items-center w-11/12 m-auto">
-        <h1>Browse by categories</h1>
-        <h1 class="px-2 rounded text-black text-base border border-red-400 hover:bg-gray-300 cursor-pointer"><i class="text-red-500 text-xl fas fa-filter"></i>Filter</h1>
+        <div class="bg-gray-600 sm:w-11/12 w-full sm:mb-0 mb-2 sm:block flex justify-between">
+            <span class="mr-14 pl-2 text-white">Browse by categories</span>
+            <a href="sectiodetails.html"><button class="px-1 ml-3 hover:bg-gray-500 bg-red-600 text-white">Product details</button></a>
+        </div>
+
+        <div class="sm:w-2/12 w-full sm:mb-0 mb-2">
+            <h1 id="filta" class="px-2 text-base hover:bg-gray-500 bg-gray-800 text-white cursor-pointer"><i class="text-white text-base fas fa-filter"></i>Filter</h1>
+            <div id="pana" class="py-2">
+                <h1 class="font-semibold">Sort products by:</h1>
+                <h1 class="hover:text-red-500 sm:text-sm text-xs text-black cursor-pointer">Popularity</h1>
+                <h1 class="hover:text-red-500 sm:text-sm text-xs text-black cursor-pointer">Price:Low to high</h1>
+                <h1 class="hover:text-red-500 sm:text-sm text-xs text-black cursor-pointer">Price:High to Low</h1>
+                <h1 class="hover:text-red-500 sm:text-sm text-xs text-black cursor-pointer">Product rating</h1>
+            </div>
         </div>
 
     </div>
 
 </section>
 
+   
 
 
 
 
-<!-- <wrapper class="text-3xl grid grid-cols-4 w-11/12 m-auto"> -->
+<wrapper class="flex sm:flex-row flex-col justify-between items-start w-11/12 m-auto">
         <!-------------------------CATEGORIES NAVIGATION------------------------------------------->
 
-<!-- 
-        <div class="border-black">
-            <div class="flex flex-col m-auto regis">
-
-                <div id="line">
-                    <h1 class="draw">
-                        <a><button class="showSingle focus:text-red-500 focus:outline-none hover hover-1 sm:text-xl text-base text-black cursor-pointer" target="1">New arrivals</h1></a>
-                        </button>
-                </div>
-            
-
-            <div id="line">
-                <h1 class="draw " >
-                    <a><button class="showSingle focus:text-red-500 focus:outline-none  hover hover-1 sm:text-xl text-base text-black cursor-pointer" target="2">Sofas</h1></a>
-                    </button>
-            </div>
-
-            <div id="line">
-                <h1 class="draw">
-                    <a><button class="showSingle focus:text-red-500 focus:outline-none hover hover-1 sm:text-xl text-base text-black cursor-pointer" target="3">Tabels</h1></a>
-                    </button>
-            </div>
-
-            <div id="line">
-                <h1 class="draw">
-                    <a><button class="showSingle focus:text-red-500 focus:outline-none hover hover-1 sm:text-xl text-base text-black cursor-pointer" target="4">Sectionals</h1></a>
-                    </button>
-            </div>
-
-            <div id="line">
-                <h1 class="draw">
-                    <a><button class="showSingle focus:text-red-500 focus:outline-none hover hover-1 sm:text-xl text-base text-black cursor-pointer" target="5">Stools</h1></a>
-                    </button>
-            </div>
-
 
             
-        </div>
-        </div> -->
+            <section class="flex-col flex sm:w-3/12 w-full">
+                <a href="Cart.html"><h1 class="font-semibold sm:text-base hover:text-green-700 cursor-pointer">New arrivals</h1></a>
 
-        <a href="Cart.html"><button class="showSingle focus:text-red-500 focus:outline-none sm:text-xl text-base text-black cursor-pointer">New arrivals</h1></button></a>
-        <a href="testcart.html"><button class="showSingle focus:text-red-500 focus:outline-none  sm:text-xl text-base text-red-500 cursor-pointer">Sofas</h1></button></a>
+                <article class="">
+                    <div id="flip" class="font-semibold text-base hover:text-green-700 border-current border-t cursor-pointer">Living room collections</div>
+                    <div id="panel" class="py-2 border-current border-t border-b">
+                    <a href="sectionalscart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-red-500 cursor-pointer">Sectionals</h1></a>
+                    <a href="testcart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Sofas</h1></a>
+                    <a href="testcart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Chaise lounges & daybeds</h1></a>
+                    <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Leather seating</h1></a>
+                    <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Chairs</h1></a>
+                    <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Benches and ottomans</h1></a>
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="fli" class="font-semibold text-base hover:text-green-700  cursor-pointer">Bedroom collections</div>
+                    <div id="pane" class="py-2 border-current border-t border-b">
+                    <a href="Beds.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Beds</h1></a>
+                    <a href="Headboards.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Headboards</h1></a>
+                    <a href="testcart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Nightstands</h1></a>
+                    <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Dressers</h1></a>
+                    <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Armories</h1></a>
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="flipe" class="font-semibold text-base hover:text-green-700  cursor-pointer">Kitchen and Dinning room</div>
+                    <div id="panele" class="py-2 border-current border-t border-b">
+                    <a href="Beds.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Chairs, Benches & Stools</h1></a>
+                    <a href="Headboards.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Bar Carts & Cabinets</h1></a>
+                    <a href="testcart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Buffets & Sideboards</h1></a>
+                    <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Dinning sets</h1></a>
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="fliper" class="font-semibold text-base hover:text-green-700  cursor-pointer">Small and office space furnitures</div>
+                    <div id="paneler" class="py-2 border-current border-t border-b">
+                    <a href="Beds.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum.</h1></a>
+                    <a href="Headboards.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    <a href="testcart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem</h1></a>
+                    <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="fl" class="font-semibold text-base hover:text-green-700  cursor-pointer">Bathroom and outdoor furnitures</div>
+                    <div id="pan" class="py-2 border-current border-t border-b">
+                    <a href="Beds.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum.</h1></a>
+                    <a href="Headboards.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    <a href="testcart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem</h1></a>
+                    <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    </div>
+                </article>
+
+                <article class="">
+                    <div id="deco" class="font-semibold text-base hover:text-green-700  cursor-pointer">Decor & Styling Services</div>
+                    <div id="decor" class="py-2 border-current border-t border-b">
+                    <a href="Beds.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum.</h1></a>
+                    <a href="Headboards.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    <a href="testcart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem</h1></a>
+                    <a href="405.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Lorem, ipsum dolor.</h1></a>
+                    </div>
+                </article>
+
+
+
+
+            </section>
+
 
 
 
  <!------------------------------------Products SHOWCASE---------------------------------->
-       <section id="div2" class="targetDiv col-span-3">
+       <section class="sm:w-9/12 w-full">
 
             <!--products -->
             <section class="products">
@@ -181,7 +226,12 @@
                     <!-- single product  -->
                     <!----end of single product  -->
                 </div>
+
+                <div class="flex justify-between py-12">
+                <p class="bg-transparent">.</p>
+                <button class="cursor-pointer focus:outline-none px-2 py-1 hover:bg-gray-500 bg-red-600 text-white">Load more</button>
                 </section>
+
                 <!--end of products-->
 
 
@@ -191,7 +241,7 @@
                             <span class="close-cart">
                             <i class="fas fa-window-close"></i>
                         </span>
-                        <h2>Your Cart</h2>
+                        <h2 class="text-2xl font-semibold text-gray-700">Your Cart</h2>
                         <div class="cart-content">
                             <!--cart item-->
                             <div class="cart-item">
@@ -202,8 +252,8 @@
 
                 <div class="cart-footer">
                     <h3>your total : $ <span class="cart-total">0</span></h3>
-                    <button class="clear-cart banner-btn">clear cart</button>
-                    <a href="Login.html"><button onclick="ala()">Checkout</button></a>
+                    <button class="clear-cart banner-btn px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Clear cart</button>
+                    <a href="Login.html"><button  onclick="ala()" class="px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
                 </div>
 
             </div>
@@ -212,11 +262,7 @@
     </section>
 
 
-
-
-
-<!-- </wrapper> -->
-
+</wrapper> 
 
 
 
@@ -225,42 +271,64 @@
 
 
 
+     <!----------JQUERY SLIDER------------->
+            <script> 
+                $(document).ready(function(){
+                $("#flip").click(function(){
+                    $("#panel").slideToggle("fast");
+                });
+                });
+            </script>
+
+            <script> 
+                $(document).ready(function(){
+                $("#fli").click(function(){
+                    $("#pane").slideToggle("fast");
+                });
+                });
+            </script>
+            <script> 
+                $(document).ready(function(){
+                $("#flipe").click(function(){
+                    $("#panele").slideToggle("fast");
+                });
+                });
+            </script>
+            <script> 
+                $(document).ready(function(){
+                $("#fliper").click(function(){
+                    $("#paneler").slideToggle("fast");
+                });
+                });
+            </script>
+            <script> 
+                $(document).ready(function(){
+                $("#fl").click(function(){
+                    $("#pan").slideToggle("fast");
+                });
+                });
+            </script>
+
+            <script> 
+                $(document).ready(function(){
+                $("#deco").click(function(){
+                    $("#decor").slideToggle("fast");
+                });
+                });
+            </script>
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--end of cart-->
-<!-- <script src="cart.js"></script> -->
-
+        <!---------------FILTER TOOGLE------------->
+            <script> 
+                $(document).ready(function(){
+                $("#filta").click(function(){
+                    $("#pana").slideToggle("fast");
+                });
+                });
+            </script>
 
 
         <!---------------------------Sticky Navbar------------->
@@ -290,34 +358,18 @@
     }
     </script>
     
+
+    <!-------counter up------------>
     <script>
         $(".number").counterUp({time:9000});
       </script>
-    
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script>
-        jQuery(function(){
-     jQuery('#showall').click(function(){
-           jQuery('.targetDiv').show();
-    });
-    jQuery('.showSingle').click(function(){
-          jQuery('.targetDiv').hide();
-          jQuery('#div'+$(this).attr('target')).show();
-    });
-});
-    </script>
 
 
 
 
+      <script>
 
-
-<script>
-
-
-    //variables
+        //variables
 
 const cartBtn = document.querySelector(".cart-btn");
 const closeCartBtn = document.querySelector(".close-cart");
@@ -338,7 +390,7 @@ let buttonsDOM = []
 class Products{
  async getProducts(){
 try {
-    let result =  await fetch("sofas.json");
+    let result =  await fetch("sectionals.json");
     let data = await result.json();
 
     let products = data.items;
@@ -565,15 +617,7 @@ ui.setupAPP();
 });
 
 
-
-
-
-</script>
-
-
-
-
-
+      </script>
 
 
 

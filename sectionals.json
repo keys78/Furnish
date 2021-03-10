@@ -3,9 +3,9 @@
       {
         "sys": { "id": "1" },
         "fields": {
-          "title": "Akara Sofa",
-          "price": 10.99,
-          "image": { "fields": { "file": { "url": "./carrtimages/product-1.jpeg" } } }
+          "title": "Whitenbar",
+          "price": 850.01,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/61069209-1135-CH0097_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
         }
       },
       {
@@ -13,7 +13,7 @@
         "fields": {
           "title": "king panel bed",
           "price": 12.99,
-          "image": { "fields": { "file": { "url": "./carrtimages/product-2.jpeg" } } }
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/62166434-4108-L-WL0023-WFRG_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
         }
       },
       {
