@@ -124,20 +124,19 @@
 
             <div id="line">
               <h1 class="draw">
-                <a href="Login.html"><h1 class="hover hover-1 sm:text-base text-sm text-white cursor-pointer"><i class="far fa-user"></i> Login</h1></a>
+                <a href="Login.html"><h1 class="hover hover-1 sm:text-lg mt-2 text-sm text-white cursor-pointer"><i class="far fa-user"></i> Login</h1></a>
               </h1>
             </div>
         
-            <div class="cart-btn">
+            <div class="cart-btn mt-2">
               <span class="nav-icon text-white ">
-                  <i class="text-lg fas fa-cart-plus"></i>
+                  <i class="cursor-pointer text-lg fas fa-cart-plus"></i>
               </span>
-               <div class="cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-2 sm:right-8 right-2">0</div>
+               <div class="cursor-pointer cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-4 sm:right-8 right-2">0</div>
           </div>
 
         </div>
         </header>
-
 
 
 
@@ -874,6 +873,48 @@
 
 
 
+      
+
+
+       <!----cart  -->
+       <div class="cart-overlay">
+        <div class="cart">
+
+      <div class="flex justify-between flex-row-reverse items-center">
+         <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+        </span>
+
+        <div class="">
+          <div class="tooltip text-sm animate-pulse"><i class="text-xl text-red-500 hover:bg-gray-600 fas fa-info-circle"></i>
+            <span class="tooltiptext ">
+              <i class="text-yellow-500 text-xs mr-2 fas fa-exclamation-triangle"></i>
+              <p class="text-xs">You have to be on the products page or logged in to increase,
+                decrease or clear cart </p>
+            </span>
+          </div>
+         </div>
+      </div>
+
+        <h2 class="text-2xl font-semibold text-gray-700">Your Cart</h2>
+
+        <div class="cart-content text-black">
+            <!--cart item-->
+            <div class="cart-item text-black">
+            
+        </div>
+    
+        
+
+<div class="cart-footer text-black">
+    <h3>your total : $ <span class="cart-total">0</span></h3>
+    <button class="focus:outline-none clear-cart banner-btn px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Clear cart</button>
+    <a href="Checkout.html"><button  onclick="ala()" class="focus:outline-none px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
+</div>
+<!----end of cart it-->
+
+
+
 <!----------------------SIDENAV TOOGLE------------------------------------>
     <script>
         function openNav() {
@@ -919,5 +960,7 @@
 
         </script>
 
+
+        <script src="cart.js"></script>
   </body>
 </html>

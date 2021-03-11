@@ -99,140 +99,6 @@
 
 
 
-  
-
-#nav div{
-	z-index: 3;
-	position: absolute;
-}
-
-/*Sidebar Effect*/
-.cube-effect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-	overflow: hidden;
-}
-
-.cube-effect li {
-  position: absolute;
-  list-style: none;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.15);
-  bottom: -160px;
-  -webkit-animation: square 25s infinite;
-  animation: square 25s infinite;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear;
-}
-
-.cube-effect li:nth-child(1) {
-  left: 10%;
-}
-
-.cube-effect li:nth-child(2) {
-  left: 20%;
-  width: 80px;
-  height: 80px;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-duration: 17s;
-          animation-duration: 17s;
-}
-
-.cube-effect li:nth-child(3) {
-  left: 25%;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-
-.cube-effect li:nth-child(4) {
-  left: 40%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation-duration: 22s;
-          animation-duration: 22s;
-  background-color: rgba(255, 255, 255, 0.25);
-}
-
-.cube-effect li:nth-child(5) {
-  left: 70%;
-}
-
-.cube-effect li:nth-child(6) {
-  left: 80%;
-  width: 120px;
-  height: 120px;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-
-.cube-effect li:nth-child(7) {
-  left: 32%;
-  width: 160px;
-  height: 160px;
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-}
-
-.cube-effect li:nth-child(8) {
-  left: 55%;
-  width: 20px;
-  height: 20px;
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-}
-
-.cube-effect li:nth-child(9) {
-  left: 25%;
-  width: 10px;
-  height: 10px;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-duration: 40s;
-          animation-duration: 40s;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.cube-effect li:nth-child(10) {
-  left: 90%;
-  width: 160px;
-  height: 160px;
-  -webkit-animation-delay: 11s;
-          animation-delay: 11s;
-}
-
-@-webkit-keyframes square {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-950px) rotate(600deg);
-            transform: translateY(-950px) rotate(600deg);
-  }
-}
-
-@keyframes square {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-950px) rotate(600deg);
-            transform: translateY(-950px) rotate(600deg);
-  }
-}
-
-
      
   </style>
   <body>
@@ -252,7 +118,7 @@
 
           <div class="mt-36">
             <a class="bnav hover:text-red-500" href="Home.html">Home</a>
-            <a class="bnav" href="Cart.html">Prod</a>
+            <a class="bnav" href="Cart.html">Products</a>
             <a class="bnav" href="Blog.html">Blog</a>
             <a class="bnav" href="About.html">About</a>
           </div>
@@ -292,7 +158,21 @@
                <h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1>
               </div></a>
 
-            <span class="navbi mt-2 cursor-pointer md:text-2xl text-xl hover:text-red-500" onclick="openNav()">&#9776;</span>
+              <div class="lg:w-2/12 sm:w-3/12 w-4/12 flex justify-between items-center">
+                <span class="navbi mt-2 cursor-pointer md:text-2xl text-xl hover:text-red-500" onclick="openNav()">&#9776;</span>
+    
+                <div id="line">
+                  <h1 class="draw">
+                    <a href="Login.html"><h1 class="hover hover-1 sm:text-lg mt-2 text-sm text-white cursor-pointer"><i class="far fa-user"></i> Login</h1></a>
+                  </h1>
+                </div>
+            
+                <div class="cart-btn mt-2">
+                  <span class="nav-icon text-white ">
+                      <i class="cursor-pointer text-lg fas fa-cart-plus"></i>
+                  </span>
+                   <div class="cursor-pointer cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-4 sm:right-8 right-2">0</div>
+              </div>
 
         </header>
 
@@ -1668,8 +1548,6 @@
       </footer>
 
 
-
-
       
 <!----------------------SIDENAV TOOGLE------------------------------------>
         <script>
@@ -1739,6 +1617,6 @@
 });
       </script>
 
-     
+     <script src="cart.js"></script>
   </body>
 </html>
