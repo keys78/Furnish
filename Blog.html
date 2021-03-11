@@ -24,26 +24,27 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 9999999999;
+    z-index: 2;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color:rgb(0, 0, 0);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: 0.3s; 
+    text-align: center;
   }
   
   .sidenav a:hover {
     color: #f1f1f1;
+    padding-left:20px;
+
   }
   
   .sidenav .closebtn {
@@ -52,6 +53,9 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+  .sidenav .closebtn:hover{
+    color:red;
   }
   
   @media screen and (max-height: 450px) {
@@ -227,15 +231,42 @@
             transform: translateY(-950px) rotate(600deg);
   }
 }
+
+
      
   </style>
   <body>
 
     <!-- style="background-image:url('./Images/sideb.jpg')" -->
         <!------------stickyNAV--------------------->
-        <div id="mySidenav" class="sidenav ">
+        <div id="mySidenav" class="sidenav">
          
-          <ul class="cube-effect " style="z-index: 1;">
+          <div class="flex justify-between">
+            <h1><a class="-mt-14" href="Home.html"><div class="Logo sm:mt-1 mt-2">
+              <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+             <h1 class="logo sm:text-2xl text-base text-gray-400 sm:-my-3 -my-2">furnish.</h1>
+            </div></a></h1>
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          </div>
+
+          <div class="mt-36">
+            <a class="bnav hover:text-red-500" href="Home.html">Home</a>
+            <a class="bnav" href="Cart.html">Prod</a>
+            <a class="bnav" href="Blog.html">Blog</a>
+            <a class="bnav" href="About.html">About</a>
+          </div>
+
+          <div class="nabfoot absolute bottom-0 right-16 text-center">
+            <h1 class="flex"></h1>
+            <i class="text-gray-700 hover:text-white fab fa-twitter"></i>
+            <i class="text-gray-700 hover:text-white fab fa-facebook"></i>
+          </h1>
+          <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+          </div>
+
+
+            <ul class="cube-effect " style="z-index: -1;">
             <li></li>
             <li></li>
             <li></li>
@@ -249,16 +280,8 @@
          </ul>
 
 
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-
-
-            
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-            </div>
+          
+        </div>
           
         
 
@@ -269,9 +292,13 @@
                <h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1>
               </div></a>
 
-            <span class="navbi mt-2 cursor-pointer md:text-2xl text-xl" class="hover:text-red-400" onclick="openNav()">&#9776;</span>
+            <span class="navbi mt-2 cursor-pointer md:text-2xl text-xl hover:text-red-500" onclick="openNav()">&#9776;</span>
 
         </header>
+
+
+
+
 
 
 
@@ -1647,7 +1674,7 @@
 <!----------------------SIDENAV TOOGLE------------------------------------>
         <script>
         function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "300px";
         }
         
         function closeNav() {

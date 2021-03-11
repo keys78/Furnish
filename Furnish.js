@@ -1,15 +1,11 @@
 function openNav() {
-    document.getElementById("mySidenav").style.width = "350px";
-  }
-  
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+document.getElementById("mySidenav").style.width = "300px";
+}
 
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+}
 
-
-
-  
 
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');

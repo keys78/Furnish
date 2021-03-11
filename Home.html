@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Furnish.css" />
+    <link rel="stylesheet" href="Othercart.css" />
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="glide.core.min.css">
     <link rel="stylesheet" href="glide.theme.min.css">
@@ -18,132 +19,97 @@
 
 <body>
 
-  <div id="loader">
+  <div id="loaer">
     <h1 class="ld text-2xl">Loading...</h1>
   </div>
 
 
+  <div id="mySidenav" class="sidenav">
+         
+    <div class="flex justify-between">
+      <a class="-mt-14 ml-3" href="Home.html"><div class="Logo sm:mt-1 mt-2">
+        <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+       <h1 class="logo sm:text-2xl text-base text-gray-400 sm:-my-3 -my-2">furnish.</h1>
+      </div></a>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+
+    <div class="mt-36 text-center">
+      <a href="Home.html">Home</a>
+      <a href="Cart.html">Products</a>
+      <a href="Blog.html">Blog</a>
+      <a href="About.html">About</a>
+    </div>
+
+    <div class="nabfoot absolute bottom-0 right-16">
+      <h1 class="ml-14">
+      <i class="text-gray-700 hover:text-white fab fa-twitter"></i>
+      <i class="text-gray-700 hover:text-white fab fa-facebook"></i>
+      </h1>
+    <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+    </div>
+
+      <ul class="cube-effect" style="z-index:-1;">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+   </ul>
+
+</div>
+    
+
   <div id="luxy">
 
-    
-  <section class="Navbary bg-gray-800 h-14">
 
-    <div class="w-11/12 h-auto flex justify-between align-center m-auto">
+    <header class="flex justify-between bg-black items-center h-14 w-full m-auto lg:px-10 px-3 py-4">
 
-      <div class="Logo sm:mt-1 mt-2">
-        <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
-        <a href="Home.html"><h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1></a>
-      </div>
+        <a href="Home.html"><div class="Logo sm:mt-1 mt-2">
+            <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+           <h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1>
+          </div></a>
 
-    
-    <div class="OtherNav ">
-
-        
-      <div id="mySidenav" class="sidenav bg-cover bg-no-repeat"style="background:url('./Images/menucover.jpg')">
-
-        <div class="bg-black opacity-80 z-10 h-screen " style=" font-family:Roos St Regis Display;">
-          <div class="menucontainer w-9/12 grid grid-cols-3 gap-4 pt-40 px-40 m-auto">
-
-        <a href="javascript:void(0)" class="closebtn hover:text-gray-400 animate-spin text-3xl" onclick="closeNav()">&times;</a>
-        
-        <div  id="line">
-          <h1 class="draw  ml-16">
-            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
-          </h1>
-        </div>
-        <div  id="line ">
-          <h1 class="draw ml-16">
-            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  / </span></a>
-          </h1>
-        </div>
-        <div  id="line">
-          <h1 class="draw ml-16">
-            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
-          </h1>
-        </div>
-        <div  id="line">
-          <h1 class="draw">
-            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
-          </h1>
-        </div>
-        <div  id="line">
-          <h1 class="draw">
-            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
-          </h1>
-        </div>
-        <div  id="line">
-          <h1 class="draw">
-            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
-          </h1>
-        </div>
-        <div  id="line" class="col-span-3">
-          <h1 class="draw">
-            <a href="incart.html"><span class="hover hover-1 text-5xl">Home  /</span></a>
-          </h1>
-        </div>
-       
-        
+          <div class="lg:w-2/12 sm:w-3/12 w-4/12 flex justify-between items-center sm:mt-4 mt-3">
   
-        
-          <!--Menucontainer-->
-          </div>
-
-          <div class="w-5/12 m-auto flex justify-between align-center mt-60 text-white text-xl">
-            
-           <p>emoriginals@furnish.com</p>
-           <p>+234 0810 8243267</p>
-           <p>Twitter</p>
-           <p>Facebook</p>
-           
-          </div>
-
-          <div class="w-5/12 m-auto flex justify-between align-center mt-8 text-white text-xl">
-            
-           <p>Old GRA Port Harcourt, New Lane</p>
-           <p>www.emcodes.com</p>
-           <p>Pick a Number</p>
-           <p>Aqua Apparitions</p>
-
-          </div>
-
-      </div>
-
-      </div>
-
-    </div>
-
-
-    <div class="lg:w-2/12 sm:w-3/12 w-4/12 flex justify-between items-center sm:mt-4 mt-3">
-
-        <div class="sm:flex hidden dropdown relative inline-block">
-          <h1 class="dropbtn sm:text-xl text-red-500"><i class="fab fa-searchengin"></i></h1>
-          <div class="dropdown-content hidden w-60 absolute z-10 mt-8">
-              <div class="serchbar block flex item-center py-2 w-68 bg-gray-200 px-2 m-auto">
-              <input class="w-40 py-1 border border-current focus:outline-none" type="text" name="search" placeholder="search products">
-              <button class="py-1 text-sm pr-1 text-sms bg-black text-white">SEARCH</button>
+              <div class="sm:flex hidden dropdown relative inline-block">
+                <h1 class="dropbtn sm:text-xl text-red-500"><i class="fab fa-searchengin"></i></h1>
+                <div class="dropdown-content hidden w-60 absolute z-10 mt-8">
+                    <div class="serchbar block flex item-center py-2 w-68 bg-gray-200 px-2 m-auto">
+                    <input class="w-40 py-1 border border-current focus:outline-none" type="text" name="search" placeholder="search products">
+                    <button class="py-1 text-sm pr-1 text-sms bg-black text-white">SEARCH</button>
+                    </div>
+                </div>
               </div>
+              
+              <div id="line">
+                <h1 class="draw">
+                  <span class="hover hover-1 text-white sm:text-base text-sm cursor-pointer" onclick="openNav()">&#9776; Menu</span>
+                </h1>
+              </div>
+              
+              <div id="line">
+                <h1 class="draw">
+                  <a href="Login.html"><h1 class="hover hover-1 sm:text-base text-sm text-white cursor-pointer"><i class="far fa-user"></i> Login</h1></a>
+                </h1>
+              </div>
+          
+              <div class="cart-btn">
+                <span class="nav-icon text-white ">
+                    <i class="text-lg fas fa-cart-plus"></i>
+                </span>
+                 <div class="cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-2 sm:right-8 right-2">0</div>
+            </div>
+          
           </div>
-        </div>
-        
-        <div id="line">
-          <h1 class="draw">
-            <span class="hover hover-1 text-white sm:text-base text-sm cursor-pointer" onclick="openNav()">&#9776; Menu</span>
-          </h1>
-        </div>
-        
-        <div id="line">
-          <h1 class="draw">
-            <a href="Login.html"><h1 class="hover hover-1 sm:text-base text-sm text-white cursor-pointer"><i class="far fa-user"></i> Login</h1></a>
-          </h1>
-        </div>
 
-    
-    </div>
-
-    <!--flexer-->
-  </div>
-
-  </section>
+    </header>
 
 
 
@@ -363,7 +329,7 @@
 
   <!-------------------------------SOFA----------------------------------------->
 
-<section class="red-grad-out text-black" style="font-family:Roos St Regis Display;">
+<section class="red-grad-out text-black regis" >
 
 <!--iMAGETEXT SPLIT-->
     <div class="Showcaseconatiner lg:w-10/12 w-11/12 m-auto">
@@ -408,7 +374,7 @@
 
 <!-------------------------------DINNING SET----------------------------------------->
 
-<section class="gradients text-black" style="font-family:Roos St Regis Display;">
+<section class="gradients text-black regis">
 
   <!--iMAGETEXT SPLIT-->
   <div class="Showcaseconatiner lg:w-10/12 w-11/12 m-auto">
@@ -452,7 +418,7 @@
 
   <!-------------------------------GALLERY---------------------------------------->
 
-  <section class="reverse-grad text-black" style="font-family:Roos St Regis Display; ">
+  <section class="reverse-grad text-black regis">
 
 
     <div class="2NDcontainer lg:w-10/12 w-11/12 m-auto">
@@ -1862,6 +1828,8 @@
 
 </script>
 
+
     <script src="Furnish.js"></script>
+    <script src="cart.js"></script>
   </body>
 </html>

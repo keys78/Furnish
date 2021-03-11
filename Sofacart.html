@@ -28,16 +28,47 @@
 
     <!------------stickyNAV--------------------->
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         
+        <div class="flex justify-between">
+          <a class="-mt-14 ml-3" href="Home.html"><div class="Logo sm:mt-1 mt-2">
+            <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+           <h1 class="logo sm:text-2xl text-base text-gray-400 sm:-my-3 -my-2">furnish.</h1>
+          </div></a>
 
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
 
+        <div class="mt-36 text-center">
+          <a class="bnav hover:text-red-500" href="Home.html">Home</a>
+          <a class="bnav" href="Cart.html">Prod</a>
+          <a class="bnav" href="Blog.html">Blog</a>
+          <a class="bnav" href="About.html">About</a>
+        </div>
 
-        
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <div class="nabfoot absolute bottom-0 right-16">
+          <h1 class="ml-14">
+          <i class="text-gray-700 hover:text-white fab fa-twitter"></i>
+          <i class="text-gray-700 hover:text-white fab fa-facebook"></i>
+                </h1>
+        <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+        </div>
+
+          <ul class="cube-effect " style="z-index: -1;">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+       </ul>
+
     </div>
+    
+    
     
 
     <header class="flex justify-between bg-black items-center w-full m-auto lg:px-10 px-3 py-2">
@@ -351,7 +382,7 @@
 <!----------------------SIDENAV TOOGLE------------------------------------>
 <script>
     function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "300px";
     }
     
     function closeNav() {

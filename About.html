@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Furnish.css" />
+    <link rel="stylesheet" href="Othercart.css" />
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="glide.core.min.css">
     <link rel="stylesheet" href="glide.theme.min.css">
@@ -19,46 +20,7 @@
       .regis{
         font-family:Roos St Regis Display;
       }
-              
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
+ 
   header{
         position: fixed;
         top:0;
@@ -99,15 +61,55 @@
   </style>
   <body>
 
+    
+
    
         <!------------stickyNAV--------------------->
         <div id="mySidenav" class="sidenav">
+         
+          <div class="flex justify-between">
+            <a class="-mt-14" href="Home.html"><div class="Logo sm:mt-1 mt-2">
+              <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+             <h1 class="logo sm:text-2xl text-base text-gray-400 sm:-my-3 -my-2">furnish.</h1>
+            </div></a>
+
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
-        </div>
+          </div>
+
+          <div class="mt-36">
+            <a href="Home.html">Home</a>
+            <a href="Cart.html">Products</a>
+            <a href="Blog.html">Blog</a>
+            <a href="About.html">About</a>
+          </div>
+
+          <div class="nabfoot absolute bottom-0 right-16 text-center">
+            <h1 class="flex"></h1>
+            <i class="text-gray-700 hover:text-white fab fa-twitter"></i>
+            <i class="text-gray-700 hover:text-white fab fa-facebook"></i>
+          </h1>
+          <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+          </div>
+
+
+            <ul class="cube-effect " style="z-index: -1;">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+         </ul>
+
+
+          
+        </div> 
+
+
         
 
         <header class="flex justify-between items-center w-full m-auto lg:px-10 px-3 py-4">
@@ -117,8 +119,23 @@
                <h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1>
               </div></a>
 
-            <span class="navbi mt-2 cursor-pointer md:text-2xl text-xl" onclick="openNav()">&#9776;</span>
+          <div class="lg:w-2/12 sm:w-3/12 w-4/12 flex justify-between items-center">
+            <span class="navbi mt-2 cursor-pointer md:text-2xl text-xl hover:text-red-500" onclick="openNav()">&#9776;</span>
 
+            <div id="line">
+              <h1 class="draw">
+                <a href="Login.html"><h1 class="hover hover-1 sm:text-base text-sm text-white cursor-pointer"><i class="far fa-user"></i> Login</h1></a>
+              </h1>
+            </div>
+        
+            <div class="cart-btn">
+              <span class="nav-icon text-white ">
+                  <i class="text-lg fas fa-cart-plus"></i>
+              </span>
+               <div class="cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-2 sm:right-8 right-2">0</div>
+          </div>
+
+        </div>
         </header>
 
 
@@ -165,6 +182,10 @@
 
     </section>
 
+
+
+
+  
 
    
     <section class="text-black bg-gray-200 pb-40 ">
@@ -265,7 +286,7 @@
 
 
                         <div class="col-span-2">
-                            <h1 class=" text-3xl text-gray-700 font-bold regis">Iana Maurie</h1>
+                            <h1 class=" text-3xl text-gray-700 font-bold regis">Iana Maurie Bandicoot</h1>
                             <h2 class="text-2xl text-red-500 regis">COO/Co-founder</h2>
                         <p class="text-gray-400 sm:pb-0 pb-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, tenetur blanditiis 
                             aspernatur eaque libero tempore saepe, dicta facere placeat nihil natus? Esse beatae voluptatibus
@@ -856,7 +877,7 @@
 <!----------------------SIDENAV TOOGLE------------------------------------>
     <script>
         function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("mySidenav").style.width = "300px";
         }
         
         function closeNav() {

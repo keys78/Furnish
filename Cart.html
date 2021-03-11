@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Furnish.com</title>
-
-
        <!-- Latest compiled and minified CSS -->
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     
-   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="cart.css" />
@@ -25,16 +22,46 @@
 
     <!------------stickyNAV--------------------->
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         
+        <div class="flex justify-between">
+          <a class="-mt-14 ml-3" href="Home.html"><div class="Logo sm:mt-1 mt-2">
+            <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+           <h1 class="logo sm:text-2xl text-base text-gray-400 sm:-my-3 -my-2">furnish.</h1>
+          </div></a>
 
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
 
+        <div class="mt-36 text-center">
+          <a class="bnav hover:text-red-500" href="Home.html">Home</a>
+          <a class="bnav" href="Cart.html">Prod</a>
+          <a class="bnav" href="Blog.html">Blog</a>
+          <a class="bnav" href="About.html">About</a>
+        </div>
 
-        
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <div class="nabfoot absolute bottom-0 right-16">
+          <h1 class="ml-14">
+          <i class="text-gray-700 hover:text-white fab fa-twitter"></i>
+          <i class="text-gray-700 hover:text-white fab fa-facebook"></i>
+                </h1>
+        <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+        </div>
+
+          <ul class="cube-effect " style="z-index: -1;">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+       </ul>
+
     </div>
+    
     
 
     <header class="flex justify-between bg-black items-center w-full m-auto lg:px-10 px-3 py-2">
@@ -58,10 +85,10 @@
 
 
             <div class="cart-btn">
-            <span class="nav-icon text-white ">
-                <i class="text-lg fas fa-cart-plus"></i>
-            </span>
-             <div class="cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-2 sm:right-8 right-2">0</div>
+                <span class="nav-icon text-white ">
+                    <i class="text-lg fas fa-cart-plus"></i>
+                </span>
+                 <div class="cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-2 sm:right-8 right-2">0</div>
             </div>
 
 
@@ -251,7 +278,7 @@
                 <div class="cart-footer">
                     <h3>your total : $ <span class="cart-total">0</span></h3>
                     <button class="clear-cart banner-btn px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Clear cart</button>
-                    <a href="Cart.html"><button  onclick="ala()" class="px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
+                    <a href="Checkout.html"><button  onclick="ala()" class="px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
                 </div>
 
             </div>
@@ -354,7 +381,7 @@
 <!----------------------SIDENAV TOOGLE------------------------------------>
 <script>
     function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("mySidenav").style.width = "300px";
     }
     
     function closeNav() {
