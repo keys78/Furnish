@@ -93,7 +93,7 @@
 
         
         <div class="flex  justify-center items-center 4/12">
-            <div class="number text-red-500 text-xl font-extrabold mara regis pr-4">873</div>
+            <div class="number text-red-500 text-xl font-extrabold mara regis pr-4">56</div>
             <p class="text-xl"> products found</p>
         </div>
 
@@ -114,7 +114,7 @@
 
         <div class="bg-gray-600 sm:w-11/12 w-full sm:mb-0 mb-2 sm:block flex justify-between">
             <span class="mr-14 pl-2 text-white">Browse by categories</span>
-            <a href="sectiodetails.html"><button class="px-1 ml-3 hover:bg-gray-500 bg-red-600 text-white">Product details</button></a>
+            <a href=""><button class="focus:outline-none px-1 ml-3 hover:bg-gray-500 bg-red-600 text-white">Product details</button></a>
         </div>
 
         <div class="sm:w-2/12 w-full sm:mb-0 mb-2">
@@ -148,8 +148,8 @@
                 <article class="">
                     <div id="flip" class="font-semibold text-base hover:text-green-700 border-current border-t cursor-pointer">Living room collections</div>
                     <div id="panel" class="py-2 border-current border-t border-b">
-                    <a href="sectionalscart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-red-500 cursor-pointer">Sectionals</h1></a>
-                    <a href="Sofacart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Sofas</h1></a>
+                    <a href="sectionalscart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Sectionals</h1></a>
+                    <a href="Sofacart.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-red-black cursor-pointer">Sofas</h1></a>
                     <a href="Otto.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Benches and ottomans</h1></a>
                     <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Chaise lounges & daybeds</h1></a>
                     <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Leather seating</h1></a>
@@ -162,7 +162,7 @@
                     <div id="fli" class="font-semibold text-base hover:text-green-700  cursor-pointer">Bedroom collections</div>
                     <div id="pane" class="py-2 border-current border-t border-b">
                     <a href="Beds.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Beds</h1></a>
-                    <a href="Headboards.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Headboards</h1></a>
+                    <a href="Headboards.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-red-500 cursor-pointer">Headboards</h1></a>
                     <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Nightstands</h1></a>
                     <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Dressers</h1></a>
                     <a href="Popinalerts.html"><h1 class="hover:text-red-500 sm:text-base text-sm text-black cursor-pointer">Armories</h1></a>
@@ -230,7 +230,7 @@
 
                 <div class="flex justify-between py-12">
                 <p class="bg-transparent">.</p>
-                <a href="Sofacart.html"><button class="cursor-pointer focus:outline-none px-2 py-1 hover:bg-gray-500 bg-red-600 text-white">Load more</button></a>
+                <a href="Kitchen.html"><button class="cursor-pointer focus:outline-none px-2 py-1 hover:bg-gray-500 bg-red-600 text-white">Load more</button></a>
                 </section>
 
                 <!--end of products-->
@@ -391,7 +391,7 @@ let buttonsDOM = []
 class Products{
  async getProducts(){
 try {
-    let result =  await fetch("sectionals.json");
+    let result =  await fetch("Headboard.json");
     let data = await result.json();
 
     let products = data.items;

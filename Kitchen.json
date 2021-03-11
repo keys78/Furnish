@@ -1,0 +1,84 @@
+{
+    "items": [
+      {
+        "sys": { "id": "1" },
+        "fields": {
+          "title": "#q01 Mariana Sets",
+          "price": 2120,
+          "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/2635038/pexels-photo-2635038.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" } } }
+        }
+      },
+      {
+        "sys": { "id": "2" },
+        "fields": {
+          "title": "#q02 Irish Oos",
+          "price": 3100,
+          "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/2089696/pexels-photo-2089696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" } } }
+        }
+      },
+      {
+        "sys": { "id": "3" },
+        "fields": {
+          "title": "#q03 Volenda Becur",
+          "price": 7100,
+          "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" } } }
+        }
+      },
+      {
+        "sys": { "id": "4" },
+        "fields": {
+          "title": "#q04 Carlo QYE",
+          "price": 1400,
+          "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/6186827/pexels-photo-6186827.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" } } }
+        }
+      },
+      {
+        "sys": { "id": "5" },
+        "fields": {
+          "title": "#q05 Zelun 22",
+          "price": 2250.00,
+          "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/6297088/pexels-photo-6297088.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" } } }
+        }
+      },
+      {
+        "sys": { "id": "6" },
+        "fields": {
+          "title": "#q06 Epittigo King",
+          "price": 149.99,
+          "image": { "fields": { "file": { "url": "https://s7d5.scene7.com/is/image/Anthropologie/56916471-7560-VV0013-WASH_b?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain" } } }
+        }
+      },
+      {
+        "sys": { "id": "7" },
+        "fields": {
+          "title": "#q07 Alingbu Kafint",
+          "price": 2030,
+          "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/6186826/pexels-photo-6186826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" } } }
+        }
+      },
+      {
+        "sys": { "id": "8" },
+        "fields": {
+          "title": "#q08 Nekri Lodon ",
+          "price": 1770,
+          "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/6283962/pexels-photo-6283962.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" } } }
+        }
+      },
+      {
+        "sys": { "id": "9" },
+        "fields": {
+          "title": "#q09 Adele",
+          "price": 2200,
+          "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/6312076/pexels-photo-6312076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" } } }
+        }
+      },
+      {
+        "sys": { "id": "10" },
+        "fields": {
+          "title": "#q010 EMC",
+          "price": 48,
+          "image": { "fields": { "file": { "url": "https://images.pexels.com/photos/6312077/pexels-photo-6312077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" } } }
+        }
+      }
+    ]
+  }
