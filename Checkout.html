@@ -167,7 +167,7 @@
 
 
                     <label class="pl-1 mt-6">Pay with Paypal</label>
-                    <div class="py-2 flex justify-between items-center bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1"">
+                    <div class="py-2 flex justify-between items-center bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1">
                         <input type="radio">
                         <i class="text-2xl fab fa-cc-paypal"style="color:blue;"></i>
                     </div>
@@ -176,7 +176,7 @@
                         <input type="checkbox" value=""><span class="text-sm text-gray-600 ml-2">By clicking the button, you agree to the T&C's</span>
                     </div>
 
-                    <input onclick="kapa()" class="w-full mt-6 focus:outline-none py-2 text-white text-center bg-green-500 hover:bg-red-500" type="submit" name="submit" value="PLACE ORDER">
+                    <a href="Cart.html"><input onclick="kapa()" class="w-full mt-6 focus:outline-none py-2 text-white text-center bg-green-500 hover:bg-red-500" type="submit" name="submit" value="PLACE ORDER"></a>
 
                     </section>
             
@@ -188,7 +188,7 @@
                     <section id="div2" class="targetDiv">
                        
                         <input type="radio">
-                        <div class="py-2 justify-between items-center bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1"">
+                        <div class="py-2 justify-between items-center bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1">
                             <p>Pick up delivery on our outlets close to you</p>
                         </div>
 
@@ -198,7 +198,7 @@
                             <p>Delivery yo your default billing address</p>
                         </div>
 
-                        <input class="mt-4 focus:outline-none w-full py-2 text-center text-white bg-green-500 hover:bg-red-500" type="submit" name="submit" value="PLACE ORDER">
+                        <a href="Cart.html"><input onclick="kapa()" class="mt-4 focus:outline-none w-full py-2 text-center text-white bg-green-500 hover:bg-red-500" type="submit" name="submit" value="PLACE ORDER"></a>
 
                     </section>
 
@@ -213,7 +213,7 @@
 
                         <div class="flex w-7/12 -mt-8">
                             <i class=" mt-1 fas fa-cart-plus"></i>
-                            <p>Cart Summary</p>
+                            <p class="font-semibold" >Cart Summary</p>
                         </div>
 
 
@@ -291,8 +291,8 @@
     </script>
 
     <script>
-       function ala() {
-                alert("You dey worry");
+       function kapa() {
+                alert("Order #0074636 is confirmed! Check your email for expected delivery timelines. Thanks for shopping on Furnish beautiful!");
                 }
     </script>
 
