@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Furnish.com</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="/Images/fav.ico">
+</head>
+<style>
+    .checkout-div{
+	position: absolute;
+	top:90%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	box-sizing:border-box;
+    overflow-y: hidden;
+
+	}
+
+	.shadow{
+		box-shadow: 0px 1px 12px 5px rgba(0, 0, 0, 0.342);
+	}
+</style>0
+<body class="bg-gray-100">
+
+        <section class="w-5/12 h-96 bg-red-500 rounded-br-full rounded-tr-full"></section>
+
+
+
+    <header class="checkout-div bg-white h-auto w-8/12 m-auto">
+
+
+            <!-- <div class="flex justify-between z-50">
+                <a class="-mt-14 ml-3" href="Home.html"><div class="Logo sm:mt-1 mt-2">
+                <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+                <h1 class="logo sm:text-2xl text-base text-black sm:-my-3 -my-2">furnish.</h1>
+                </div></a>
+        
+                <p>LALALA</p>
+            </div> -->
+
+           
+            
+            
+        <div class="w-11/12 bg-gray-200 m-auto">
+            <div class="cont w-11/12 m-auto flex justify-between items-start">
+
+            <div class="">
+                <h1 class="text-xl font-semibold">Billing details</h1>
+
+                <form>
+                <label class="pl-1">First & last name</label>
+                <input class="w-full rounded mb-3 bg-white border-blue-200 border-2 focus:outline-none py-1 px-1" type="text" name="name" placeholder="Enter name" required>
+
+                <label class="pl-1">Email</label>
+                <input class="w-full rounded mb-5 bg-white border-blue-200 border-2 focus:outline-none py-1 px-1" type="email" name="name" placeholder="Enter valid email" required>
+
+                
+                <label class="pl-1">Country:</label>
+                <select class="w-full rounded bg-white border-blue-200 border-2 focus:outline-none py-1 px-1" id="">
+                    <option value=""></option>
+                    <option value="">Nigeria</option>
+                    <option value="">Canada</option>
+                    <option value="">Madrid</option>
+                    <option value="">Whales</option>
+                </select>
+                
+
+                <div class="flex gap-8 mt-4">
+
+                    <div class="">
+                        <label class="pl-1">State/county</label>
+                        <input class="bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1" type="text" name="text" required>
+                    </div>
+
+                    <div class="">
+                        <label class="pl-1">Zip/Postal code</label>
+                        <input class="bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1" type="text" name="text" required>
+                    </div>
+
+                </div>
+
+                </form>
+
+
+                <div class="Methods">
+                    <h1 class="text-xl font-semibold mt-6">Payment method</h1>
+
+                    <div class="flex justify-center gap-4 text-base text-gray-700 mt-3 mb-6">
+                    <h1  class="showSingle cursor-pointer font-semibold hover:text-red-500" target="1">Credit card</h1>
+                    <h1  class="showSingle cursor-pointer font-semibold hover:text-red-500" target="2">Pay on delivery</h1>
+                    </div>
+
+
+                    <section id="div1" class="targetDiv">
+                    <div class="py-1 w-full flex justify-between items-center bg-white rounded border-blue-200 border-2 focus:outline-none px-1">
+                        <input class="w-full focus:outline-none" type="radio" value="Credit card" >Credit card
+                        <div class="flex">
+                            <i class="fab pr-4 cursor-pointer hover:text-blue-600 sm:text-xl text-base fa-cc-visa" style="color:navy;"></i>
+                            <i class="fab pr-4 cursor-pointer hover:text-blue-400 sm:text-xl text-base fa-cc-amex" style="color:blue;"></i>
+                            <i class="fab pr-4 cursor-pointer hover:text-red-400 sm:text-xl text-base fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fab  cursor-pointer hover:text-orange-300 sm:text-xl text-base fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                    </div>
+
+                    <label class="pl-1 mt-2">Card number</label>
+                    <div class="flex py-1 justify-between items-center w-full rounded bg-white border-blue-200 border-2 focus:outline-none px-1">
+                        <input class="py-1 w-full focus:outline-none" type="text" name="name" placeholder="0000 1111 2222 3333" required>
+                        <i class="fab cursor-pointer hover:text-blue-600 sm:text-xl text-base fa-cc-visa" style="color:navy;"></i>
+                    </div>
+
+                   
+                    <div class="flex gap-6">
+
+                        <div class="">
+                        <label class="pl-1 mt-2">Expiration date</label>
+                        <input class="w-full rounded bg-white border-blue-200 border-2 focus:outline-none py-1 px-1" type="date">
+                        </div>
+
+                        <div class="">
+                            <label class="pl-1">Security code</label>
+                            <input class="bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1" type="text" name="text" placeholder="000" required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="py-2 flex justify-between items-center bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1"">
+                        <input type="radio">
+                        <i class="fab fa-cc-paypal"style="color:blue;"></i>
+                    </div>
+
+                    <div class="">
+                        <input type="checkbox" value=""><span class="text-sm text-gray-600 ml-2">By clicking the button, you agree to the T&C's</span>
+                    </div>
+
+                    <input class="w-full py-2 text-white text-center bg-green-500 hover:bg-red-500" type="submit" name="submit" value="PLACE ORDER">
+
+                    </section>
+            
+
+
+
+
+
+
+                    <section id="div2" class="targetDiv">
+                       
+                        <input type="radio">
+                        <div class="py-2 justify-between items-center bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1"">
+                            <p>Pick up delivery on our outlets close to you</p>
+                        </div>
+
+
+                        <input class="mt-4" type="radio">
+                        <div class="py-2 flex bg-white rounded border-blue-200 border-2 focus:outline-none py-1 px-1">
+                            <p>Delivery yo your default billing address</p>
+                        </div>
+
+                        <input class="mt-4 w-full py-2 text-center text-white bg-green-500 hover:bg-red-500" type="submit" name="submit" value="PLACE ORDER">
+
+                    </section>
+
+
+                </div>
+            </div>
+
+                <!---Other Div-->
+                <div class="">
+                    <p class="Lo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, veritatis nulla. Ab consectetur et ratione amet veniam iste quis quibusdam? Quaerat, quisquam beatae id omnis reiciendis repellendus eveniet dicta obcaecati eligendi ex quod odio voluptates nesciunt. Voluptatem exercitationem similique facere obcaecati ea qui eum sint, consequuntur quibusdam provident rem error dolorum aperiam. Error nisi voluptate possimus repellat debitis magni quam deserunt. Quasi perferendis saepe facere delectus, perspiciatis voluptates totam omnis at. Maxime, quo? Ipsum sequi magni optio ut impedit nisi temporibus suscipit sed cupiditate quam laboriosam eum molestiae excepturi mollitia unde animi rem asperiores, adipisci porro quasi aperiam, minus illo ex accusantium. Iusto odio officiis obcaecati recusandae aut sequi quis, quidem ullam esse dolores quos enim neque nostrum quasi, nihil facere accusantium commodi quaerat maiores deleniti repudiandae dolor! Explicabo a repellendus nam quia tenetur sequi mollitia ducimus similique eveniet, voluptas commodi, quae id quo assumenda esse, iusto non voluptatem ratione placeat. Hic quia facilis, minima illo culpa libero animi vitae cum quam ut voluptates quidem ratione rem explicabo recusandae similique, vero nostrum! Doloribus placeat praesentium minima rem ut eligendi quos nemo id harum veniam? Nulla sit quibusdam ullam reiciendis qui neque beatae aliquid quae, eum voluptatem. Eveniet modi molestiae iusto, facere omnis dignissimos vero provident quidem. Voluptates soluta magni reprehenderit quidem blanditiis ratione at cum ipsam veritatis quos reiciendis assumenda quasi, enim unde illo accusantium consequatur nostrum maiores! Itaque deleniti quos nesciunt et omnis vitae aliquam eaque cum dolorum iusto voluptatem, modi laboriosam fugiat fugit quod? Iure deserunt dolor atque quod maiores impedit alias beatae molestias obcaecati corrupti velit consectetur officiis temporibus delectus, adipisci optio mollitia earum explicabo ipsa! Modi accusamus velit quos corrupti nisi optio quia, illum aut sint, labore consequuntur sapiente eos, rerum facere. Magnam aliquam, consequuntur sed nisi praesentium iusto, quia quod tenetur, maxime architecto rem incidunt! Deleniti recusandae nisi nam consequatur quaerat corrupti, iusto nulla laboriosam exercitationem ad. Quam neque porro harum similique est provident, enim explicabo! Provident ratione quaerat eaque sapiente ex recusandae, sit nihil voluptatum, accusamus vel maiores eveniet rem. Natus, est repudiandae nisi quibusdam assumenda sint! Accusamus unde, porro at culpa ad eaque tempore dolore doloremque corporis nulla repellendus enim molestias magnam illo reprehenderit tempora facilis ducimus nesciunt voluptate est totam exercitationem! Ut laborum quo neque saepe? Et quasi mollitia, sapiente necessitatibus asperiores sint voluptate. Ducimus facilis, vel hic animi eveniet porro praesentium ex sunt, rerum commodi doloremque quis, delectus asperiores enim expedita!</p>
+                </div>
+
+        </div>
+        </div>
+        
+    </header>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        jQuery(function(){
+     jQuery('#showall').click(function(){
+           jQuery('.targetDiv').show();
+    });
+    jQuery('.showSingle').click(function(){
+          jQuery('.targetDiv').hide();
+          jQuery('#div'+$(this).attr('target')).show();
+    });
+});
+    </script>
+
+</body>
+</html>
