@@ -7,7 +7,10 @@
     <title>Furnish.com</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="Furnish.css" />
+    <link rel="stylesheet" href="Othercart.css" />
+    <link rel="stylesheet" href="Dashboard.css" />
+    <link rel="stylesheet" href="Navbar.scss" />
+    <link rel="stylesheet" href="Navbar.css" />
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="glide.core.min.css">
     <link rel="stylesheet" href="glide.theme.min.css">
@@ -15,5 +18,137 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="/Images/fav.ico">
   </head>
-  <body></body>
-  </html>
+  <style>
+  .change{
+    background-image: linear-gradient(to right,black, red, black);
+  }
+  .chang{
+    background-image: linear-gradient(to right, black, red);
+  }
+  </style>
+     
+  <body class="text-black">
+
+    
+
+   
+        <!------------stickyNAV--------------------->
+        
+        <header class="flex change justify-between items-center w-full h-16 m-auto lg:px-10 px-3 py-4">
+
+            <a href="Home.html"><div class="Logo sm:mt-1 mt-2">
+                <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+               <h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1>
+              </div></a>
+
+          <div class="lg:w-2/12 sm:w-3/12 w-4/12 flex justify-between items-center">
+            
+            <h1 onclick="searcho()" class="cursor-pointer sm:text-xl text-red-500"><i class="fab fa-searchengin"></i></h1>
+            <div id="searching" class="serchbar block flex item-center absolute xl:left-96 lg:right-64 right-44 top-4 w-4/12 bg-black m-auto">
+              <input class="w-10/12 py-1 px-2 border border-current focus:outline-none" type="text" name="search" placeholder="search products">
+              <!-- <button class="py-2 px-2 hover:bg-red-500 text-sm pr-1 text-sms bg-gray-700 text-white">SEARCH</button> -->
+              </div>
+
+            <div id="line">
+              <h1 class="draw">
+                <a href="Myaccount.html"><h1 class="hover hover-1 sm:text-lg mt-2 text-sm text-white cursor-pointer"><i class="far fa-user"></i> Hi, Irene</h1></a>
+              </h1>
+            </div>
+        
+            <div class="cart-btn mt-2">
+              <span class="nav-icon text-white ">
+                  <i class="cursor-pointer text-lg fas fa-cart-plus"></i>
+              </span>
+               <div class="cursor-pointer cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-4 sm:right-8 right-2">0</div>
+          </div>
+
+        </div>
+        </header>
+
+
+
+        
+        <div class="sidenav mt-2 ">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#clients">Clients</a>
+          <a href="#contact">Contact</a>
+        </div>
+         
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!----cart  -->
+       <div class="cart-overlay">
+        <div class="cart">
+
+      <div class="flex justify-between flex-row-reverse items-center">
+         <span class="close-cart">
+            <i class="fas fa-window-close"></i>
+        </span>
+
+        <div class="">
+          <div class="tooltip text-sm animate-pulse"><i class="text-xl text-red-500 hover:bg-gray-600 fas fa-info-circle"></i>
+            <span class="tooltiptext ">
+              <i class="text-yellow-500 text-xs mr-2 fas fa-exclamation-triangle"></i>
+              <p class="text-xs">You have to be on the products page or logged in to increase,
+                decrease or clear cart </p>
+            </span>
+          </div>
+         </div>
+      </div>
+
+        <h2 class="text-2xl font-semibold text-gray-700">Your Cart</h2>
+
+        <div class="cart-content text-black">
+            <!--cart item-->
+            <div class="cart-item text-black">
+            
+        </div>
+    
+        
+
+<div class="cart-footer text-black">
+    <h3>your total : $ <span class="cart-total">0</span></h3>
+    <button class="focus:outline-none clear-cart banner-btn px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Clear cart</button>
+    <a href="Checkout.html"><button  onclick="ala()" class="focus:outline-none px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
+</div>
+<!----end of cart it-->
+
+
+
+
+
+<script>
+  function searcho() {
+    var x = document.getElementById("searching");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
+
+
+
+   <script src="cart.js"></script>
+  </body>
+</html>
