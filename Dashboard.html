@@ -12,10 +12,6 @@
     <link rel="stylesheet" href="Navbar.scss" />
     <link rel="stylesheet" href="Navbar.css" />
     <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="glide.core.min.css">
-    <link rel="stylesheet" href="glide.theme.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="/Images/fav.ico">
   </head>
   <style>
@@ -25,6 +21,28 @@
   .chang{
     background-image: linear-gradient(to right, black, red);
   }
+  .laco{
+    box-shadow: 0px 1px 2px 2px rgba(189, 189, 189, 0.41);
+  }
+    .oneT{
+      background: linear-gradient(to right, #000000, #0f9b0f);
+    }
+  
+    .twoT{
+      background: #485563;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+  
+    .threeT{
+      background: linear-gradient(to left, #93291E, #ED213A);
+
+    }
+
+
+
+
   </style>
      
   <body class="text-black">
@@ -73,20 +91,101 @@
 
         
         <section class="sidenav mt-8 ">
-          <a href="Dashboard.html"><h1 class="block pb-5 pl-7 text-sm border-b-2 border-gray-300 bg-yellow-500 text-white "><i class=" fa fa-dashboard mt-8 mr-6"></i>Dashboard</h1></a>
-          <a href="Accounts"><h1 class="text-center py-4 hover:bg-gray-200">My Account</h1></a>
+          <a href="Dashboard.html"><h1 class="mt-1 border-b border-gray-300 pl-9 py-4 bg-gray-200"><i class="pr-2 fas fa-tachometer-alt"></i>Dashboard</h1></a>
+          <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 hover:bg-gray-200"><i class="pr-2 far fa-user"></i>My Account</h1></a>
+          <a href="Order.html"><h1 class="pl-9 border-b border-gray-300 py-4 hover:bg-gray-200"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
+          <a href="Wishlist"><h1 class="pl-9 border-b border-gray-300 py-4 hover:bg-gray-200"><i class="pr-2 far fa-heart"></i>Wishlist</h1></a>
+          <a href="Help.tml"><h1 class="pl-9 border-b border-gray-300 py-4 hover:bg-gray-200"><i class="pr-2 far fa-question-circle"></i>Help</h1></a>
+          <a href="Login.html"><h1 class="pl-9 border-b border-gray-300 py-4 hover:bg-gray-200"><i class="pr-2 fas fa-sign-out-alt"></i>Log out</h1></a>
           
+
+
+
+
+          <div class="nabfoot absolute bottom-0 right-16">
+            <h1 class="ml-14">
+            <i class="text-gray-700 hover:text-red-500 fab fa-twitter"></i>
+            <i class="text-gray-700 hover:text-red-500 fab fa-facebook"></i>
+            </h1>
+          <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+          </div>
+
         </section>
          
 
-        <section class="main bg-white">
+        <section class="main bg-gray-50 h-screen">
+
+          <div class="WELCOME h-12 bg-gray-50 laco">
+            <div class="flex justify-between items-center pt-3">
+              <p>Welcome</p>
+              <a class="hover:text-red-500" href="Home.html"><p>Home</p></a>
+            </div>
+          </div>
           
-          </li>
-          <li><a href="#"><i class="fa fa-user push"></i>Users<i class="fa fa-angle-right"></i></a><span class="hover"></span>
-          <ul class="sub-menu">
-             <li><a href="#">Ad User<i class="a fa-angle-right"></i></a><span class="hover"></span></li>
+         
+          <div class="BOXESHOLDER flex justify-between items-center gap-28 w-11/12 m-auto pt-8">
+
+            <div class="oneT h-32 w-full px-8 pt-4">
+              <p class="text-white text-xl pb-3">Wallet Balance</p>
+              <div class="flex justify-between items-center text-white">
+                <i class="text-4xl fas fa-wallet"></i>
+                <h1 class="text-4xl">$4,352</h1>
+              </div>
+            </div>
+            <div class="twoT h-32 w-full px-8 pt-4">
+              <p class="text-white text-xl pb-3">Total Orders</p>
+              <div class="flex justify-between items-center text-white">
+                <i class="text-5xl fas fa-mail-bulk"></i>
+                <h1 class="text-4xl">162</h1>
+              </div>
+            </div>
+            <div class="threeT h-32 w-full px-8 pt-4">
+              <p class="text-white text-xl pb-3">Shop Bonus</p>
+              <div class="flex justify-between items-center text-white">
+                <i class="text-5xl fas fa-hand-holding-usd"></i>
+                <h1 class="text-4xl">$924</h1>
+              </div>
+            </div>
             
-        </div>
+
+          </div>
+
+
+
+          <section class="flex gap-4 mt-12 w-11/12 m-auto">
+
+            <div class="h-12 bg-blue-900 w-8/12 px-3">
+              <h1 class="text-white text-xl pt-2" >Recent orders</h1>
+
+              <div class="">
+                <img src="https://s7d5.scene7.com/is/image/Anthropologie/45548625-01085-SV0097-WDOV_b2?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+
+                <p>#B02</p>
+
+                <p>Whitenbur</p>
+
+                <p>Delivered</p>
+
+
+              </div>
+
+
+
+              
+
+            </div>
+
+
+            <div class="h-12 bg-blue-900 w-4/12 px-3">
+
+              <h1 class="text-white text-xl pt-2" >Recently viewed</h1>
+              
+
+            </div>
+            
+
+
+          </section>
 
 
 
