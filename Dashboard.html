@@ -29,7 +29,7 @@
     background-image: linear-gradient(to right,black, red, black);
   }
   .chang{
-    background-image: linear-gradient(to right, black, red);
+    background: linear-gradient(to right, #000000, #434343); 
   }
   .laco{
     box-shadow: 0px 1px 2px 2px rgba(189, 189, 189, 0.41);
@@ -110,11 +110,11 @@
    
         <!------------stickyNAV--------------------->
 
-    <section class="w-11/12 m-auto">
+    <section class="w-full m-auto">
 
 
         
-        <header class="flex change justify-between items-center w-full h-16 m-auto lg:px-10 px-3 py-4">
+        <header class="flex chang justify-between items-center w-full h-16 m-auto lg:px-10 px-6 py-4">
 
             <a href="Home.html"><div class="Logo sm:mt-1 mt-2">
                 <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
@@ -124,14 +124,14 @@
           <div class="lg:w-2/12 sm:w-3/12 w-4/12 flex justify-between items-center">
             
             <h1 onclick="searcho()" class="cursor-pointer sm:text-xl text-red-500"><i class="fab fa-searchengin"></i></h1>
-            <div id="searching" class="serchbar block flex item-center absolute xl:left-96 lg:right-64 right-44 top-4 w-4/12 bg-black m-auto">
-              <input class="w-10/12 py-1 px-2 border border-current focus:outline-none" type="text" name="search" placeholder="search products">
+            <div id="searching" class="serchbar block flex item-center absolute xl:right-96 lg:right-88 md:right-72 sm:right-56 right-44 top-4 w-4/12 bg-black m-auto">
+              <input class="w-full rounded py-1 px-2 border border-current focus:outline-none" type="text" name="search" placeholder="search products">
               <!-- <button class="py-2 px-2 hover:bg-red-500 text-sm pr-1 text-sms bg-gray-700 text-white">SEARCH</button> -->
               </div>
 
             <div id="line">
               <h1 class="draw">
-                <a href="Myaccount.html"><h1 class="hover hover-1 sm:text-lg mt-2 text-sm text-white cursor-pointer"><i class="far fa-user"></i> Hi, Irene</h1></a>
+                <a href="Accounts.html"><h1 class="hover hover-1 sm:text-lg mt-2 text-sm text-white cursor-pointer"><i class="far fa-user"></i> Hi, Irene</h1></a>
               </h1>
             </div>
         
@@ -148,8 +148,8 @@
 
 
         
-        <section class="sidenav">
-          <a href="Dashboard.html"><h1 class="mt-1 border-b border-gray-300 pl-9 py-4 bg-gray-200"><i class="pr-2 fas fa-tachometer-alt"></i>Dashboard</h1></a>
+        <section class="sidenav md:block hidden">
+          <a href="Dashboard.html"><h1 class="border-b border-gray-300 pl-9 py-4 bg-gray-300"><i class="pr-2 fas fa-tachometer-alt"></i>Dashboard</h1></a>
           <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 hover:bg-gray-200"><i class="pr-2 far fa-user"></i>My Account</h1></a>
           <a href="Order.html"><h1 class="pl-9 border-b border-gray-300 py-4 hover:bg-gray-200"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
           <a href="Wishlist"><h1 class="pl-9 border-b border-gray-300 py-4 hover:bg-gray-200"><i class="pr-2 far fa-heart"></i>Wishlist</h1></a>
@@ -189,14 +189,20 @@
         <section class="main bg-gray-100 h-auto">
 
           <div class="WELCOME h-12 bg-gray-50 px-3 laco">
-            <div class="flex justify-between items-center pt-3">
+            <div class="flex justify-between items-center pt-2">
               <p>Welcome</p>
-              <a class="hover:text-red-500" href="Home.html"><p>Home</p></a>
+              <a class="px-2 bg-red-500 hover:bg-gray-600 text-white cursor-pointer rounded py-1" href="Home.html"><p>Home</p></a>
             </div>
+
+            <div class="flex justify-between items-center pt-2">
+              <p>Welcome</p>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+            </div>
+
           </div>
           
          
-          <div class="BOXESHOLDER flex justify-between items-center gap-28 w-11/12 m-auto pt-8">
+          <div class="BOXESHOLDER flex justify-between items-center xl:gap-28 lg:gap-16 gap-6 xl:w-11/12 w-full m-auto pt-8">
 
             <div class="oneT h-32 w-full px-8 pt-4">
               <p class="text-white text-xl pb-3">Wallet Balance</p>
@@ -227,12 +233,12 @@
 
             <!-------------RECENTLIES----------------->
             <!-------------RECENTLIES----------------->
-          <div class="flex gap-4 mt-12 w-11/12 m-auto ">
+          <div class="flex lg:flex-row flex-col gap-4 mt-12 xl:w-11/12 w-full m-auto ">
 
-            <div class="w-8/12 ">
+            <div class="lg:w-8/12 w-full">
               <h1 class="text-white text-xl bg-blue-900 px-3 py-2" >Recent orders</h1>
 
-              <div class="flex justify-between items-center py-2 rounded px-2 mt-5 bg-white">
+              <div class="flex justify-between items-center py-2 rounded px-2 lg:mt-5 mt-1 bg-white">
                 <img class="w-40 h-20" src="https://s7d5.scene7.com/is/image/Anthropologie/45548625-01085-SV0097-WDOV_b2?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
 
                 <p>#B02</p>
@@ -290,7 +296,7 @@
 
                 <p>Lwed Dresser</p>
 
-                <p>$1410.09</p>
+                <p>$1410</p>
 
                 <p class="px-1 py-2 bg-red-700 rounded text-white">Cancelled</p>
 
@@ -304,11 +310,11 @@
 
 
             <!-----------VIEWWD-->
-            <div class="w-4/12">
-              <h1 class="text-white text-xl bg-blue-900 px-3 py-2" >Recently viewed</h1>
+            <div class="lg:w-4/12 w-full lg:mt-0 mt-8">
+              <h1 class="text-white text-xl bg-blue-900 px-3 py-2" >Recently Viewed Items</h1>
               
 
-              <div class="flex justify-between items-center py-2 rounded px-2 mt-5 bg-white relative">
+              <div class="flex justify-between items-center py-2 rounded px-2 lg:mt-5 mt-1 bg-white relative">
                 <img class="w-28 h-40" src="https://s7d5.scene7.com/is/image/Anthropologie/59737478_026_b?$a15-pdp-detail-shot$=&fit=constrain&fmt=webp&qlt=80&wid=720">
 
                 <div onclick="love();" id="heart" class="tooltip-container absolute top-1 right-2"><i class="text-red-500 cursor-pointer far fa-heart" aria-hidden="true"></i>
@@ -327,8 +333,8 @@
                 <span class="tooltip">Add to Wishlist</span>
                 </div>
 
-                <p>Whitenbur</p>
-                <p>$1,206</p>
+                <p>Oak Desk</p>
+                <p>$650</p>
 
               </div>
               <div class="flex justify-between items-center py-2 rounded px-2 mt-1 bg-white relative">
@@ -338,8 +344,8 @@
                 <span class="tooltip">Add to Wishlist</span>
                 </div>
 
-                <p>Whitenbur</p>
-                <p>$1,206</p>
+                <p>Papas Cush</p>
+                <p>$1,600</p>
 
               </div>
 
@@ -354,26 +360,19 @@
 
 
           <!-------------------------------------FEATURED ITEMS------------------>
-          <div class="w-11/12 m-auto mt-12">
          
-          </div>
 
-           <!--products -->
-           <section class="products">
+           
+           <section class="products mt-12">
+
             <div class="WELCOME h-12 bg-gray-50 px-3 laco mb-4">
-              <p class="text-2xl text-gray-700">Featured Items</p>
+              <p class="text-2xl text-gray-700 pt-3">Featured Items</p>
             </div>
             <div class="products-center">
                 <!-- single product  -->
                 <!----end of single product  -->
             </div>
 
-            <div class="flex justify-between py-12">
-            <p class="bg-transparent">.</p>
-            <a href="sectionalscart.html"><button class="cursor-pointer focus:outline-none px-2 py-1 hover:bg-gray-500 bg-red-600 text-white">Load more</button></a>
-            </section>
-
-            <!--end of products-->
 
 
                 <!----cart  -->
@@ -397,8 +396,13 @@
                 <a href="Checkout.html"><button  onclick="ala()" class="px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
             </div>
 
-        </div>
-        </div>
+          </section>
+
+
+          <footer class="bg-gray-400 w-full">
+            <p class="text-center text-white text-base py-1">www.furnish.com</p>
+          </footer>
+
 
 </section>
 
@@ -415,7 +419,7 @@
 
 
 
-    </section>
+  
 
 
 
@@ -429,7 +433,7 @@
     
 
        
-<!----end of cart it-->
+
 
 
 <!-----ADDED TO WISHLIST ALERT----->
