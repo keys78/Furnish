@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Furnish.com</title>
+
+       <!-- Latest compiled and minified CSS -->
+       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Othercart.css" />
+    <link rel="stylesheet" href="Dashboard.css" />
+    <link rel="stylesheet" href="Navbar.scss" />
+    <link rel="stylesheet" href="Navbar.css" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="icon" href="/Images/fav.ico">
+  </head>
+  <style>
+      .sharp{
+        
+  box-shadow: 0 1px 1px rgba(0,0,0,0.25), 
+              0 2px 2px rgba(0,0,0,0.20), 
+              0 4px 4px rgba(0,0,0,0.15), 
+              0 8px 8px rgba(0,0,0,0.10),
+              0 16px 16px rgba(0,0,0,0.05);
+}
+      
+
+  </style>
+     
+  <body class="text-black">
+
+    
+
+   
+        <!------------stickyNAV--------------------->
+
+    <section class="w-full m-auto">
+
+
+        
+        <header class="flex chang justify-between items-center w-full h-16 m-auto lg:px-10 px-6 py-4">
+
+          <span class="sm:hidden block cursor-pointer text-white text-2xl hover:bg-gray-700 hover:text-red-500" onclick="openNav()">&#9776;</span>
+
+            <a href="Home.html"><div class="Logo sm:mt-1 mt-0 sm:-mt-0 -mt-2 sm:-ml-0 -ml-20">
+                <h1 class="sm:text-xl text-red-600"><i class="fab fa-accusoft"></i></h1>
+               <h1 class="logo sm:text-2xl text-xl text-white sm:-my-3 -my-2">furnish.</h1>
+              </div></a>
+
+          <div class="lg:w-2/12 sm:w-3/12 w-4/12 flex justify-between items-center">
+            
+            <h1 onclick="searcho()" class="sm:flex hidden cursor-pointer sm:text-xl text-red-500"><i class="fab fa-searchengin"></i></h1>
+            <div id="searching" class="serchbar block flex item-center absolute xl:right-96 lg:right-88 md:right-72 sm:right-56 right-44 top-4 sm:w-4/12 w-5/12 bg-black m-auto">
+              <input class="w-full rounded py-1 px-2 border border-current focus:outline-none" type="text" name="search" placeholder="search products">
+              <!-- <button class="py-2 px-2 hover:bg-red-500 text-sm pr-1 text-sms bg-gray-700 text-white">SEARCH</button> -->
+              </div>
+
+            <div id="line">
+              <h1 class="draw">
+                <a href="Accounts.html"><h1 class="hover hover-1 sm:text-lg mt-2 text-sm text-white cursor-pointer"><i class="far fa-user"></i> Hi, Irene</h1></a>
+              </h1>
+            </div>
+        
+            <div class="cart-btn mt-2">
+              <span class="nav-icon text-white ">
+                  <i class="cursor-pointer text-lg fas fa-cart-plus"></i>
+              </span>
+               <div class="cursor-pointer cart-items bg-red-500 px-1 text-xs rounded text-white absolute top-4 sm:right-8 right-2">0</div>
+          </div>
+
+        </div>
+        </header>
+         
+
+
+
+        <div id="mySidenav" class="mynav lg:hidden block dreamy">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Dashboard.html"><h1 class="border-b border-gray-300 pl-9 py-4 polo"><i class="pr-2 fas fa-tachometer-alt"></i>Dashboard</h1></a>
+            <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 fore"><i class="pr-2 far fa-user"></i>My Account</h1></a>
+            <a href="Order.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
+            <a href="Wishlist"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-heart"></i>Wishlist</h1></a>
+            <a href="Help.tml"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-question-circle"></i>Help</h1></a>
+            <a href="Login.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-sign-out-alt"></i>Log out</h1></a>
+            
+
+          <div class="nabfoot absolute bottom-0 right-16">
+            <h1 class="ml-14">
+            <i class="text-gray-700 hover:text-red-500 fab fa-twitter"></i>
+            <i class="text-gray-700 hover:text-red-500 fab fa-facebook"></i>
+            </h1>
+          <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+          </div>
+
+        </div>
+
+
+
+        
+        <section class="sidenav lg:block hidden dreamy">
+            <a href="Dashboard.html"><h1 class="border-b border-gray-300 pl-9 py-4 polo"><i class="pr-2 fas fa-tachometer-alt"></i>Dashboard</h1></a>
+            <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 fore"><i class="pr-2 far fa-user"></i>My Account</h1></a>
+            <a href="Order.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
+            <a href="Wishlist"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-heart"></i>Wishlist</h1></a>
+            <a href="Help.tml"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-question-circle"></i>Help</h1></a>
+            <a href="Login.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-sign-out-alt"></i>Log out</h1></a>
+            
+
+
+
+          <div class="nabfoot absolute bottom-0 right-16">
+            <h1 class="ml-14">
+            <i class="text-gray-700 hover:text-red-500 fab fa-twitter"></i>
+            <i class="text-gray-700 hover:text-red-500 fab fa-facebook"></i>
+            </h1>
+          <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+          </div>
+
+        </section>
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="main bg-gray-50 h-auto lg:ml-64 ml-0 pt-16 px-1">
+           
+
+          <div class="WELCOME py-2 bg-gray-50 sm:px-3 px-0 dreamy">
+
+
+            <div class="sm:hidden block flex rounded m-auto mt-1">
+              <input class="py-2 focus:outline-none px-2 w-full bg-transparent" type="text" name="search" placeholder="Search products">
+              <button class="py-3 rounded px-3 text-center hover:bg-red-500 text-sm pr-1 text-sms bg-gray-700 text-white">SEARCH</button>
+            </div>
+
+
+            <div class="lg:flex hidden flex justify-between items-center pt-2">
+              <p>Welcome!</p>
+              <a class="px-2 bg-red-500 hover:bg-gray-600 text-white cursor-pointer rounded py-1" href="Home.html"><p>Home</p></a>
+            </div>
+
+            <div class="lg:hidden sm:flex hidden flex justify-between items-center pt-2">
+              <a class="px-2 bg-red-500 hover:bg-gray-600 text-white cursor-pointer rounded py-1" href="Home.html"><p>Home</p></a>
+              <span class="cursor-pointer px-2 text-black text-2xl hover:bg-gray-700 hover:text-white" onclick="openNav()">&#9776;</span>
+            </div>
+
+          </div>
+          
+         
+          <!---------------Accounts Place------------------->
+
+          <div class="grid grid-cols-3 mt-6 w-10/12">
+
+            <div class=" w-8/12 ml-12">
+                <div class="text-center bg-white dreamy py-4 rounded-t-xl">
+                    <img class="ml-12 w-36 h-36 rounded-t-3xl rounded-b-3xl" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=707b9c33066bf8808c934c8ab394dff6">
+                    <p class="text-xl text-gray-600 ">Irene Hernanes</p>
+                    <h1 class="rounded-full w-7/12 m-auto text-white bg-red-500">
+                        <i class="-mt-2 text-xs ml-2 fas fa-wallet">Balance: 4,356 </i>
+                    </h1>
+                </div>
+
+                <div class="bg-gray-100 mt-1 py-6 sharp">
+                    <p class="mr-7 text text-base text-gray-600"><i class="mr-2 fas fa-street-view"></i>Uyo, Akwa Ibom</p>
+                    <p class="text-base text-gray-600"><i class="mr-2 my-3 far fa-envelope"></i>rahzy24@gmail.com</p>
+                    <p class="text-base text-gray-600"><i class="mr-2 fas fa-mobile-alt"></i>+234 0824 3267</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="">
+
+            </div>
+
+
+            <div class="">
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <!-------------------------------------FEATURED ITEMS------------------>
+         
+
+           
+          <footer class="bg-gray-400 w-full">
+            <p class="text-center text-white text-base py-1">www.furnish.com</p>
+          </footer>
+
+
+
+                <!----cart  -->
+                <div class="cart-overlay">
+                    <div class="cart">
+                        <span class="close-cart">
+                        <i class="fas fa-window-close"></i>
+                    </span>
+                    <h2 class="text-2xl font-semibold text-gray-700">Your Cart</h2>
+                    <div class="cart-content">
+                        <!--cart item-->
+                        <div class="cart-item">
+                        
+                    </div>
+                <!----end of cart item-->
+            </div>
+
+            <div class="cart-footer">
+                <h3>your total : $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Clear cart</button>
+                <a href="Checkout.html"><button  onclick="ala()" class="px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
+            </div>
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+
+
+  
+<script>
+    function searcho() {
+      var x = document.getElementById("searching");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+  
+
+
+
+
+<script>
+  $(".number").counterUp({time:2000});
+</script>
+
+
+
+   <script src="cart.js"></script>
+  </body>
+</html>
