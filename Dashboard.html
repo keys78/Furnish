@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Furnish.com</title>
+
+       <!-- Latest compiled and minified CSS -->
+       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Othercart.css" />
@@ -15,6 +21,10 @@
     <link rel="icon" href="/Images/fav.ico">
   </head>
   <style>
+    header{
+      z-index: 2;
+    }
+
   .change{
     background-image: linear-gradient(to right,black, red, black);
   }
@@ -29,16 +39,64 @@
     }
   
     .twoT{
-      background: #485563;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: linear-gradient(to left, #29323c, #485563);
     }
   
     .threeT{
       background: linear-gradient(to left, #93291E, #ED213A);
 
     }
+
+
+    
+
+.tooltip {
+    opacity: 0;
+    z-index: 99;
+    color: rgb(255, 255, 255);
+    width: 190px;
+    display: block;
+    font-size: 11px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #111;
+    background: rgba(156, 1, 1, 0.9);
+    border: 1px solid rgba(34,34,34,0.9);
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    position: absolute;
+    right: -80px;
+    bottom: 40px;
+}
+
+.tooltip:before,.tooltip:after {
+    content: '';
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid rgba(51,51,51,0.9);
+    position: absolute;
+    bottom: -10px;
+    left: 43%;
+}
+
+.tooltip-container:hover .tooltip,a:hover .tooltip {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
 
 
 
@@ -90,7 +148,7 @@ background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Fi
 
 
         
-        <section class="sidenav mt-8 ">
+        <section class="sidenav">
           <a href="Dashboard.html"><h1 class="mt-1 border-b border-gray-300 pl-9 py-4 bg-gray-200"><i class="pr-2 fas fa-tachometer-alt"></i>Dashboard</h1></a>
           <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 hover:bg-gray-200"><i class="pr-2 far fa-user"></i>My Account</h1></a>
           <a href="Order.html"><h1 class="pl-9 border-b border-gray-300 py-4 hover:bg-gray-200"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
@@ -144,21 +202,21 @@ background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Fi
               <p class="text-white text-xl pb-3">Wallet Balance</p>
               <div class="flex justify-between items-center text-white">
                 <i class="text-4xl fas fa-wallet"></i>
-                <h1 class="text-4xl">$4,352</h1>
+                <h1 class="text-4xl">$<span class="number">4,352</span></h1>
               </div>
             </div>
             <div class="twoT h-32 w-full px-8 pt-4">
               <p class="text-white text-xl pb-3">Total Orders</p>
               <div class="flex justify-between items-center text-white">
                 <i class="text-5xl fas fa-mail-bulk"></i>
-                <h1 class="text-4xl">162</h1>
+                <h1 class="number text-4xl">162</h1>
               </div>
             </div>
             <div class="threeT h-32 w-full px-8 pt-4">
               <p class="text-white text-xl pb-3">Shop Bonus</p>
               <div class="flex justify-between items-center text-white">
                 <i class="text-5xl fas fa-hand-holding-usd"></i>
-                <h1 class="text-4xl">$924</h1>
+                <h1 class="text-4xl">$<span class="number">924</span></h1>
               </div>
             </div>
             
@@ -246,16 +304,114 @@ background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Fi
 
 
             <!-----------VIEWWD-->
-            <div class="h-12 bg-blue-900 w-4/12 px-3">
-
-              <h1 class="text-white text-xl pt-2" >Recently viewed</h1>
+            <div class="w-4/12">
+              <h1 class="text-white text-xl bg-blue-900 px-3 py-2" >Recently viewed</h1>
               
 
+              <div class="flex justify-between items-center py-2 rounded px-2 mt-5 bg-white relative">
+                <img class="w-28 h-40" src="https://s7d5.scene7.com/is/image/Anthropologie/59737478_026_b?$a15-pdp-detail-shot$=&fit=constrain&fmt=webp&qlt=80&wid=720">
+
+                <div onclick="love();" id="heart" class="tooltip-container absolute top-1 right-2"><i class="text-red-500 cursor-pointer far fa-heart" aria-hidden="true"></i>
+                <span class="tooltip">Add to Wishlist</span>
+                </div>
+
+                <p>Pedruk Dresser</p>
+                <p>$206</p>
+
+              </div>
+
+              <div class="flex justify-between items-center py-2 rounded mt-1 px-2 bg-white relative">
+                <img class="w-28 h-40" src="https://s7d5.scene7.com/is/image/Anthropologie/47079223_018_b?$a15-pdp-detail-shot$=&fit=constrain&fmt=webp&qlt=80&wid=720">
+
+                <div onclick="love();" id="hear" class="tooltip-container absolute top-1 right-2"><i class="text-red-500 cursor-pointer far fa-heart" aria-hidden="true"></i>
+                <span class="tooltip">Add to Wishlist</span>
+                </div>
+
+                <p>Whitenbur</p>
+                <p>$1,206</p>
+
+              </div>
+              <div class="flex justify-between items-center py-2 rounded px-2 mt-1 bg-white relative">
+                <img class="w-30 h-40" src="https://s7d5.scene7.com/is/image/Anthropologie/60439593_097_b2?$an-category$&qlt=80&fit=constrain">
+
+                <div onclick="love();" id="hea" class="tooltip-container absolute top-1 right-2"><i class="text-red-500 cursor-pointer far fa-heart" aria-hidden="true"></i>
+                <span class="tooltip">Add to Wishlist</span>
+                </div>
+
+                <p>Whitenbur</p>
+                <p>$1,206</p>
+
+              </div>
+
+
+              <!--viewed-->
             </div>
             
 
 
+            <!--flex for view and hg-->
           </div>
+
+
+          <!-------------------------------------FEATURED ITEMS------------------>
+          <div class="w-11/12 m-auto mt-12">
+         
+          </div>
+
+           <!--products -->
+           <section class="products">
+            <div class="WELCOME h-12 bg-gray-50 px-3 laco mb-4">
+              <p class="text-2xl text-gray-700">Featured Items</p>
+            </div>
+            <div class="products-center">
+                <!-- single product  -->
+                <!----end of single product  -->
+            </div>
+
+            <div class="flex justify-between py-12">
+            <p class="bg-transparent">.</p>
+            <a href="sectionalscart.html"><button class="cursor-pointer focus:outline-none px-2 py-1 hover:bg-gray-500 bg-red-600 text-white">Load more</button></a>
+            </section>
+
+            <!--end of products-->
+
+
+                <!----cart  -->
+                <div class="cart-overlay">
+                    <div class="cart">
+                        <span class="close-cart">
+                        <i class="fas fa-window-close"></i>
+                    </span>
+                    <h2 class="text-2xl font-semibold text-gray-700">Your Cart</h2>
+                    <div class="cart-content">
+                        <!--cart item-->
+                        <div class="cart-item">
+                        
+                    </div>
+                <!----end of cart item-->
+            </div>
+
+            <div class="cart-footer">
+                <h3>your total : $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Clear cart</button>
+                <a href="Checkout.html"><button  onclick="ala()" class="px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
+            </div>
+
+        </div>
+        </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -270,48 +426,18 @@ background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Fi
 
 
 
-
-
-       <!----cart  -->
-       <div class="cart-overlay">
-        <div class="cart">
-
-      <div class="flex justify-between flex-row-reverse items-center">
-         <span class="close-cart">
-            <i class="fas fa-window-close"></i>
-        </span>
-
-        <div class="">
-          <div class="tooltip text-sm animate-pulse"><i class="text-xl text-red-500 hover:bg-gray-600 fas fa-info-circle"></i>
-            <span class="tooltiptext ">
-              <i class="text-yellow-500 text-xs mr-2 fas fa-exclamation-triangle"></i>
-              <p class="text-xs">You have to be on the products page or logged in to increase,
-                decrease or clear cart </p>
-            </span>
-          </div>
-         </div>
-      </div>
-
-        <h2 class="text-2xl font-semibold text-gray-700">Your Cart</h2>
-
-        <div class="cart-content text-black">
-            <!--cart item-->
-            <div class="cart-item text-black">
-            
-        </div>
     
-        
 
-<div class="cart-footer text-black">
-    <h3>your total : $ <span class="cart-total">0</span></h3>
-    <button class="focus:outline-none clear-cart banner-btn px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Clear cart</button>
-    <a href="Checkout.html"><button  onclick="ala()" class="focus:outline-none px-4 py-2 hover:bg-gray-500 bg-red-600 text-white">Checkout</button></a>
-</div>
+       
 <!----end of cart it-->
 
 
-
-
+<!-----ADDED TO WISHLIST ALERT----->
+<script>
+  function love(){
+    alert('Item Added To Wishlist')
+  }
+</script>
 
 <script>
   function searcho() {
@@ -323,6 +449,63 @@ background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Fi
     }
   }
   </script>
+
+
+<!--------------------LIKE AND UNLIKE--------------  -->
+  <script>
+    $(document).ready(function(){
+    $("#heart").click(function(){
+    if($("#heart").hasClass("liked")){
+      $("#heart").html('<i class="fa fa-heart-o" aria-hidden="true"></i>');
+      $("#heart").removeClass("liked");
+    }else{
+      $("#heart").html('<i class="fa fa-heart" aria-hidden="true"></i>');
+      $("#heart").addClass("liked");
+      }
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function(){
+    $("#hear").click(function(){
+    if($("#hear").hasClass("liked")){
+      $("#hear").html('<i class="fa fa-heart-o" aria-hidden="true"></i>');
+      $("#hear").removeClass("liked");
+    }else{
+      $("#hear").html('<i class="fa fa-heart" aria-hidden="true"></i>');
+      $("#hear").addClass("liked");
+      }
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function(){
+    $("#hea").click(function(){
+    if($("#hea").hasClass("liked")){
+      $("#hea").html('<i class="fa fa-heart-o" aria-hidden="true"></i>');
+      $("#hea").removeClass("liked");
+    }else{
+      $("#hea").html('<i class="fa fa-heart" aria-hidden="true"></i>');
+      $("#hea").addClass("liked");
+      }
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+<script>
+  $(".number").counterUp({time:1000});
+</script>
 
 
 
