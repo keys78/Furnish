@@ -46,7 +46,7 @@
         
         <header class="flex chang justify-between items-center w-full h-16 m-auto lg:px-10 px-6 py-4">
 
-          <span class="sm:hidden block cursor-pointer text-white text-2xl hover:bg-gray-700 hover:text-red-500" onclick="openNav()">&#9776;</span>
+          <span class="sm:hidden block px-2 cursor-pointer text-white text-2xl hover:bg-gray-700 hover:text-red-500" onclick="openNav()">&#9776;</span>
 
             <a href="Home.html"><div class="Logo sm:mt-1 mt-0 sm:-mt-0 -mt-2 sm:-ml-0 -ml-20">
                 <h1 class="sm:text-xl text-red-600"><i class="fab fa-accusoft"></i></h1>
@@ -86,6 +86,7 @@
             <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 fore"><i class="pr-2 far fa-user"></i>My Account</h1></a>
             <a href="Order.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
             <a href="Wishlist"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-heart"></i>Wishlist</h1></a>
+            <a href="Changepassword.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-lock"></i>Change password</h1></a>
             <a href="Help.tml"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-question-circle"></i>Help</h1></a>
             <a href="Login.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-sign-out-alt"></i>Log out</h1></a>
             
@@ -108,6 +109,7 @@
             <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 fore"><i class="pr-2 far fa-user"></i>My Account</h1></a>
             <a href="Order.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
             <a href="Wishlist"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-heart"></i>Wishlist</h1></a>
+            <a href="Changepassword.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-lock"></i>Change password</h1></a>
             <a href="Help.tml"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-question-circle"></i>Help</h1></a>
             <a href="Login.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-sign-out-alt"></i>Log out</h1></a>
             
@@ -153,7 +155,7 @@
 
 
             <div class="lg:flex hidden flex justify-between items-center pt-2">
-              <p>Welcome!</p>
+              <p>Update your account settings</p>
               <a class="px-2 bg-red-500 hover:bg-gray-600 text-white cursor-pointer rounded py-1" href="Home.html"><p>Home</p></a>
             </div>
 
@@ -167,21 +169,24 @@
          
           <!---------------Accounts Place------------------->
 
-          <div class="grid grid-cols-3 mt-6 w-10/12">
+          <div class="grid grid-cols-3 mt-6 xl:w-10/12 w-full m-auto gap-6">
 
-            <div class=" w-8/12 ml-12">
+            <div class="lg:col-span-1 col-span-3">
                 <div class="text-center bg-white dreamy py-4 rounded-t-xl">
-                    <img class="ml-12 w-36 h-36 rounded-t-3xl rounded-b-3xl" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=707b9c33066bf8808c934c8ab394dff6">
+                    <div class="flex items-center justify-between">
+                        <img class="w-36 h-36 rounded-t-3xl rounded-b-3xl" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=707b9c33066bf8808c934c8ab394dff6">
+                        <p><i class="cursor-pointer hover:text-red-500 far fa-edit"></i></p>
+                    </div>
                     <p class="text-xl text-black my-3 font-medium">Irene Hernanes</p>
                     <h1 class="rounded-full w-7/12 m-auto text-white bg-red-500">
-                        <p><i class="text-xs py-1 mr-1 fas fa-wallet"></i>Balance: 4,356 </p>
+                        <p><i class="text-xs py-1 mr-1 fas fa-wallet"></i>Balance: $4,356 </p>
                     </h1>
                 </div>
 
                 <div class="bg-gray-50 py-6 sharp">
-                    <p class="ml-8 text text-base text-gray-600"><i class="mr-2 fas fa-street-view"></i>Uyo, Akwa Ibom</p>
-                    <p class="ml-8 text-base text-gray-600"><i class="mr-2 my-3 far fa-envelope"></i>rahzy24@gmail.com</p>
-                    <p class="ml-8 text-base text-gray-600"><i class="mr-2 fas fa-mobile-alt"></i>+234 0824 3267</p>
+                    <p class="ml-20 text text-base text-gray-600"><i class="mr-2 fas fa-street-view"></i>Uyo, Akwa Ibom</p>
+                    <p class="ml-20 text-base text-gray-600"><i class="mr-2 my-3 far fa-envelope"></i>rahzy24@gmail.com</p>
+                    <p class="ml-20 text-base text-gray-600"><i class="mr-2 fas fa-mobile-alt"></i>+234 0824 3267</p>
 
                 </div>
 
@@ -265,12 +270,12 @@
                         <p><i class="cursor-pointer hover:text-red-500 far fa-edit"></i></p>
                     </h1>
 
-                    <img src="./Images/visaimg.png" alt="bank card png">
+                    <img class="mt-4" src="./Images/visaimg.png" alt="bank card png">
                    
                 </div>
 
 
-                <div class="sharp p-6">
+                <div class="sharp p-6 mt-5">
 
                     <h1 class="flex justify-between items-center mt-4">
                         <p>Card Type</p>
@@ -311,16 +316,19 @@
 
 
 
-          <div class="w-10/12 m-auto">
-            <p class="font-medium">NEWSLETTER</p>
+
+
+
+          <div class="w-10/12 m-auto sharp p-6 my-6">
+            <p class="font-medium border-b border-current pb-2">NEWSLETTER</p>
             <p>Subscription:None</p>
             <p>Subscribe to our newsletter and be the first to know about our lastest promotions
                 and update
             </p>
 
             <div class="flex justify-between items-center">
-             <p>.</p>
-            <button class="px-2 py-2 bg-red-500 focus:outline-none hover:bg-gray-600">SUBSCRIBE</button>
+             <p class="text-gray-100">.</p>
+            <button class="px-2 py-1 text-white rounded bg-red-500 focus:outline-none hover:bg-gray-600">SUBSCRIBE</button>
             </div>
           </div>
 
