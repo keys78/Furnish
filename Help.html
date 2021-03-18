@@ -29,6 +29,17 @@
                     0 8px 8px rgba(0,0,0,0.10),
                     0 16px 16px rgba(0,0,0,0.05);
       }
+
+      .rotate{
+        transition:transform .4s ease-in-out;
+      }
+      .rotate:hover{
+        transition:transform .4s ease-in-out;
+        transform: rotate(180deg);
+        transition-delay: 1s;
+      }
+      
+     
   </style>
      
   <body class="text-black">
@@ -56,7 +67,7 @@
             <h1 onclick="searcho()" class="sm:flex hidden cursor-pointer sm:text-xl text-red-500"><i class="fab fa-searchengin"></i></h1>
             <div id="searching" class="serchbar block flex item-center absolute xl:right-96 lg:right-88 md:right-72 sm:right-56 right-44 top-4 sm:w-4/12 w-5/12 bg-black m-auto">
               <input class="w-full rounded py-1 px-2 border border-current focus:outline-none" type="text" name="search" placeholder="search products">
-              <!-- <button class="py-2 px-2 hover:bg-red-500 text-sm pr-1 text-sms bg-gray-700 text-white">SEARCH</button> -->
+              
               </div>
 
             <div id="line">
@@ -75,12 +86,7 @@
         </div>
         </header>
 
-        <!-- <h1 class="sm:hidden block mt-20 cursor-pointer sm:text-xl text-red-500"><i class="fab fa-searchengin"></i></h1>
-        <div  class="serchbar block flex item-center absolute xl:right-96 lg:right-88 md:right-72 sm:right-56 right-44 top-4  w-9/12 bg-black m-auto">
-          <input class="w-full rounded py-1 px-2 border border-current focus:outline-none" type="text" name="search" placeholder="search products">
-          <button class="py-2 px-2 hover:bg-red-500 text-sm pr-1 text-sms bg-gray-700 text-white">SEARCH</button> -->
-    
-         
+       
 
 
 
@@ -147,7 +153,7 @@
 
 
 
-        <section class="main bg-white h-auto lg:ml-64 ml-0 pt-16 px-1">
+        <section class="main bg-white h-screen lg:ml-64 ml-0 pt-16 px-1">
 
 
           <div class="WELCOME py-2 bg-gray-50 sm:px-3 px-0 dreamy mt-4 border border-gray-300">
@@ -159,7 +165,7 @@
 
 
             <div class="lg:flex hidden flex justify-between items-center pt-2">
-              <p>Welcome!</p>
+              <p>Need a problem solved?</p>
               <a class="px-2 bg-red-500 hover:bg-gray-600 text-white cursor-pointer rounded py-1" href="Home.html"><p>Home</p></a>
             </div>
 
@@ -175,44 +181,55 @@
           <!--------------HELP---------------------->
          
           
-          <img class="lg:h-40 lg:w-40 sm:h-20 sm:w-20 h-16 w-16 absolute top-24 right-12" src="https://thumbs.gfycat.com/TerribleElasticIndiancow-max-1mb.gif">
+          <img class="lg:h-40 lg:w-40 sm:h-20 sm:w-20 h-16 w-16 absolute sm:top-24 top-28 sm:right-12 right:6" src="https://thumbs.gfycat.com/TerribleElasticIndiancow-max-1mb.gif">
 
 
-          <div class="w-7/12 m-auto">
+        <div class="md:w-7/12 w-11/12 m-auto mt-24">
         
-        <div id="Help1" class="py-1 bg-gray-600 hover-bg-gray-400 text-white px-2 text-xl">Fix a problem</div>
-        
-        <div id="Help11">
-             <li class="cursor-pointer ml-3 hover:text-red-500 text-gray-700">Fix upload problem</li>
-             <li class="cursor-pointer ml-3 hover:text-red-500 text-gray-700">Fix refund request issue</li>
-             <li class="cursor-pointer ml-3 hover:text-red-500 text-gray-700">Fix Lorem Ipsum</li>
-             <li class="cursor-pointer ml-3 hover:text-red-500 text-gray-700">Catch a bug</li>
-        </div>
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            <div id="Help1" class="flex justify-between items-center py-2 bg-gray-100 hover:bg-gray-200 text-white px-2 text-xl">
+                <div class="text-black">Fix a problem</div>
+                <h1><i class="rotate text-xl text-white fas fa-chevron-down"></i></h1>
+            </div>
+            <div class="" id="Help11"style="display:none;">
+                <li class="cursor-pointer ml-3 hover:text-yellow-500 text-gray-700">Fix upload problem</li>
+                <li class="cursor-pointer ml-3 hover:text-yellow-500 text-gray-700">Fix refund request issue</li>
+                <li class="cursor-pointer ml-3 hover:text-yellow-500 text-gray-700">Fix Lorem Ipsum</li>
+                <li class="cursor-pointer ml-3 hover:text-yellow-500 text-gray-700">Catch a bug</li>
+            </div>
+
+            <div id="Help2" class="mt-6 flex justify-between items-center py-2 bg-gray-100 hover:bg-gray-200 text-white px-2 text-xl">
+                <div  class="text-black">Manage Accounts and Settings</div>
+                <h1><i class="rotate text-xl text-white fas fa-chevron-down"></i></h1>
+            </div>
+            <div id="Help22"style="display:none;">
+                <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Payment gateway problems</li>
+                <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Refferal non compliance</li>
+                <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Lorem Ipsum</li>
+                <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Catch a bug</li>
+            </div>
+
+            <div id="Help3" class="mt-6 flex justify-between items-center py-2 bg-gray-100 hover:bg-gray-200 text-white px-2 text-xl">
+                <div  class="text-black">Policies, Theft and Copyrights</div>
+                <h1><i class="rotate text-xl text-white fas fa-chevron-down"></i></h1>
+            </div>
+            <div id="Help33"style="display:none;">
+                <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Our Terms and conditions</li>
+                    <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Infringment on copyright</li>
+                    <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Lorem Ipsum</li>
+                    <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Catch a bug</li>
+            </div>
+
+            <div id="Help4" class="mt-6 flex justify-between items-center py-2 bg-gray-100 hover:bg-gray-200 text-white px-2 text-xl">
+                <div  class="text-black">Bonus and Gift Claims</div>
+                <h1><i class="rotate text-xl text-white fas fa-chevron-down"></i></h1>
+            </div>
+            <div id="Help44"style="display:none;">
+                <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Lorem Ipsum</li>
+                    <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Lorem Ipsum</li>
+                    <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Lorem Ipsum</li>
+                    <li class="cursor-pointer hover:text-yellow-500 ml-3 text-gray-700">Catch a bug</li>
+            </div>
+            
         
         
         
@@ -286,8 +303,6 @@
   }
   </script>
 
-
-
 <script>
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
@@ -298,6 +313,8 @@
   }
   </script>
 
+
+<!---------------------TOGGLE JSs----------------------->
 <script> 
     $(document).ready(function(){
     $("#Help1").click(function(){
@@ -306,6 +323,30 @@
     });
 </script>
 
+<script>
+ $(document).ready(function(){
+    $("#Help2").click(function(){
+        $("#Help22").slideToggle("fast");
+    });
+    });
+</script>
+
+
+<script>
+ $(document).ready(function(){
+    $("#Help3").click(function(){
+        $("#Help33").slideToggle("fast");
+    });
+    });
+</script>
+
+<script>
+ $(document).ready(function(){
+    $("#Help4").click(function(){
+        $("#Help44").slideToggle("fast");
+    });
+    });
+</script>
 
    <script src="cart.js"></script>
   </body>
