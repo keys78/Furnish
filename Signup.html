@@ -21,7 +21,7 @@
     html {
 	height: 100%;
 	width: 100%;
-	background-image:url('./Images/C2.jpg');
+	background-image:url('https://images.pexels.com/photos/2923034/pexels-photo-2923034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 	background-repeat: repeat-x;
 	background-position: 0 20%;
 	background-size: 2000px;
@@ -87,19 +87,172 @@
   }
 }
 
+
+
+
+
+.regis{
+        font-family:Roos St Regis Display;
+      }
+              
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color:rgb(0, 0, 0);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s; 
+    text-align: center;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+    padding-left:20px;
+
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .sidenav .closebtn:hover{
+    color:red;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  header{
+        position: fixed;
+        top:0;
+        left:0;
+        transition: 0.6s;
+    }
+
+    header .logo{
+        position: relative;
+        transition: 0.6s;
+       
+    }
+    .navbi{
+        position: relative;
+        transition: 0.6s;
+    }
+
+    header.sticky{
+        padding: 4px 30px;
+        background:rgba(0, 0, 0, 0.753);
+        z-index: 1;
+    }
+    header.logo,
+    header.sticky {
+        color:rgb(207, 13, 13);
+    }
+
+    .shadowi{
+      box-shadow:
+                5px 5px 15px  rgba(0, 0, 0, 0.3),
+                -5px -5px 15px  rgba(0,0,0,0.1);
+    }
+
+
+
   </style>
 
 
 <body>
 
 
-    <section class="h-screen mb-40 w-full bg-black opacity-40 ">
+    <!------------stickyNAV--------------------->
+<div id="mySidenav" class="sidenav">
+         
+    <div class="flex justify-between">
+      <h1><a class="-mt-14" href="Home.html"><div class="Logo sm:mt-1 mt-2">
+        <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+       <h1 class="logo sm:text-2xl text-base text-gray-400 sm:-my-3 -my-2">furnish.</h1>
+      </div></a></h1>
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+
+    <div class="mt-36">
+      <a class="bnav hover:text-red-500" href="Home.html">Home</a>
+      <a class="bnav" href="Cart.html">Products</a>
+      <a class="bnav" href="Blog.html">Blog</a>
+      <a class="bnav" href="About.html">About</a>
+    </div>
+
+    <div class="nabfoot absolute bottom-0 right-16 text-center">
+      <h1 class="flex"></h1>
+      <i class="text-gray-700 hover:text-white fab fa-twitter"></i>
+      <i class="text-gray-700 hover:text-white fab fa-facebook"></i>
+    </h1>
+    <p class="text-gray-700">seismic ideas | &copy; 2021</p>
+    </div>
+
+
+      <ul class="cube-effect " style="z-index: -1;">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+   </ul>
+
+
+    
+  </div>
+   
+
+
+
+
+
+
+
+    <section class="h-screen mb-40 w-full bg-black opacity-10 ">
         <div class="lg:w-full sm:w-9/12 w-7/12 ">
 
         </div>
     </section>
     <!--Holders-->
     
+
+
+    <header class="flex justify-between items-center w-full m-auto lg:px-10 px-3 py-4 absolute top-2">
+
+        <a href="Home.html"><div class="Logo pr-5 sm:mt-1 mt-2">
+            <h1 class="sm:text-xl text-base text-red-600"><i class="fab fa-accusoft"></i></h1>
+           <h1 class="logo sm:text-2xl text-base text-white sm:-my-3 -my-2">furnish.</h1>
+          </div></a>
+  
+            <span class="navbi mt-2 cursor-pointer md:text-2xl text-xl hover:text-red-500" onclick="openNav()">&#9776;</span>
+  
+  
+    </header>
+
+
 
     <div class="login-div shadow h-auto lg:w-3/12 md:w-6/12 sm:w-8/12 w-10/12 m-auto">
 
@@ -174,6 +327,27 @@
         </div>
 
     </div>
+
+
+
+
+
+
+    
+    <script>
+        function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+        }
+        
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+        
+
+
+
+
 
      
        <script>
