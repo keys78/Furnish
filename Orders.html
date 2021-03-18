@@ -83,8 +83,8 @@
         <div id="mySidenav" class="mynav lg:hidden block dreamy">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="Dashboard.html"><h1 class="border-b border-gray-300 pl-9 py-4 polo"><i class="pr-2 fas fa-tachometer-alt"></i>Dashboard</h1></a>
-            <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 fore"><i class="pr-2 far fa-user"></i>My Account</h1></a>
-            <a href="Orders.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
+            <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-user"></i>My Account</h1></a>
+            <a href="Orders.html"><h1 class="pl-9 border-b border-gray-300 py-4 fore"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
             <a href="Wishlist"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-heart"></i>Wishlist</h1></a>
             <a href="Changepassword.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-lock"></i>Change password</h1></a>
             <a href="Help.tml"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-question-circle"></i>Help</h1></a>
@@ -106,8 +106,8 @@
         
         <section class="sidenav lg:block hidden dreamy">
             <a href="Dashboard.html"><h1 class="border-b border-gray-300 pl-9 py-4 polo"><i class="pr-2 fas fa-tachometer-alt"></i>Dashboard</h1></a>
-            <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 fore"><i class="pr-2 far fa-user"></i>My Account</h1></a>
-            <a href="Orders.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
+            <a href="Accounts.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-user"></i>My Account</h1></a>
+            <a href="Orders.html"><h1 class="pl-9 border-b border-gray-300 py-4 fore"><i class="pr-2 fas fa-couch"></i>Orders</h1></a>
             <a href="Wishlist"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-heart"></i>Wishlist</h1></a>
             <a href="Changepassword.html"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 fas fa-lock"></i>Change password</h1></a>
             <a href="Help.tml"><h1 class="pl-9 border-b border-gray-300 py-4 polo"><i class="pr-2 far fa-question-circle"></i>Help</h1></a>
@@ -150,12 +150,11 @@
 
             <div class="sm:hidden block flex rounded m-auto">
               <input class=" focus:outline-none px-2 w-full bg-transparent" type="text" name="search" placeholder="Search products">
-              <!-- <button class="py-3 rounded px-3 text-center hover:bg-red-500 text-sm pr-1 text-sms bg-gray-700 text-white">SEARCH</button> -->
             </div>
 
 
             <div class="lg:flex hidden flex justify-between items-center pt-2">
-              <p>Update your account settings</p>
+              <p>Track your orders</p>
               <a class="px-2 bg-red-500 hover:bg-gray-600 text-white cursor-pointer rounded py-1" href="Home.html"><p>Home</p></a>
             </div>
 
@@ -167,192 +166,132 @@
           </div>
           
          
-          <!---------------Accounts Place------------------->
+          <!---------------ORDERS-------------------------------->
 
-          <div class="flex justify-between items-start lg:flex-row flex-col mt-6 xl:w-10/12 w-full m-auto gap-6">
+          
+          <div class="ORDErS rounded sharp lg:w-11/12 w-full m-auto mt-10 bg-gray-50">
 
-            <div class=" lg:w-4/12 w-full m-auto">
-                <div class="bg-white dreamy py-4 rounded-t-xl p-6">
-                    <div class="flex items-center justify-between">
-                        <img class="w-36 h-36 rounded-t-3xl rounded-b-3xl" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=707b9c33066bf8808c934c8ab394dff6">
-                        <p><i class="cursor-pointer hover:text-red-500 far fa-edit"></i></p>
+            <div class="containnner w-11/12 m-auto">
+    
+               
+    
+                <div class="ordersID grid sm:grid-cols-4 grid-cols-3 py-6">
+    
+                    <div class="sm:w-11/12 w-full h-8 sm:py-1 py-0 px6 rounded-full bg-gray-400 flex justify-around items-center">
+                    <span class="sm:text-lg text-base">Order</span><span class="sm:text-lg text-base">#G05</span>
                     </div>
-                    <p class="text-xl text-black my-3 font-medium">Irene Hernanes</p>
-                    <h1 class="rounded-full xl:w-7/12 lg:w-8/12 md:w-3/12 w-6/12 text-center text-white bg-red-500">
-                        <p><i class="text-xs py-1 mr-1 fas fa-wallet"></i>Balance: $4,352 </p>
-                    </h1>
+    
+                    <p class="text-gray-600 sm:col-span-2 col-span-1 sm:ml-0 ml-4">Order placed Thu, 18th March 2021</p>
+    
+                    <a href="https://www.wpcargo.com/"target="_blank"><p class="ml-20 hover:text-red-500"><i class="fas fa-map-pin pr-1"></i>TRACK</p></a>
                 </div>
-
-                <div class="bg-gray-50 py-6 sharp">
-                    <p class="xl:ml-16 lg:ml-12 ml-6 text text-base text-gray-600"><i class="mr-2 fas fa-street-view"></i>Uyo, Akwa Ibom</p>
-                    <p class="xl:ml-16 lg:ml-12 ml-6 text-base text-gray-600"><i class="mr-2 my-3 far fa-envelope"></i>rahzy24@gmail.com</p>
-                    <p class="xl:ml-16 lg:ml-12 ml-6 text-base text-gray-600"><i class="mr-2 fas fa-mobile-alt"></i>+234 0824 3267</p>
-
+    
+                <div class="DIVIDE border-b border-gray-300"></div>
+    
+                <div class="MAINORDER grid sm:grid-cols-4 grid-cols-1 py-6">
+    
+                    <div class="col-span-2 flex justify-between items-start sm:mb-0 mb-6" >
+                        <img class="w-6/12" src="https://s7d5.scene7.com/is/image/Anthropologie/43791797-2100-VE0030-WLAN-AB_b2?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                        
+                        <div class="w-6/12 ml-4">
+                            <p class="text-xl font-bold text-gray-700 pb-8">Lamar Cushion</p>
+                            <p>Size:L Qty:2 </p>
+                            <h1 class="text-red-500">$2700</h1>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <p class="sm:text-lg text-xs text-gray-600">Status</p>
+                        <h1 class="bg-gray-200 py-1 px-6 text-white lg:w-7/12 w-10/12 rounded">Pending...</h1>
+                    </div>
+    
+                    <div class="">
+                        <p class="sm:text-lg text-xs text-gray-600">Delivery expected by</p>
+                        <h1 class="font-semibold">Thursday 18th March, 2021</h1>
+                        <h2>1300 Hours</h2>
+    
+                    </div>
+    
                 </div>
-
+    
+               
+    
+                <!--contain-->
             </div>
-
-
-            <div class="lg:w-4/12 w-full m-auto">
-                <div class="sharp p-6 mb-4">
-                    <h1 class="flex justify-between items-center">
-                        <p class="font-medium text-xl">Account Details</p>
-                        <p><i class="cursor-pointer hover:text-red-500 far fa-edit"></i></p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-4">
-                        <p>First Name</p>
-                        <p class="font-medium">Irene</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>Last Name</p>
-                        <p class="font-medium">Hernanes</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>Date Of Birth</p>
-                        <p class="font-medium">12 July, 1990</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>Gender</p>
-                        <p class="font-medium">Female</p>
-                    </h1>
-
-                </div>
-                <!--second-->
-                <div class="sharp p-6">
-                    <h1 class="flex justify-between items-center">
-                        <p class="font-medium text-xl">Shipping Address</p>
-                        <p><i class="cursor-pointer hover:text-red-500 far fa-edit"></i></p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-4">
-                        <p>Address</p>
-                        <p class="font-medium">4lane, Old GRA</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>City</p>
-                        <p class="font-medium">Port Harcourt</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>Country</p>
-                        <p class="font-medium">Nigeria</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>State</p>
-                        <p class="font-medium">Rivers</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>Zip Code</p>
-                        <p class="font-medium">100010</p>
-                    </h1>
-
-                </div>
-
-                <!--end of second-->
+    
+            <div class="DIVIDE border-b border-gray-300"></div>
+    
+            <div class="CANCEL flex justify-between items-center py-4">
+                <h1 class=" lg:text-lg md:text-base text-sm cursor-pointer ml-6 bg-gray-600 text-white hover:bg-gray-800 border rounded border-gray-600 sm:py-1 py-0 px-2">x CANCEL ORDER</h1>
+                <p class="mr-6 text-blue-300 sm:text-lg text-xs">Paid with VISA</p>
             </div>
+    
+            <!--0rders-->
+        </div>
+    
+        
 
 
+          <div class="ORDErS rounded sharp lg:w-11/12 w-full m-auto mt-10 bg-gray-50">
 
-
-
-            <div class="lg:w-4/12 w-full m-auto">
-
-                <div class="sharp pt-5 px-6 pb-6">
-                    <h1 class="flex justify-between items-center">
-                        <p class="font-medium text-xl">Payment Method</p>
-                        <p><i class="cursor-pointer hover:text-red-500 far fa-edit"></i></p>
-                    </h1>
-
-                    <img class="mt-4" src="./Images/visaimg.png" alt="bank card png">
-                   
+            <div class="containnner w-11/12 m-auto">
+    
+               
+    
+                <div class="ordersID grid sm:grid-cols-4 grid-cols-3 py-6">
+    
+                    <div class="sm:w-11/12 w-full h-8 sm:py-1 py-0 px6 rounded-full bg-gray-400 flex justify-around items-center">
+                    <span class="sm:text-lg text-base">Order</span><span class="sm:text-lg text-base">#G05</span>
+                    </div>
+    
+                    <p class="text-gray-600 sm:col-span-2 col-span-1 sm:ml-0 ml-4">Order placed Thu, 18th March 2021</p>
+    
+                    <a href="https://www.wpcargo.com/"target="_blank"><p class="ml-20 hover:text-red-500"><i class="fas fa-map-pin pr-1"></i>TRACK</p></a>
                 </div>
-
-
-                <div class="sharp p-6 mt-5">
-
-                    <h1 class="flex justify-between items-center mt-4">
-                        <p>Card Type</p>
-                        <p class="font-medium">VISA</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>Card Holder</p>
-                        <p class="font-medium">Abimbola Ada Aisha</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>Expire</p>
-                        <p class="font-medium">06/18</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>Card Number</p>
-                        <p class="font-medium">4000 1111 1111</p>
-                    </h1>
-
-                    <h1 class="flex justify-between items-center mt-2">
-                        <p>Balance</p>
-                        <p class="font-medium">$XXX,XXX</p>
-                    </h1>
-
+    
+                <div class="DIVIDE border-b border-gray-300"></div>
+    
+                <div class="MAINORDER grid sm:grid-cols-4 grid-cols-1 py-6">
+    
+                    <div class="col-span-2 flex justify-between items-start sm:mb-0 mb-6" >
+                        <img class="w-6/12" src="https://s7d5.scene7.com/is/image/Anthropologie/43791797-2100-VE0030-WLAN-AB_b2?$a15-mto-carousel$&hei=640&qlt=80&fit=constrain">
+                        
+                        <div class="w-6/12 ml-4">
+                            <p class="text-xl font-bold text-gray-700 pb-8">Lamar Cushion</p>
+                            <p>Size:L Qty:2 </p>
+                            <h1 class="text-red-500">$2700</h1>
+                        </div>
+                    </div>
+    
+                    <div class="">
+                        <p class="sm:text-lg text-xs text-gray-600">Status</p>
+                        <h1 class="bg-gray-200 py-1 px-6 text-white lg:w-7/12 w-10/12 rounded">Pending...</h1>
+                    </div>
+    
+                    <div class="">
+                        <p class="sm:text-lg text-xs text-gray-600">Delivery expected by</p>
+                        <h1 class="font-semibold">Thursday 18th March, 2021</h1>
+                        <h2>1300 Hours</h2>
+    
+                    </div>
+    
                 </div>
-
+    
+               
+    
+                <!--contain-->
             </div>
-
-
-
-
-
-
-            <!--Cont Oga-->
-          </div>
-
-
-
-
-
-
-          <div class="lg:w-10/12 w-full m-auto sharp p-6 my-6">
-            <p class="font-medium border-b border-current pb-2">NEWSLETTER</p>
-            <p>Subscription:None</p>
-            <p>Subscribe to our newsletter and be the first to know about our lastest promotions
-                and update
-            </p>
-
-            <div class="flex justify-between items-center">
-             <p class="text-gray-100">.</p>
-            <button class="px-2 py-1 text-white rounded bg-red-500 focus:outline-none hover:bg-gray-600">SUBSCRIBE</button>
+    
+            <div class="DIVIDE border-b border-gray-300"></div>
+    
+            <div class="CANCEL flex justify-between items-center py-4">
+                <h1 class=" lg:text-lg md:text-base text-sm cursor-pointer ml-6 bg-gray-600 text-white hover:bg-gray-800 border rounded border-gray-600 sm:py-1 py-0 px-2">x CANCEL ORDER</h1>
+                <p class="mr-6 text-blue-300 sm:text-lg text-xs">Paid with VISA</p>
             </div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
+            <!--0rders-->
+        </div>
+    
 
 
           <!-------------------------------------FEATURED ITEMS------------------>
