@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200&family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
     <link rel="icon" href="/Images/fav.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <style>
       .regis{
@@ -97,13 +98,27 @@
     }
 
 
+    .slide-top {
+	        -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(-100px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
 
      
   </style>
   <body>
 
-    <!-- style="background-image:url('./Images/sideb.jpg')" -->
+    
         <!------------stickyNAV--------------------->
         <div id="mySidenav" class="sidenav">
          
@@ -185,16 +200,16 @@
     <section class="pt-20 md:h-96 cover center"style="background-image:url('./Blogimages/blonew.jpg')">
 
 
-        <h1 class="w-10/12 m-auto sm:text-5xl text-4xl regis pt-10">Welcome to <span class="text-red-500">Furnish.</span> Blog</h1>
+        <h1 class="w-10/12 m-auto sm:text-5xl text-4xl regis pt-10"data-aos="fade-right">Welcome to <span class="text-red-500">Furnish.</span> Blog</h1>
 
         <div class="w-10/12 m-auto md:flex-row flex-col flex justify-between items-start pt-12 md:gap-12 gap-2">
 
-            <h2 class="md:w-6/12">Explore the lastest trends in home decor, quality furnitures and the best of home styling Inspiration. Lets rol11
+            <h2 class="md:w-6/12"data-aos="fade-right">Explore the lastest trends in home decor, quality furnitures and the best of home styling Inspiration. Lets rol11
                 laborum asperiores <span class="md:inline hidden">adipisci quod itaque excepturi numquam nemo voluptas
                 met consectetur adipisicing elit.</span>
             </h2>
 
-            <h1 class="md:w-6/12 md:pb-0 pb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
+            <h1 class="md:w-6/12 md:pb-0 pb-8"data-aos="fade-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
                  ri numquam nemo voluptas Temporibus <span class="md:inline hidden">laborum asperiores adipisci quod itaque exceptu
                   est dolor iste natus error facere dicta eveniet, cupiditate minus id et?</span></h1>
 
@@ -204,7 +219,7 @@
 
     <!------------------------WELCOME TEXT------------------->
 
-    <h1 class="w-10/12 m-auto text-gray-700 pt-16 py-4">Welcome to our blog where we help you with day to day furniture care,
+    <h1 class="w-10/12 m-auto text-gray-700 pt-16 py-4"data-aos="fade-up">Welcome to our blog where we help you with day to day furniture care,
          discuss design ideas and latest trends, and speak about the latest design trends. 
          We also discuss how the right decision for buying furniture can lead to an overall improvement
           in your lifestyle and ofcourse, make your home look beautiful. We focus on furniture for all rooms
@@ -260,7 +275,7 @@
 
  <!---------------------------------POSTS AREA-------------------->
 
-  <section id="div1" class="targetDiv">
+  <section id="div1" class="targetDiv"data-aos="fade-up">
 
        <section class="pb-28">
 
@@ -284,7 +299,7 @@
 
 
 
-             <div class="FLRHOLSER lg:w-7/12 w-full">
+             <div class="FLRHOLSER lg:w-7/12 w-full"data-aos="fade-up">
 
 
                 <div class="questions shadowi -mt-0 rounded border border-gray-700 px-2 py-1 mb-2 text-black m-auto">
@@ -349,7 +364,7 @@
           
                       </div>
                      
-                      <div class="question-text pt-2 border-t border-red-400 opacity-90">
+                      <div class="question-text pt-2 border-t border-red-400 opacity-90"data-aos="fade-up">
                          
                               
                         <a href="404.html"><h1 class=" mb-2  text-black text-sm hover:text-red-700 cursor-pointer">Home Improvement</h1></a>
@@ -394,7 +409,7 @@
             <div class="CONT w-10/12 m-auto grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-12">
 
 
-                <div class="">
+                <div class=""data-aos="fade-up">
                     <img class="" src="https://images.pexels.com/photos/4506109/pexels-photo-4506109.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
                     
                     <div class="text-gray-700">
@@ -408,7 +423,7 @@
 
                 </div>
 
-                <div class="">
+                <div class=""data-aos="fade-up">
                     <img class="" src="https://images.pexels.com/photos/6297086/pexels-photo-6297086.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                     
                     <div class="text-gray-700">
@@ -422,7 +437,7 @@
 
                 </div>
 
-                <div class="gap-3 ">
+                <div class="gap-3 "data-aos="fade-up">
                     <img class="" src="https://images.pexels.com/photos/6301179/pexels-photo-6301179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
                     
                     <div class="text-gray-700">
@@ -438,7 +453,7 @@
 
 
 
-                <div class="gap-3 ">
+                <div class="gap-3 "data-aos="fade-up">
                     <img class="" src="https://images.pexels.com/photos/6297091/pexels-photo-6297091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
                     
                     <div class="text-gray-700">
@@ -454,7 +469,7 @@
 
 
 
-                <div class="gap-3 ">
+                <div class="gap-3 "data-aos="fade-up">
                     <img class="" src="https://images.pexels.com/photos/6207497/pexels-photo-6207497.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                     
                     <div class="text-gray-700">
@@ -470,7 +485,7 @@
 
 
 
-                <div class="gap-3 ">
+                <div class="gap-3 "data-aos="fade-up">
                     <img class="" src="https://images.pexels.com/photos/276651/pexels-photo-276651.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                     
                     <div class="text-gray-700">
@@ -486,7 +501,7 @@
 
 
 
-                <div class="gap-3 ">
+                <div class="gap-3 "data-aos="fade-up">
                     <img class="" src="https://images.pexels.com/photos/3920847/pexels-photo-3920847.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
                     
                     <div class="text-gray-700">
@@ -502,7 +517,7 @@
 
 
 
-                <div class="gap-3 ">
+                <div class="gap-3 "data-aos="fade-up">
                     <img class="" src="https://images.pexels.com/photos/3808819/pexels-photo-3808819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="images of perdom">
                     
                     <div class="text-gray-700">
@@ -518,7 +533,7 @@
 
 
 
-                <div class="gap-3 ">
+                <div class="gap-3 "data-aos="fade-up">
                     <img class="" src="https://images.pexels.com/photos/4072687/pexels-photo-4072687.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
                     
                     <div class="text-gray-700">
@@ -1616,6 +1631,28 @@
       });
 });
       </script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="login.js"></script>
+    <script>
+        AOS.init({
+            offset: 100,
+            duration: 1500
+          
+        });
+      </script>
+
+      <script>
+        AOS.init({
+  disable: function() {
+    var maxWidth = 800;
+    return window.innerWidth < maxWidth;
+  }
+});
+      </script>
+
+      
 
      <script src="cart.js"></script>
   </body>
