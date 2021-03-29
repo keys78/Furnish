@@ -244,3 +244,9 @@ ui.setupAPP();
      ui.cartLogic()
     });
 });
+
+
+
+function sure(){
+    if(confirm("Are you sure"));
+} 
