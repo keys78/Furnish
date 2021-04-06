@@ -303,8 +303,8 @@
                 <input type="checkbox" value=""><span class="text-sm text-gray-300 ml-2">I agree to Furnish's T&C's</span>
             </div>
 
-            <div class="input-group full my-4">
-             <input class="py-2 w-full text-white bg-red-700 focus:outline-none hover:bg-red-600 cursor-pointer" type="submit" value="SIGN UP" class="submit-btn" />
+            <div class="input-group full my-4" id="mybtn">
+             <input class="py-2 w-full text-white bg-red-700 focus:outline-none hover:bg-red-600 cursor-pointer" type="submit" value="SIGN UP" class="submit-btn"  />
              <div class="clear"></div>
             </div>
 
@@ -456,7 +456,23 @@ toggleconPassword.addEventListener('click', function (e) {
 
 
 
+       <script>
+         
+const newinfo = document.querySelector('#firstname');
+const mybtn = document.querySelector('#mybtn');
 
+
+
+mybtn.addEventListener('click', addTo);
+
+function addTo() {
+
+  localStorage.setItem('name', newinfo.value);
+
+  console.log(localStorage.getItem('name'));
+
+} 
+       </script>
 
  
 </body>

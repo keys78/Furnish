@@ -59,7 +59,7 @@
 
             <div id="line">
               <h1 class="draw">
-                <a href="Accounts.html"><h1 class="hover hover-1 sm:text-lg mt-2 text-sm text-white cursor-pointer"><i class="far fa-user"></i> Hi, Irene</h1></a>
+                <a href="Accounts.html"><h1 class="hover hover-1 sm:text-lg mt-2 text-sm text-white cursor-pointer"><i class="far fa-user"></i><span id = "wel">Hi </span></h1></a>
               </h1>
             </div>
         
@@ -452,14 +452,24 @@
   </script>
 
 
-
-
+<script>
+  $(".number").counterUp({time:2000});
+</script>
 
 
 
 <script>
-  $(".number").counterUp({time:2000});
+  document.addEventListener('DOMContentLoaded', getInfo)
+  const newDat = document.querySelector('#wel');
+
+function getInfo() {
+  const infom = localStorage.getItem('name');
+  newDat.appendChild(document.createTextNode(infom));
+} 
+
 </script>
+
+
 
 
 
